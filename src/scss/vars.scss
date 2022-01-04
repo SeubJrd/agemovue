@@ -1,3 +1,29 @@
+$fontFamily : rustica, sans-serif;
+$footerTitleFont : 400;
+ 
+$rootFontSize : 16;
+
+//couleurs principales 
+$colorTitle : #170D42;
+$colorText : #2D1C78;
+$colorBackground : #FAF8FF;
+$colorAction : #6970FF;
+$colorActionSecond: #DF6FFF;
+
+//couleurs radiant
+$horizontalGradient : linear-gradient(90deg, rgba(105,112,255,1) 0%, rgba(252,191,255,1) 100%);
+$linearGradient : linear-gradient(180deg, rgba(105,112,255,1) 0%, rgba(252,191,255,1) 100%);
+$horizontalGradientVariant : linear-gradient(90deg, rgba(252,191,255,1) 0%, rgba(105,112,255,1) 100%);
+
+//couleurs secondaires
+$bleuVert :#6970FF;
+$bleuFluo :#58FFEF;
+$roseClair:#FCBFFF;
+
+//taille points timeline
+$size: 26;
+
+
 $color-white: #ffffff;
 $color-black: #000000;
 $color-thunderbird: #BF2720;
