@@ -1,5 +1,7 @@
 <template>
-    <h1 class="titre">Personnalise et précommande ta paire !</h1> 
+    <div class="main">
+        
+    </div>
 </template>
 
 <script>
