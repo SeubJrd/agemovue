@@ -1,0 +1,128 @@
+h1,h2,h3{
+    color: $colorTitle;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 2vw;
+}
+
+h2{
+    font-size: 1.625vw;
+}
+
+h3{
+    font-size: 1.25vw;
+}
+
+h4{
+    font-size: 1.1vw;
+}
+
+// Styles des titres jolis
+
+.titlePage p, .titlePage h1 {
+    font-size: 2.8vw; 
+    font-weight: 900;
+    line-height: 0em;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.titlePage {
+    width: 31%;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 15vh;
+    margin-left: 10%;
+    
+    background-image: url("../assets/Icones/deco-titre.svg");
+}
+
+.titlePage__1 {
+    color: $colorActionSecond;
+    margin-left: 0px;
+    margin-top: -6px;
+}
+
+.titlePage__2 {
+    color: $bleuFluo;
+    margin-left: 3px;
+    margin-top: -3px;
+}
+
+.titlePage__3 {
+    color: $colorTitle;
+    margin-left: 6px;
+    margin-top: -3px;
+}
+
+
+// fin des titres jolis
+
+//titres jolis sur deux lignes
+
+.titlePage2 p, .titlePage2 h1 {
+    font-size: 2.8vw; 
+    font-weight: 900;
+    line-height: 0em;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.titlePage2 {
+    width: 31%;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 7vh;
+    margin-left: 6%;
+}
+
+.titlePage2__1 {
+    color: $colorActionSecond;
+    margin-left: 0px;
+    margin-top: -6px;
+}
+
+.titlePage2__2 {
+    color: $bleuFluo;
+    margin-left: 3px;
+    margin-top: -3px;
+}
+
+.titlePage2__3 {
+    color: $colorTitle;
+    margin-left: 6px;
+    margin-top: -3px;
+}
+
+//fin des titres jolis sur deux lignes
+
+p{
+    font-size: 1vw;
+    color: $colorText;
+    font-weight: 300;
+}
+
+label,input{
+    font-size: 1vw;
+    line-height: pxToRem(21);
+    font-weight: 300;
+    color: $colorText;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+label{
+    padding-left: 0;
+}
+ 
+.formulaire__msgError{
+    font-weight: 300;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: red;
+}
