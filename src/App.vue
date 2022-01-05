@@ -5,8 +5,26 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
-  </div>
+   </div>
 </template>
+
+<script>
+import locomotiveScroll from "locomotive-scroll"
+export default {
+  mounted() {
+    this.initLocomotiveScroll()
+  },
+  methods: {
+    initLocomotiveScroll() {
+      window.lmS = new locomotiveScroll({
+        el: document.querySelector('#app'),
+        smooth: true,
+      })
+    }
+  }
+}
+</script>
+
 
 <style>
 #app {
@@ -28,5 +46,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+p {
+  margin-top: 25vh;
 }
 </style>
