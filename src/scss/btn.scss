@@ -1,0 +1,114 @@
+// Bouton desktop
+
+.primaryBtn{
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: inline-block;
+    background: $colorAction;
+    color: white;
+    padding: 1rem 1.8rem;
+    border-radius: 15px;
+    &.-fleche{
+        padding: 1rem 0.925rem 1rem 1.8rem;
+        transition: padding 0.3s ease-in-out;
+        &:hover{
+                padding: 1rem 1.8rem 1rem 1.8rem;
+                transition: padding 0.3s ease-in-out;
+        }
+    }
+    &:hover{
+        .fleche__line{
+            transform: scaleX(1.7);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fleche__pointe{
+            transform: translateX(14px);
+            transition: transform 0.3s ease-in-out;
+        }  
+    }
+    .fleche {
+        width: 30px;
+        *{
+            fill:white;
+        }
+        .fleche__line{
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fleche__pointe{
+            transition: transform 0.3s ease-in-out;
+        }  
+        
+    }
+}
+
+.primaryBtn:hover{
+    background: $horizontalGradient;
+}
+
+
+//bouton variant page modeles
+
+.BtnVariant-modeles{
+    text-decoration: none;
+    font-size: 1.2vw;
+    background: $roseClair;
+    color: white;
+    padding: 1rem 1.8rem;
+    border-radius: 15px;
+    &.-fleche{
+        padding: 1rem 0.925rem 1rem 1.8rem;
+        transition: padding 0.3s ease-in-out;
+        &:hover{
+                padding: 1rem 1.8rem 1rem 1.8rem;
+                transition: padding 0.3s ease-in-out;
+        }
+    }
+    &:hover{
+        .fleche__line{
+            transform: scaleX(1.7);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fleche__pointe{
+            transform: translateX(14px);
+            transition: transform 0.3s ease-in-out;
+        }  
+    }
+    .fleche {
+        width: 30px;
+        *{
+            fill:white;
+        }
+        .fleche__line{
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fleche__pointe{
+            transition: transform 0.3s ease-in-out;
+        }  
+        
+    }
+}
+
+.BtnVariant-modeles:hover{
+    background: $horizontalGradientVariant;
+}
+
+
+// Bouton compte
+
+.primaryBtnCompte{
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: inline-block;
+    background: $colorAction;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+}
+
+.primaryBtnCompte:hover{
+    background: $horizontalGradient;
+}
