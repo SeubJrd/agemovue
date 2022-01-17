@@ -24,13 +24,13 @@
                 </a>
             </div>
             <div class="accueil__infos-illus">
-                <img src="@/assets/img/Accueil/Illu personailser.png" alt="">
+                <img src="@/assets/img/Accueil/illu_perso.svg" alt="">
             </div>
         </div>
 
         <div class="accueil__section -accueil-colGauche">
             <div class="accueil__infos-illus">
-                <img src="@/assets/img/Accueil/Illu Colaboration.png" alt="">
+                <img src="@/assets/img/Accueil/illu_colaboration.svg" alt="">
             </div>
             <div class="accueil__infos">
                 <h1>Découvres nos collaborations</h1>
@@ -66,13 +66,13 @@
                 </a>
             </div>
             <div class="accueil__infos-illus">
-                <img src="@/assets/img/Accueil/Illu Partagez.png" alt="">
+                <img src="@/assets/img/Accueil/illu_partagez.svg" alt="">
             </div>
         </div>
 
         <div class="accueil__section -accueil-colGauche">
             <div class="accueil__infos-illus">
-                <img src="@/assets/img/Accueil/Illu Engagemens.png" alt="">
+                <img src="@/assets/img/Accueil/illu_engagements.svg" alt="">
             </div>
             <div class="accueil__infos">
                 <h1>Découvres nos engagements</h1>
