@@ -14,7 +14,7 @@
                     <h1>AG Mid IV</h1>
                     <P>A partir de 95 €</P>
                 </div>
-                <div class="modele__infos-hover">
+                <div class="modele__infos-hover -1">
                     <p>
                         La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
                         qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
@@ -38,7 +38,7 @@
                     <h1>AG Mid V</h1>
                     <P>A partir de 130 €</P>
                 </div>
-                <div class="modele__infos-hover">
+                <div class="modele__infos-hover -2">
                     <p>
                         La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
                         qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
@@ -62,7 +62,7 @@
                     <h1>AG One 163</h1>
                     <P>A partir de 90 €</P>
                 </div>
-                <div class="modele__infos-hover">
+                <div class="modele__infos-hover -3">
                     <p>
                         La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
                         qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
@@ -82,11 +82,11 @@
             </div>
     
             <div class="modele__card modele__col4">
-                <div class="modele__infos">
+                <div class="modele__infos ">
                     <h1>AG Run 808</h1>
                     <P>A partir de 120 €</P>
                 </div>
-                <div class="modele__infos-hover">
+                <div class="modele__infos-hover -4">
                     <p>
                         La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
                         qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
@@ -128,24 +128,52 @@ export default {
     border-radius: 5%;
 }
 
-.modele__card:hover{
-    background: $bleuVert;
-    color: white;
-}
-
 .modele__card h1{
     font-weight: 600;
 }
 
 .modele__infos-hover{
     margin: 8%;
+    visibility: hidden;
 }
-
 
 .modele__infos-hover p{
-    color: white;
-    margin-bottom: 15%;
+            color: white;
+            margin-bottom: 15%;
+        }
+
+.modele__col1:hover{
+    .modele__infos-hover {
+        visibility: visible;
+    }
+    background-color: $bleuVert;
+    background-image: none;
 }
+
+.modele__col2:hover{
+    .modele__infos-hover {
+        visibility: visible;
+    }
+    background-color: $bleuVert;
+    background-image: none;
+}
+
+.modele__col3:hover{
+    .modele__infos-hover {
+        visibility: visible;
+    }
+    background-color: $bleuVert;
+    background-image: none;
+}
+
+.modele__col4:hover{
+    .modele__infos-hover {
+        visibility: visible;
+    }
+    background-color: $bleuVert;
+    background-image: none;
+}
+
 
 .modele__infos{
     margin-left: 8%;
