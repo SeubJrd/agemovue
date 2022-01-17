@@ -1,11 +1,13 @@
 <template>
     <div class="main">
 
+        <div  class="accueil__section1">
         <video class="section1__video" autoplay loop muted>
             <source src="@/assets/video/test youtube.mp4" type=video/mp4>
         </video>
 
-        <img class="chevronEtrange" src="@/assets/img/Accueil/chevronEtrange.png" alt="">
+        <img class="chevronEtrange" src="@/assets/img/Accueil/chevron_etrange.svg" alt="">
+        </div>
 
         <div class="accueil__section -accueil-colDroite">
             <div class="accueil__infos">
@@ -164,14 +166,20 @@ export default {
 
 }
 
-.chevronEtrange{
+
+.accueil__section1{
     position: relative;
+}
+.chevronEtrange{
+    position: absolute;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10vh;
-    width: 100%;
+    margin: auto;
+    width: 50%;
+    bottom: 0.36vh;
+    left : 25%;
 }
 
 </style>
