@@ -13,7 +13,7 @@
             <div class="accueil__infos">
                 <h1>Personnalises tes chaussures</h1>
                 <p>Laisse parler ta créativité ! Couleurs, textures et même des motifs réalisés par des artistes, tu peux tout changer pour créer le modèle de tes rêves.</p>
-                <a class="primaryBtn -fleche" href="">Personnalises
+                <router-link class="primaryBtn -fleche" to="/Personalisation">Personnalises
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -23,7 +23,7 @@
                                 d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                         c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                         </svg></span>
-                </a>
+                </router-link>
             </div>
             <div class="accueil__infos-illus">
                 <img src="@/assets/img/Accueil/illu_perso.svg" alt="">
@@ -37,7 +37,7 @@
             <div class="accueil__infos">
                 <h1>Découvres nos collaborations</h1>
                 <p>Des motifs fleuris de Ponce, à l’aventure One Piece en partant pour l’espace avec la NASA, viens découvrir des designs originaux et éphémères pour personnaliser te s chaussures.</p>
-                <a class="primaryBtn -fleche" href="">Découvres
+                <router-link class="primaryBtn -fleche" to="/Collaborations">Découvres
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -47,7 +47,7 @@
                                 d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                         c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                         </svg></span>
-                </a>
+                </router-link>
             </div>
         </div>
 
@@ -55,7 +55,7 @@
             <div class="accueil__infos">
                 <h1>Partages tes créations</h1>
                 <p>Besoin d’inspiration pour faire ta customisation ? Penses à regarder les modèles réalisés par les créatifs. N’hésites pas à y partager ta propre création.</p>
-                <a class="primaryBtn -fleche" href="">Accèdes à la galerie
+                <router-link class="primaryBtn -fleche" to="/Galerie">Accèdes à la galerie
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -65,7 +65,7 @@
                                 d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                         c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                         </svg></span>
-                </a>
+                </router-link>
             </div>
             <div class="accueil__infos-illus">
                 <img src="@/assets/img/Accueil/illu_partagez.svg" alt="">
@@ -79,7 +79,7 @@
             <div class="accueil__infos">
                 <h1>Découvres nos engagements</h1>
                 <p>Notre planète est importante, pour limiter notre impact environnemental, Agemo s’engage sur ses méthodes de production et choix de matériaux.</p>
-                <a class="primaryBtn -fleche" href="">Découvres
+                <router-link class="primaryBtn -fleche" to="/">Découvres
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -89,7 +89,7 @@
                                 d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                         c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                         </svg></span>
-                </a>
+                </router-link>
             </div>
         </div>
         

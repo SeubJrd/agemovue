@@ -165,7 +165,6 @@ export default {
 
 <style lang="scss">
 
-/*styles timeline
 .timeline {
     list-style: none;
     display: flex;
@@ -206,7 +205,7 @@ export default {
         }
     }
 }
-*/
+
 /* fin des styles timeline*/
 
 /*styles perso*/
