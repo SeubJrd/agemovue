@@ -1,7 +1,7 @@
 <template>
 
     <div class="header">
-        <router-link to="/Home" class="header__image"><img class="header__logo" src="@/assets/img/LogoHeader.svg" alt="logo agemo"></router-link>
+        <router-link to="/" class="header__image"><img class="header__logo" src="@/assets/img/LogoHeader.svg" alt="logo agemo"></router-link>
         <nav class="header__navigation">
             <router-link class="header__lien -principal" to="#">Personnaliser</router-link>
             <router-link class="header__lien" to="/Collaborations">Collaborations</router-link>
