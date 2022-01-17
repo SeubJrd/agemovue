@@ -10,13 +10,13 @@
             </div>
 
             <div class="formulaire">
-                <label class="formulaire__label" for="email">Email / Pseudo</label> <br>
-                <input class="formulaire__input" type="text" required name="email" id="email" placeholder="monPseudo">
+                <label class="formulaire__label || email__label" for="email">Email / Pseudo</label> <br>
+                <input class="formulaire__input || email__input" type="text" required name="email" id="email" placeholder="monPseudo">
             </div>
 
             <div class="formulaire">
-                <label class="formulaire__label" for="mdp">Mot de passe</label> <br>
-                <input class="formulaire__input" type="password" required name="mdp" id="mdp" placeholder="motdepasse">
+                <label class="formulaire__label || mdp__label" for="mdp">Mot de passe</label> <br>
+                <input class="formulaire__input || mdp__input" type="password" required name="mdp" id="mdp" placeholder="motdepasse">
             </div>
 
             <a class="zoneConnexion__lien" href="">Mot de passe oublié ?</a>
@@ -62,16 +62,17 @@ export default {
 }
 
 .formulaire{
-    margin:2%;
+    margin:2% 0;
 }
  
 input{
-    width: 762px;
-    height: 58px;
+    width: 49.6vw;
+    height: 8vh;
     border: 1px solid $colorAction;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 1.4vh;
 }
+
  
 //input avec erreur
 .-error{
@@ -84,7 +85,6 @@ input{
     border: 3px solid green;
     outline: none;
 }
-
 
 
 </style>

@@ -6,14 +6,15 @@
             <p class="titlePage__2">Les Collaborations</p>
             <p class="titlePage__3">Les Collaborations</p>
         </div>
-
+        <a class ="primaryBtn" href="">Test</a>
         <div class="collab__ponce -col-gauche">
             <div class="collab__infos">
                 <img src="@/assets/img/collabs/deco-fleur.jpg" alt="">
                 <h1>Ponce X Agemo</h1>
                 <p>Nouveau, découvres notre collaboration avec le streamer Ponce ! L’occasion de t’approprier ses fameux motifs floraux pour personnaliser tes chaussures.</p>
                 <a class="collab__plus" href="#">En savoir plus sur Ponce</a>
-                <a class="primaryBtn -fleche" href="">Testes le motif
+                <a class="primaryBtn -fleche" href=""> 
+                    <span> Testes le motif </span>
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">

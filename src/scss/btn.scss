@@ -1,29 +1,33 @@
 // Bouton desktop
 
 .primaryBtn{
+    position: relative;
+    height: 44px;
+    line-height: 44px;
     text-decoration: none;
     display: inline-block;
     background: $colorAction;
     color: white;
-    padding: 1rem 1.8rem;
+    padding: 0 1.8rem;
     border-radius: 15px;
+    overflow: hidden;
     &.-fleche{
-        padding: 1rem 0.925rem 1rem 1.8rem;
-        transition: padding 0.3s ease-in-out;
+        padding: 0 0.925rem 0 1.8rem;
+        transition: padding 0.3s $easeInOutBack;
         &:hover{
-                padding: 1rem 1.8rem 1rem 1.8rem;
-                transition: padding 0.3s ease-in-out;
+                padding: 0 1.8rem 0 1.8rem;
+                transition: padding 0.3s $easeInOutBack;
         }
     }
     &:hover{
         .fleche__line{
             transform: scaleX(1.7);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s $easeInQuart;
         }
 
         .fleche__pointe{
             transform: translateX(14px);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s $easeInQuart;
         }  
     }
     .fleche {
@@ -32,19 +36,40 @@
             fill:white;
         }
         .fleche__line{
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.5s $easeInQuart;
         }
 
         .fleche__pointe{
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.5s $easeInQuart;
         }  
         
     }
+    span{
+        position: relative;
+        z-index: 2;
+    }
 }
 
-.primaryBtn:hover{
+
+.primaryBtn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
     background: $horizontalGradient;
+    opacity: 0;
+    transition: opacity 450ms $authenticMotion, transform 450ms $magikMotion;
+    transform: translateX(60px);
 }
+
+.primaryBtn:hover::after{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 
 
 //bouton variant page modeles
