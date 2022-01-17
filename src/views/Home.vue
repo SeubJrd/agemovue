@@ -111,7 +111,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(2);
     margin-left: 12.5%;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .accueil__infos{
