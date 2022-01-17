@@ -4,6 +4,17 @@ import Home from '../views/Home.vue'
 import Collaborations from '../views/Collaborations.vue'
 import Registration from '../views/Registration.vue'
 import Login from '../views/Login.vue'
+import Compte from '../views/Compte.vue'
+import Connexion from '../views/Connexion.vue'
+import Galerie from '../views/Galerie.vue'
+import Inscription from '../views/Inscription.vue'
+import Modeles from '../views/Modeles.vue'
+import Personalisation from '../views/Personalisation.vue'
+
+
+
+
+
 
 Vue.use(VueRouter)
 
@@ -16,22 +27,39 @@ const routes = [
     component: Home
   },
   {
-    path: '/test',
-    name: 'Test',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
     path: '/collaborations',
     name: 'Collaborations',
     component: Collaborations
+  },
+  {
+    path: '/compte',
+    name: 'Compte',
+    component: Compte
+  },
+  {
+    path: '/connexion',
+    name: 'Connexion',
+    component: Connexion
+  },
+  {
+    path: '/galerie',
+    name: 'Galerie',
+    component: Galerie
+  },
+  {
+    path: '/inscription',
+    name: 'Inscription',
+    component: Inscription
+  },
+  {
+    path: '/modeles',
+    name: 'Modeles',
+    component: Modeles
+  },
+  {
+    path: '/personalisation',
+    name: 'Personalisation',
+    component: Personalisation
   },
   {
     path: '/login',
