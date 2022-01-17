@@ -20,11 +20,19 @@
         <div v-if="error">
             <p style="color: red;">Nom ou mdp invalide mon reuf</p>
         </div>
+
+        <p>Bonjour, {{user.displayName}}</p>
+    
     </div>
 </template>
  
 <script>
 import axios from "axios"
+
+
+
+
+
 export default {
     data() {
         return {
@@ -35,6 +43,11 @@ export default {
             success: false,
             error: false,
             }
+    },
+    computed: {
+        user () {
+            return this.$store.state.user
+        }
     },
     methods: {
         submit(event) {
@@ -47,7 +60,12 @@ export default {
                 console.log(response)
                 if (response.status === 200) {
                     this.success = true
-                    this.error = false
+                    
+                    this.$store.commit('setUser' , {
+                        username: response.data.data.displayName,
+                        email: response.data.data.email,
+                        authToken: response.data.data.token
+                    })
                 }
             }).catch(error => {
                 console.log('Error LOG : ', error.response)

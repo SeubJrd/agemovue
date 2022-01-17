@@ -28,7 +28,7 @@
                 </svg>
             </router-link>
         </nav>
-    </div>
+        </div>
 
 </template>
 
