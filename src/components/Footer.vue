@@ -196,6 +196,11 @@ export default {
         width: 100%;
         height: 50%;
     }
+    .fooHR {
+    width: 30%;
+    margin-top: 1vh;
+    display: inline-flex;
+    }
 
 
 </style>
