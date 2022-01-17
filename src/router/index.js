@@ -6,6 +6,8 @@ import Registration from '../views/Registration.vue'
 
 Vue.use(VueRouter)
 
+//Installe Pi Seb
+
 const routes = [
   {
     path: '/',
