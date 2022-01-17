@@ -8,7 +8,7 @@ module.exports = {
             sass: {
                 additionalData: `
                     @use 'sass:math';
-                    @import "@/scss/styles.scss";
+                    @import "@/scss/vars.scss";
                 `
             }
         }
