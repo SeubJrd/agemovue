@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Collaborations from '../views/Collaborations.vue'
 import Registration from '../views/Registration.vue'
+import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/collaborations',
     name: 'Collaborations',
     component: Collaborations
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/registration',
