@@ -11,11 +11,6 @@ import Inscription from '../views/Inscription.vue'
 import Modeles from '../views/Modeles.vue'
 import Personalisation from '../views/Personalisation.vue'
 
-
-
-
-
-
 Vue.use(VueRouter)
 
 //Installe Pi Seb

@@ -1,5 +1,21 @@
 <template>
-    <div>
-        <h1>Les Collaborations</h1>
+    <div class="collabs">
+
+        
+        
     </div>
 </template>
+
+<script>
+
+export default {
+
+}
+
+</script>
+
+<style lang="scss">
+
+
+
+</style>
