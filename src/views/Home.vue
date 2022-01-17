@@ -7,6 +7,7 @@
         </video>
 
         <img class="chevronEtrange" src="@/assets/img/Accueil/chevron_etrange.svg" alt="">
+        <img class="flecheChevron" src="@/assets/img/Accueil/fleche_chevron.svg" alt="">
         </div>
 
         <div class="accueil__section -accueil-colDroite">
@@ -182,4 +183,9 @@ export default {
     left : 25%;
 }
 
+.flecheChevron{
+    position: absolute;
+    bottom: 4.5vh;
+    left : 48%;
+}
 </style>
