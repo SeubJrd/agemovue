@@ -136,7 +136,7 @@ export default {
 }
 
 .footer__logo{
-    width: 40%;
+    width: 60%;
 }
 
   .footer__col1 {
