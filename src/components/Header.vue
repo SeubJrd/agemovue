@@ -87,7 +87,6 @@ export default {
     font-family: $fontFamily; 
     font-weight: 500;
     font-style: normal;
-    font-size: 1vw;
 }
 
 .-principal{
@@ -99,11 +98,9 @@ export default {
     justify-content: center;
     color: #FAF8FF;
     border-radius: 15px;
-    font-size: 1vw;
     &:hover {
         background : $horizontalGradient;
         transition: 0.3s;
-        
     }
 }
 
