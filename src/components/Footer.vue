@@ -85,11 +85,11 @@
             <h3 class="footer__titre">Navigation</h3>
             <hr class="fooHR">
             <div class="footer__navigation -réseaux">
-                <router-link class="footer__lien" to="">Accueil</router-link>
-                <router-link class="footer__lien" to="">Modèles</router-link>
-                <router-link class="footer__lien" to="">Galerie</router-link>
-                <router-link class="footer__lien" to="">Collaborations</router-link>
-                <router-link class="footer__lien" to="">Nos engagements</router-link>
+                <router-link class="footer__lien" to="/Home">Accueil</router-link>
+                <router-link class="footer__lien" to="/Modeles">Modèles</router-link>
+                <router-link class="footer__lien" to="/Galerie">Galerie</router-link>
+                <router-link class="footer__lien" to="/Collaborations">Collaborations</router-link>
+                <router-link class="footer__lien" to="/Engagements">Nos engagements</router-link>
             </div>
         </div>
 
