@@ -106,4 +106,8 @@ export default {
         
     }
 }
+
+.header__logo {
+    width: 80%;
+}
 </style>
