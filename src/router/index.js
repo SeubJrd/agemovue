@@ -10,6 +10,7 @@ import Galerie from '../views/Galerie.vue'
 import Inscription from '../views/Inscription.vue'
 import Modeles from '../views/Modeles.vue'
 import Personalisation from '../views/Personalisation.vue'
+import Engagement from '../views/Engagement.vue'
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,11 @@ const routes = [
     path: '/registration',
     name: 'Registration',
     component: Registration
+  },
+  {
+    path: '/engagement',
+    name: 'Engagement',
+    component: Engagement
   }
 ]
 
