@@ -118,10 +118,6 @@ export default {
     margin-top: 15%;
 }
 
-.accueil__infos{
-    margin-top: 25%;
-}
-
 .accueil__infos h1{
     margin-bottom: 10%;
     font-weight: 600;
@@ -133,8 +129,13 @@ export default {
     width: 90%;
 }
 
-.accueil__infos-illus img{
-    width: 85%;
+.accueil__infos-illus{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    img {
+        width: 85%;
+    }
 }
 
 .-accueil-colDroite{

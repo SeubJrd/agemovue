@@ -1,10 +1,8 @@
 <template>
     <div class="collabs">
 
-        <div class="titlePage">
-            <h1 class="titlePage__1">Les Collaborations</h1>
-            <p class="titlePage__2">Les Collaborations</p>
-            <p class="titlePage__3">Les Collaborations</p>
+        <div class="titlePage__container">
+            <p class="titlePage">Les Collaborations</p>
         </div>
 
         <div class="collab__ponce -col-gauche">
