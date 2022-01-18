@@ -55,20 +55,22 @@
 
         <div class="accueil__section -accueil-colDroite">
             <div class="accueil__infos">
-                <h1>Partages tes créations</h1>
-                <p>Besoin d’inspiration pour faire ta customisation ? Penses à regarder les modèles réalisés par les créatifs. N’hésites pas à y partager ta propre création.</p>
-                <router-link class="primaryBtn -fleche" to="/Galerie">
-                    <span>Accèdes à la galerie</span>
-                    <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
-                            enable-background="new 0 0 42 16.1" xml:space="preserve">
-                             <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
-                                d="M24.4,7.1H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h19.4" />
-                            <path class="fleche__pointe" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
-                                d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
-                        c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
-                        </svg></span>
-                </router-link>
+                <div class="centreVert">
+                    <h1>Partages tes créations</h1>
+                    <p>Besoin d’inspiration pour faire ta customisation ? Penses à regarder les modèles réalisés par les créatifs. N’hésites pas à y partager ta propre création.</p>
+                    <router-link class="primaryBtn -fleche" to="/Galerie">
+                        <span>Accèdes à la galerie</span>
+                        <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
+                                enable-background="new 0 0 42 16.1" xml:space="preserve">
+                                <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
+                                    d="M24.4,7.1H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h19.4" />
+                                <path class="fleche__pointe" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
+                                    d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
+                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
+                            </svg></span>
+                    </router-link>
+                </div>
             </div>
             <div class="accueil__infos-illus">
                 <img src="@/assets/img/Accueil/illu_partagez.svg" alt="">
@@ -117,6 +119,10 @@ export default {
     grid-template-columns: repeat(2);
     margin-left: 12.5%;
     margin-top: 15%;
+}
+
+.accueil__infos {
+    padding-top: 7%;
 }
 
 .accueil__infos h1{
