@@ -6,6 +6,7 @@
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
             <span>Personnaliser</span>
             </router-link>
+            <routeur-link rel="icon" href="@assets/img/logo.ico"/>
             <router-link class="header__lien" to="/Collaborations">Collaborations</router-link>
             <router-link class="header__lien" to="/Galerie">Communauté</router-link>
             <router-link class="header__lien" to="/Engagement">Engagements</router-link>
