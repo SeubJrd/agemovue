@@ -66,7 +66,7 @@
                 <h1>Toi aussi personnalise tes sneakers</h1>
             <a class="primaryBtn -fleche" href="">
                 <span>Personnalises</span>
-                <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                         enable-background="new 0 0 42 16.1" xml:space="preserve">
                         <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
