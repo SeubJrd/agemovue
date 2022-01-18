@@ -66,10 +66,6 @@
                         <img src="@/assets/Icones/collab.svg" alt="">
                         <h3>Collaborations</h3>
                     </a>
-                    <a  class="choix-custo" href="">
-                        <img src="@/assets/Icones/texture.svg" alt="">
-                        <h3>Textures</h3>
-                    </a>
                 </span>
             </span>
             <span class="perso__btn-terminer">
@@ -95,37 +91,42 @@
 
                     <a class="choix__col" href="">
                         <div class="col__img1"></div>
-                        <p class="col__txt1">Rose</p>
+                        <p class="col__txt">Blanc</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img2"></div>
-                        <p class="col__txt2">Noir</p>
+                        <p class="col__txt">Noir</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img3"></div>
-                        <p class="col__txt3">Blanc</p>
+                        <p class="col__txt">Gris</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img4"></div>
-                        <p class="col__txt4">Bleu</p>
+                        <p class="col__txt">Rouge</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img5"></div>
-                        <p class="col__txt5">Violet</p>
+                        <p class="col__txt">Vert</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img6"></div>
-                        <p class="col__txt6">Vert</p>
+                        <p class="col__txt">Lavande</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img7"></div>
-                        <p class="col__txt7">Orange</p>
+                        <p class="col__txt">Rose</p>
+                    </a>
+
+                    <a class="choix__col" href="">
+                        <div class="col__img8"></div>
+                        <p class="col__txt">Bleu</p>
                     </a>
         
                 </div>
@@ -348,6 +349,7 @@ export default {
     line-height: pxToRem(47);
     color: white;
     text-align: center;
+    padding-top: 8%;
 }
 
 /*test bulle */
@@ -413,84 +415,53 @@ export default {
     margin-right: 3%;
 }
 
-//Couleur 1
-/*
-.col__img1, .col__img2, .col__img3, .col__img4, .col__img5, .col__img6, .col__img7 {
+.col__img1, .col__img2, .col__img3, .col__img4, .col__img5, .col__img6, .col__img7, .col__img8 {
     width: 5vh;
     height: 5vh;
     border-radius: 100%;
     margin: auto;
 }
 
+.col__txt {
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 14px;
+}
+
 .col__img1{
-    background-color: #FFCDFE;
-}
-
-.col__txt1 {
-    @include col__txt;
-}
-
-//Couleur 2
-
-.col__img2 {
-    background-color: #2B2A2A;
-}
-
-.col__txt2 {
-    @include col__txt;
-}
-
-//Couleur 3
-
-.col__img3 {
     background: #F1E8E8;
     box-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 0.25);
 }
 
-.col__txt3 {
-    @include col__txt;
+.col__img2 {
+    background-color: #000000;
 }
 
-//Couleur 4
+.col__img3 {
+    background: #535356;
+}
 
 .col__img4 {
-    background: #5A8CD8;
+    background: #782020;
 }
-
-.col__txt4 {
-    @include col__txt;
-}
-
-//Couleur 5
 
 .col__img5 {
-    background: #9464D0;
+    background: #275f37;
 }
-
-.col__txt5 {
-    @include col__txt;
-}
-
-//Couleur 6
 
 .col__img6 {
-    background-color:#64D0A3;
+    background-color:#b494e8;
 }
-
-.col__txt6 {
-    @include col__txt;
-}
-
-//Couleur 7
 
 .col__img7 {
-    background-color: #E48C4B;
+    background-color: #ffcdfe;
 }
 
-.col__txt7 {
-    @include col__txt;
+.col__img8 {
+    background-color: #5a8cd8;
 }
-*/
+
 
 
 
