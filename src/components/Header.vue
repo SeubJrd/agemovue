@@ -91,6 +91,7 @@ export default {
     font-family: $fontFamily; 
     font-weight: 500;
     font-style: normal;
+    font-size: 18px;
 }
 
 .header__logo {
