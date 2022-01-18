@@ -22,14 +22,41 @@
                 <input class="formulaire__input || date__input" type="date" required name="date" id="date" placeholder="XX / XX / XXXX">
             </div>
 
-            <div class="espace-bouton">
-                <p class="nb-page">1/2</p>
-                <div class="btn-suivant">
-                    <a class="zoneInscription__lien || primaryBtn" href="">
-                    <span>Suivant</span>
-                    </a> 
-                </div>
-                
+            <div class="formulaire">
+                <label class="formulaire__label || mdp__label" for="mdp">Mot de passe *</label> <br>
+                <input class="formulaire__input || mdp__input" type="password" required name="mdp" id="mdp" placeholder="motdepasse">
+            </div>
+
+            <div class="formulaire">
+                <label class="formulaire__label || mdp__label" for="mdp">Confirmation du mot de passe *</label> <br>
+                <input class="formulaire__input || mdp__input" type="password" required name="mdp" id="mdp" placeholder="motdepasse">
+            </div>
+
+            <div>
+               <a class="zoneConnexion__lien || primaryBtn -fleche" href="">
+                <span>Inscription</span>
+                <span class="icon-container"><svg class="fleche" x="0px" y="0px" viewBox="0 0 42 16.1">
+                        <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
+                            d="M24.4,7.1H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h19.4" />
+                        <path class="fleche__pointe" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
+                            d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
+                   c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
+                    </svg></span>
+            </a> 
+            </div>
+
+            <div>
+                <label class="main-check">Je souhaite m’inscrire à la newsletter
+                <input type="checkbox">
+                <span class="newsletter"></span>
+                </label>
+            </div>
+
+            <div>
+                <label class="main-check">J’ai lu et j’accepte les <a class="lien-connexion" href="">conditions générales d’utilisation / de vente</a>
+                <input type="checkbox">
+                <span class="newsletter"></span>
+                </label>
             </div>
 
             <div class="zoneOu">
@@ -70,6 +97,8 @@
             <a class="lien-rgpd || lien-connexion" href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">Règlement général sur la protection des données</a>
         </div>
 
+        
+
     </div>
 </template>
 
@@ -82,6 +111,59 @@ export default {
 </script>
 
 <style lang="scss">
+      .main-check {
+      display: block;
+      position: relative;
+      padding-left: 45px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      }
+
+      input[type=checkbox] {
+      visibility: hidden;
+      }
+
+      .newsletter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 21px;
+      width: 21px;
+      background-color: white;
+      border: 1px solid $colorAction;
+      border-radius: 3px;
+      }
+
+      .main-check input:active ~ .newsletter {
+      background-color: white;
+      }
+
+      .main-check input:checked ~ .newsletter {
+      background-color: $colorAction; 
+      }
+
+      .newsletter:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+
+      .main-check input:checked ~ .newsletter:after {
+      display: block;
+      }
+
+      .main-check .newsletter:after {
+      left: 6px;
+      bottom: 5px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      }
+
 .zoneInscription{
     margin: auto;
     width: 50%;
@@ -110,4 +192,23 @@ export default {
     justify-self: end;
 }
 
+#newsletter{
+    width: 18px;
+    height: 18px;
+}
+
+input[type="checkbox"]#newsletter {
+  display: none;
+}
+input[type="checkbox"]#newsletter + label::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0c8';
+  font-size: 1.2em;  
+  color: #00B7E8;
+  margin-right: 0.3rem  ;
+}
+input[type="checkbox"]#newsletter:checked + label::before {
+  content:'\f14a';
+  color: #00B7E8;
+}
 </style>

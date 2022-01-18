@@ -131,7 +131,7 @@ export default {
     left: 18%;
 }
 
-input{
+.formulaire__input{
     width: 49.6vw;
     height: 8vh;
     border: 1px solid $colorAction;
