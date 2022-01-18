@@ -45,9 +45,9 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 35%;
-    margin-left: 15%;
-    margin-right: 20%;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .header__image{
