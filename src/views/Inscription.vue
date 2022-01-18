@@ -115,7 +115,6 @@ export default {
       display: block;
       position: relative;
       padding-left: 45px;
-      padding-top: 5px;
       margin-bottom: 15px;
       cursor: pointer;
       }
