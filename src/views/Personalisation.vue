@@ -227,9 +227,11 @@ export default {
 
 .perso__menu{
     display: flex;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 5%;
     line-height: 3vh;
+    grid-column: 1;
+    align-items: center;
 }
 
 .nom-etape{
@@ -250,6 +252,7 @@ export default {
     justify-content: center;
     width: 25%;
     align-items: center;
+   // margin-left: 10%;
 }
 
 .choix-custo h3{
@@ -261,6 +264,7 @@ export default {
     align-items: center;
     margin-top: 1.5%;
     justify-content: center;
+    margin-left: 10%;
 }
 
 .perso__btn-terminer a{
@@ -270,6 +274,7 @@ export default {
 .perso__btn-terminer{
     justify-content: center;
     display: flex;
+    margin-left: 16%;
 }
 
 .perso__layer2{
@@ -277,11 +282,6 @@ export default {
     grid-template-columns: repeat(3);
     grid-auto-columns: 20% 60% 20%;
     margin-bottom: 5%;
-}
-
-.perso__menu{
-    grid-column: 1;
-    align-items: center;
 }
 
 .perso__layer2-milieu{
@@ -347,6 +347,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     width: 20vw;
+    padding-left: 5.5%;
 }
 
 .informations_prix{
@@ -415,6 +416,7 @@ export default {
 .perso__choix {
     display: flex;
     justify-content: center;
+    margin-left: 10%;
 }
 
 .perso__choix a{
