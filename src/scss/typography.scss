@@ -29,84 +29,29 @@ h1,h2,h3{
     
     // Styles des titres jolis
     
-    .titlePage p, .titlePage h1 {
-        font-size: 45px; 
-        font-weight: 900;
-        line-height: 0em;
-        width: 85%;
-        margin-left: 7.5%;
-    }
-    
     .titlePage {
-        width: 31%;
-        height: 25vh;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding-top: 15vh;
-        margin-left: 10%;
-        
-        background-image: url("../assets/Icones/deco-titre.svg");
-    }
-    
-    .titlePage__1 {
-        color: $colorActionSecond;
-        margin-left: 0px;
-        margin-top: -6px;
-    }
-    
-    .titlePage__2 {
-        color: $bleuFluo;
-        margin-left: 3px;
-        margin-top: -3px;
-    }
-    
-    .titlePage__3 {
+        font-size: 45px;
+        font-weight: 800;
         color: $colorTitle;
-        margin-left: 6px;
-        margin-top: -3px;
+        text-shadow: 3px 3px $colorActionSecond, 6px 6px $bleuFluo;
+        position: relative;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        line-height: initial;
+        &__container{
+            width: 31%;
+            height: 25vh;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-left: 10%;
+            background-image: url("../assets/Icones/deco-titre.svg");
+        }
     }
+
     
-    
+
     // fin des titres jolis
-    
-    //titres jolis sur deux lignes
-    
-    .titlePage2 p, .titlePage2 h1 {
-        font-size: 45px; 
-        font-weight: 900;
-        line-height: 0em;
-        width: 85%;
-        margin-left: 7.5%;
-    }
-    
-    .titlePage2 {
-        width: 31%;
-        height: 25vh;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding-top: 7vh;
-        margin-left: 6%;
-    }
-    
-    .titlePage2__1 {
-        color: $colorActionSecond;
-        margin-left: 0px;
-        margin-top: -6px;
-    }
-    
-    .titlePage2__2 {
-        color: $bleuFluo;
-        margin-left: 3px;
-        margin-top: -3px;
-    }
-    
-    .titlePage2__3 {
-        color: $colorTitle;
-        margin-left: 6px;
-        margin-top: -3px;
-    }
-    
-    //fin des titres jolis sur deux lignes
     
     p{
         color: $colorText;
@@ -154,84 +99,28 @@ h1,h2,h3{
     
     // Styles des titres jolis
     
-    .titlePage p, .titlePage h1 {
-        font-size: 32px; 
-        font-weight: 900;
-        line-height: 0em;
-        width: 85%;
-        margin-left: 7.5%;
-    }
-    
     .titlePage {
-        width: 31%;
-        height: 25vh;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding-top: 15vh;
-        margin-left: 10%;
-        
-        background-image: url("../assets/Icones/deco-titre.svg");
-    }
-    
-    .titlePage__1 {
-        color: $colorActionSecond;
-        margin-left: 0px;
-        margin-top: -6px;
-    }
-    
-    .titlePage__2 {
-        color: $bleuFluo;
-        margin-left: 3px;
-        margin-top: -3px;
-    }
-    
-    .titlePage__3 {
+        font-size: 45px;
+        font-weight: 800;
         color: $colorTitle;
-        margin-left: 6px;
-        margin-top: -3px;
+        text-shadow: 3px 3px $colorActionSecond, 6px 6px $bleuFluo;
+        position: relative;
+        top: 30%;
+        text-align: center;
+        line-height: initial;
+        &__container{
+            width: 90%;
+            height: 25vh;
+            margin-left: 5%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-top: 10%;
+            background-image: url("../assets/Icones/deco-titres-mobile.svg");
+        }
     }
     
     
     // fin des titres jolis
-    
-    //titres jolis sur deux lignes
-    
-    .titlePage2 p, .titlePage2 h1 {
-        font-size: 32px; 
-        font-weight: 900;
-        line-height: 0em;
-        width: 85%;
-        margin-left: 7.5%;
-    }
-    
-    .titlePage2 {
-        width: 31%;
-        height: 25vh;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding-top: 7vh;
-        margin-left: 6%;
-    }
-    
-    .titlePage2__1 {
-        color: $colorActionSecond;
-        margin-left: 0px;
-        margin-top: -6px;
-    }
-    
-    .titlePage2__2 {
-        color: $bleuFluo;
-        margin-left: 3px;
-        margin-top: -3px;
-    }
-    
-    .titlePage2__3 {
-        color: $colorTitle;
-        margin-left: 6px;
-        margin-top: -3px;
-    }
-    
-    //fin des titres jolis sur deux lignes
     
     p{
         color: $colorText;
