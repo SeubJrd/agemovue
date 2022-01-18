@@ -16,6 +16,18 @@
             <li class="timeline__item"><span>milieu</span></li>
         </ul>       
 
+        <div class="jeVeuxDesChaussures">
+            <img src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
+            <img src="@/assets/img/vue1/vue1-corps-arr_blanc.png" alt="Corps Arrière">
+            <img src="@/assets/img/vue1/vue1-corps-avant_blanc.png" alt="Corps avant">
+            <img src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
+            <img src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
+            <img src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
+            <img src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
+            <img src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
+            <img src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
+            <img src="@/assets/img/vue1/vue1-toe-box_blanc.png" alt="Toe Box">
+        </div>
        
         <div class ="infoPartagePrix">
             <a class="bulle" href="#inspiPerso">
@@ -492,7 +504,20 @@ export default {
 }
 */
 
+.jeVeuxDesChaussures {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
 
+.jeVeuxDesChaussures img {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+}
 
 
 
