@@ -69,22 +69,5 @@ export default {
 </script>
  
 <style lang="scss">
-form {
-    text-align: left;
-    width: 980px;
-    margin: auto;
- 
-    div {
-        display: flex;
-        margin-bottom: 15px;
- 
-        label {
-            width: 200px;
-        }
- 
-        input {
-            width: 100%;
-        }
-    }
-}
+
 </style>
