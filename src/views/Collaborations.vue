@@ -1,12 +1,10 @@
 <template>
     <div class="collabs">
 
-        <div class="titlePage">
-            <h1 class="titlePage__1">Les Collaborations</h1>
-            <p class="titlePage__2">Les Collaborations</p>
-            <p class="titlePage__3">Les Collaborations</p>
+        <div class="titlePage__container">
+            <p class="titlePage">Les Collaborations</p>
         </div>
-        <a class ="primaryBtn" href="">Test</a>
+
         <div class="collab__ponce -col-gauche">
             <div class="collab__infos">
                 <img src="@/assets/img/collabs/deco-fleur.jpg" alt="">
@@ -44,7 +42,8 @@
                 <h1>One Piece X Agemo</h1>
                 <p>Embarques pour notre collaboration avec la série One Piece ! Pars à l’aventure, chaussé de tes plus belles sneakers au design de pirates. Des motifs dignes du plus grand roi des pirates.</p>
                 <a class="collab__plus" href="#">En savoir plus sur One Piece</a>
-                <a class="primaryBtn -fleche" href="">Testes le motif
+                <a class="primaryBtn -fleche" href="">
+                    <span>Testes le motif</span>
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -64,7 +63,8 @@
                 <h1>Nasa X Agemo</h1>
                 <p>Paré au décollage, embarcation imminente pour notre collaboration intersidérale avec la NASA ! A toi les chaussures de l’espace ! Ce motif galactique emmenera tes chaussures personnalisées dans une autre dimension.</p>
                 <a class="collab__plus" href="#">En savoir plus sur la Nasa</a>
-                <a class="primaryBtn -fleche" href="">Testes le motif
+                <a class="primaryBtn -fleche" href="">
+                    <span>Testes le motif</span>
                     <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">

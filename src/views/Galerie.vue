@@ -1,15 +1,8 @@
 <template>
     <div class="galerie">
 
-        <div class="titlePage">
-            <h1 class="titlePage__1">Les paires de la </h1>
-            <p class="titlePage__2">Les paires de la </p>
-            <p class="titlePage__3">Les paires de la </p>
-            <div class="titlePage2">
-                <h1 class="titlePage2__1">communauté </h1>
-                <p class="titlePage2__2">communauté </p>
-                <p class="titlePage2__3">communauté </p>
-            </div>
+        <div class="titlePage__container">
+            <p class="titlePage">Les paires de la communauté</p>
         </div>
         <p class="galerie__description">Retrouves ici les créations de tous nos utilisateurs. De quoi te donner quelques idées pour te lancer dans ta propre customisation. N’hésites pas à partager ton design à la fin de la personnalisation.</p>
         
@@ -71,7 +64,8 @@
         <div class="ToiAussiPerso">
             <div class="galerieAussi__col1">
                 <h1>Toi aussi personnalise tes sneakers</h1>
-            <a class="primaryBtn -fleche" href="">Personnalises
+            <a class="primaryBtn -fleche" href="">
+                <span>Personnalises</span>
                 <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                         enable-background="new 0 0 42 16.1" xml:space="preserve">
