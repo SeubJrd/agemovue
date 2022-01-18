@@ -6,8 +6,7 @@
             <source src="@/assets/video/test youtube.mp4" type=video/mp4>
         </video>
 
-        <img class="chevronEtrange" src="@/assets/img/Accueil/chevron_etrange.svg" alt="">
-        <img class="flecheChevron" src="@/assets/img/Accueil/fleche_chevron.svg" alt="">
+        <Chevron />
         </div>
 
         <div class="accueil__section -accueil-colDroite">
@@ -102,8 +101,10 @@
 </template>
 
 <script>
+import Chevron from '@/components/Chevron.vue'
 
 export default {
+  components: { Chevron },
 
 }
 
@@ -172,25 +173,8 @@ export default {
 
 }
 
-
 .accueil__section1{
     position: relative;
 }
-.chevronEtrange{
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-    bottom: 0.36vh;
-    left : 25%;
-}
 
-.flecheChevron{
-    position: absolute;
-    bottom: 4.5vh;
-    left : 48%;
-}
 </style>

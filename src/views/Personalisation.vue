@@ -16,6 +16,18 @@
             <li class="timeline__item"><span>milieu</span></li>
         </ul>       
 
+        <div class="jeVeuxDesChaussures">
+            <img src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
+            <img src="@/assets/img/vue1/vue1-corps-arr_blanc.png" alt="Corps Arrière">
+            <img src="@/assets/img/vue1/vue1-corps-avant_blanc.png" alt="Corps avant">
+            <img src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
+            <img src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
+            <img src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
+            <img src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
+            <img src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
+            <img src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
+            <img src="@/assets/img/vue1/vue1-toe-box_blanc.png" alt="Toe Box">
+        </div>
        
         <div class ="infoPartagePrix">
             <a class="bulle" href="#inspiPerso">
@@ -66,18 +78,15 @@
                         <img src="@/assets/Icones/collab.svg" alt="">
                         <h3>Collaborations</h3>
                     </a>
-                    <a  class="choix-custo" href="">
-                        <img src="@/assets/Icones/texture.svg" alt="">
-                        <h3>Textures</h3>
-                    </a>
                 </span>
             </span>
+            
             <span class="perso__btn-terminer">
                 
                 <a class="perso-reset" href=""><img  src="@/assets/Icones/reset.svg" alt=""></a>
 
-                <a class="primaryBtn -fleche" href="">Terminer
-                    <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                <a class="primaryBtn -fleche" href=""><span>Terminer</span>
+                    <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
                             <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
@@ -95,37 +104,42 @@
 
                     <a class="choix__col" href="">
                         <div class="col__img1"></div>
-                        <p class="col__txt1">Rose</p>
+                        <p class="col__txt">Blanc</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img2"></div>
-                        <p class="col__txt2">Noir</p>
+                        <p class="col__txt">Noir</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img3"></div>
-                        <p class="col__txt3">Blanc</p>
+                        <p class="col__txt">Gris</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img4"></div>
-                        <p class="col__txt4">Bleu</p>
+                        <p class="col__txt">Rouge</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img5"></div>
-                        <p class="col__txt5">Violet</p>
+                        <p class="col__txt">Vert</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img6"></div>
-                        <p class="col__txt6">Vert</p>
+                        <p class="col__txt">Lavande</p>
                     </a>
         
                     <a class="choix__col" href="">
                         <div class="col__img7"></div>
-                        <p class="col__txt7">Orange</p>
+                        <p class="col__txt">Rose</p>
+                    </a>
+
+                    <a class="choix__col" href="">
+                        <div class="col__img8"></div>
+                        <p class="col__txt">Bleu</p>
                     </a>
         
                 </div>
@@ -134,8 +148,8 @@
                     <div class ="inspiPerso_texte">
                         <h2 class ="inspiPerso_titre">Besoin d'inspiration ?</h2>
                         <p class ="inspiPerso_paragraphe"> Besoin d'inspiration pour faire ta customisation ? Penses à regarder les modèles réalisés par les créatifs. N'hésites pas à y partager ta propre création.</p>
-                        <a class="inspiPerso_btn primaryBtn -fleche" href="./galerie.html">Accèdes à la galerie
-                            <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                        <a class="inspiPerso_btn primaryBtn -fleche" href="./galerie.html"> <span>Accèdes à la galerie</span>
+                            <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                     enable-background="new 0 0 42 16.1" xml:space="preserve">
                                     <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
@@ -348,6 +362,7 @@ export default {
     line-height: pxToRem(47);
     color: white;
     text-align: center;
+    padding-top: 8%;
 }
 
 /*test bulle */
@@ -413,86 +428,68 @@ export default {
     margin-right: 3%;
 }
 
-//Couleur 1
-/*
-.col__img1, .col__img2, .col__img3, .col__img4, .col__img5, .col__img6, .col__img7 {
+.col__img1, .col__img2, .col__img3, .col__img4, .col__img5, .col__img6, .col__img7, .col__img8 {
     width: 5vh;
     height: 5vh;
     border-radius: 100%;
     margin: auto;
 }
 
+.col__txt {
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 14px;
+}
+
 .col__img1{
-    background-color: #FFCDFE;
-}
-
-.col__txt1 {
-    @include col__txt;
-}
-
-//Couleur 2
-
-.col__img2 {
-    background-color: #2B2A2A;
-}
-
-.col__txt2 {
-    @include col__txt;
-}
-
-//Couleur 3
-
-.col__img3 {
     background: #F1E8E8;
     box-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 0.25);
 }
 
-.col__txt3 {
-    @include col__txt;
+.col__img2 {
+    background-color: #000000;
 }
 
-//Couleur 4
+.col__img3 {
+    background: #535356;
+}
 
 .col__img4 {
-    background: #5A8CD8;
+    background: #782020;
 }
-
-.col__txt4 {
-    @include col__txt;
-}
-
-//Couleur 5
 
 .col__img5 {
-    background: #9464D0;
+    background: #275f37;
 }
-
-.col__txt5 {
-    @include col__txt;
-}
-
-//Couleur 6
 
 .col__img6 {
-    background-color:#64D0A3;
+    background-color:#b494e8;
 }
-
-.col__txt6 {
-    @include col__txt;
-}
-
-//Couleur 7
 
 .col__img7 {
-    background-color: #E48C4B;
+    background-color: #ffcdfe;
 }
 
-.col__txt7 {
-    @include col__txt;
+.col__img8 {
+    background-color: #5a8cd8;
 }
-*/
 
 
+.jeVeuxDesChaussures {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.jeVeuxDesChaussures img {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+}
 
 
 

@@ -6,8 +6,7 @@
             <div class="titlePage__container titlePage__containerEngage">
                 <h1 class="titlePage titlePage__engage">Nos engagements pour l'environnement</h1>
             </div>
-            <img class="chevronEtrange" src="@/assets/img/Accueil/chevron_etrange.svg" alt="">
-            <img class="flecheChevron" src="@/assets/img/Accueil/fleche_chevron.svg" alt="">
+            <Chevron />
         </div>
 
         <div class="engage__main">
@@ -49,8 +48,10 @@
 </template>
 
 <script>
+import Chevron from '@/components/Chevron.vue'
 
 export default {
+  components: { Chevron },
 
 }
 
@@ -77,26 +78,6 @@ export default {
         background-color: rgba($color: #000000, $alpha: 0.1);
         z-index: 1;
     }
-}
-
-.chevronEtrange{
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-    bottom: 0.36vh;
-    left : 25%;
-    z-index: 2;
-}
-
-.flecheChevron{
-    position: absolute;
-    bottom: 4.5vh;
-    left : 48%;
-    z-index: 3;
 }
 
 .titlePage {
