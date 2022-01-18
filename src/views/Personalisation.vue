@@ -358,21 +358,19 @@ export default {
 
 .inspiration_texte{
     font-weight: 500;
-    font-size: 1vw;
-    line-height: pxToRem(47);
     color: white;
     text-align: center;
-    padding-top: 8%;
+    margin: auto;
 }
 
 /*test bulle */
 .infoPartagePrix_inspiration{
     background:$bleuVert;
-    padding:0px 10px;
     border-radius:1.2vw;
     border-bottom-left-radius: initial;
     width:12vw;
     height: 5vh;
+    display: flex;
 }
 
 
