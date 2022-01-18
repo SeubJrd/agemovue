@@ -3,7 +3,9 @@
     <div class="header">
         <router-link to="/" class="header__image"><img class="header__logo" src="@/assets/img/LogoHeader.svg" alt="logo agemo"></router-link>
         <nav class="header__navigation">
-            <router-link class="header__lien -principal" to="/Modeles">Personnaliser</router-link>
+            <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
+            <span>Personnaliser</span>
+            </router-link>
             <router-link class="header__lien" to="/Collaborations">Collaborations</router-link>
             <router-link class="header__lien" to="/Galerie">Communauté</router-link>
             <router-link class="header__lien" to="/Engagements">Engagements</router-link>
@@ -89,9 +91,10 @@ export default {
     font-style: normal;
 }
 
-.-principal{
+/*.-principal{
     background-color: $colorAction;
-    height: 41px;
+    height: 44px;
+    
     width: 154px; 
     display: flex;
     align-items: center;
@@ -102,7 +105,7 @@ export default {
         background : $horizontalGradient;
         transition: 0.3s;
     }
-}
+}*/
 
 .header__logo {
     width: 80%;
