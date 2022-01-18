@@ -3,9 +3,11 @@
 
         <div  class="engage__section1">
             <img src="@/assets/img/engage/photoBG.png" alt="Photo paysage" class="section1__photo">
-            <div class="titlePage__container titlePage__containerEngage">
-                <h1 class="titlePage titlePage__engage">Nos engagements pour l'environnement</h1>
+
+            <div class="titlePage__container titlePage__containerWhite">
+                <h1 class="titlePage titlePage__white">Nos engagements pour l'environnement</h1>
             </div>
+            
             <Chevron />
         </div>
 
