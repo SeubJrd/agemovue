@@ -47,13 +47,13 @@ h1,h2,h3{
             margin-left: 10%;
             background-image: url("../assets/Icones/deco-titre.svg");
         }
-        &__containerEngage{
+        &__containerWhite{
             background-image: none;
             position: absolute;
             margin-top: -75vh;
             width: 50%;
         }
-        &__engage{
+        &__white{
             color: $colorBackground;
         }
     }
@@ -125,14 +125,14 @@ h1,h2,h3{
             margin-left: 10%;
             background-image: url("../assets/Icones/deco-titre.svg");
         }
-        &__containerEngage{
+        &__containerWhite{
             background-image: none;
             position: absolute;
             margin-top: -75vh;
             width: 90%;
             margin-left: 0;
         }
-        &__engage{
+        &__white{
             color: $colorBackground;
             font-size: 40px;
         }
