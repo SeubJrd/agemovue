@@ -89,7 +89,7 @@
                 <router-link class="footer__lien" to="/Modeles">Modèles</router-link>
                 <router-link class="footer__lien" to="/Galerie">Galerie</router-link>
                 <router-link class="footer__lien" to="/Collaborations">Collaborations</router-link>
-                <router-link class="footer__lien" to="/Engagements">Nos engagements</router-link>
+                <router-link class="footer__lien" to="/Engagement">Nos engagements</router-link>
             </div>
         </div>
 

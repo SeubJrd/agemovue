@@ -8,7 +8,7 @@
             </router-link>
             <router-link class="header__lien" to="/Collaborations">Collaborations</router-link>
             <router-link class="header__lien" to="/Galerie">Communauté</router-link>
-            <router-link class="header__lien" to="/Engagements">Engagements</router-link>
+            <router-link class="header__lien" to="/Engagement">Engagements</router-link>
             <router-link class="header__lien -icone" to="/Compte">
                 <svg class="header__icone" width="28" height="31" viewBox="0 0 28 31" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
