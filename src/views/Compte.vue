@@ -1,12 +1,8 @@
 <template>
     <div class="compte">
 
-        <div class="titlePage">
-            <div class="parent">
-                <p class="titlePage__1">Mon compte</p>
-                <p class="titlePage__2">Mon compte</p>
-                <p class="titlePage__3">Mon compte </p>
-            </div>
+        <div class="titlePage__container">
+            <p class="titlePage">Mon compte</p>
         </div>
 
         <diV class="compte__superieur">

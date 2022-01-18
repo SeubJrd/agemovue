@@ -1,10 +1,8 @@
 <template>
     <div class="modeles">
 
-      <div class="titlePage">
-            <h1 class="titlePage__1">Choisis ton modèle</h1>
-            <p class="titlePage__2">Choisis ton modèle</p>
-            <p class="titlePage__3">Choisis ton modèle</p>
+      <div class="titlePage__container">
+            <p class="titlePage">Choisis ton modèle</p>
         </div>
 
         <div class="choix-modele">
