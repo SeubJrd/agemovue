@@ -22,20 +22,14 @@
                 <input class="formulaire__input || date__input" type="date" required name="date" id="date" placeholder="XX / XX / XXXX">
             </div>
 
-
-            <a class="zoneInscription__lien || lien-connexion" href="">Mot de passe oublié ?</a>
-
-            <div>
-               <a class="zoneInscription__lien || primaryBtn -fleche" href="">
-                <span>Inscription</span>
-                <span class="icon-container"><svg class="fleche" x="0px" y="0px" viewBox="0 0 42 16.1">
-                        <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
-                            d="M24.4,7.1H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h19.4" />
-                        <path class="fleche__pointe" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
-                            d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
-                   c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
-                    </svg></span>
-            </a> 
+            <div class="espace-bouton">
+                <p class="nb-page">1/2</p>
+                <div class="btn-suivant">
+                    <a class="zoneInscription__lien || primaryBtn" href="">
+                    <span>Suivant</span>
+                    </a> 
+                </div>
+                
             </div>
 
             <div class="zoneOu">
@@ -70,11 +64,10 @@
                     <span class="text-co">Continuer avec Google</span>
                 </a>
 
-                <p class="phrase-compte">Pas de compte ?<a class="lien-compte || lien-connexion" href="">Inscrivez vous ici</a> </p> 
-                
+                <p class="phrase-compte">Déjà membre ?<a class="lien-compte || lien-connexion" href="./Connexion">Connectez vous ici</a> </p> 
 
             </div>
-
+            <a class="lien-rgpd || lien-connexion" href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">Règlement général sur la protection des données</a>
         </div>
 
     </div>
@@ -97,5 +90,24 @@ export default {
     left:0;
 }
 
+.connexion2{
+    margin-bottom:3vh;
+}
+
+.espace-bouton{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.nb-page{
+    grid-column: 2;
+    margin: auto;
+}
+.btn-suivant{
+    grid-column: 3;
+    justify-self: end;
+}
 
 </style>

@@ -63,7 +63,7 @@
                     <span class="text-co">Continuer avec Google</span>
                 </a>
 
-                <p class="phrase-compte">Pas de compte ?<a class="lien-compte || lien-connexion" href="">Inscrivez vous ici</a> </p> 
+                <p class="phrase-compte">Pas de compte ?<a class="lien-compte || lien-connexion" href="./Inscription">Inscrivez vous ici</a> </p> 
                 
 
             </div>
