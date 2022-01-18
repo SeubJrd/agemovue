@@ -3,10 +3,8 @@
 
         <div  class="engage__section1">
             <img src="@/assets/img/engage/photoBG.png" alt="Photo paysage" class="section1__photo">
-            <div class="titlePage">
-                <h1 class="titlePage__1">Nos engagement pour l'environnement</h1>
-                <p class="titlePage__2">Nos engagement pour l'environnement</p>
-                <p class="titlePage__3">Nos engagement pour l'environnement</p>
+            <div class="titlePage__container titlePage__containerEngage">
+                <h1 class="titlePage titlePage__engage">Nos engagements pour l'environnement</h1>
             </div>
             <img class="chevronEtrange" src="@/assets/img/Accueil/chevron_etrange.svg" alt="">
             <img class="flecheChevron" src="@/assets/img/Accueil/fleche_chevron.svg" alt="">
@@ -105,7 +103,6 @@ export default {
     position: absolute;
     top: 10%;
     left: 5%;
-    white-space: nowrap;
     z-index: 4;
 }
 

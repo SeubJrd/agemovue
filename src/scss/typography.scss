@@ -40,12 +40,21 @@ h1,h2,h3{
         width: 80%;
         line-height: initial;
         &__container{
-            width: 31%;
+            width: 35%;
             height: 25vh;
             background-repeat: no-repeat;
             background-size: 100% 100%;
             margin-left: 10%;
             background-image: url("../assets/Icones/deco-titre.svg");
+        }
+        &__containerEngage{
+            background-image: none;
+            position: absolute;
+            margin-top: -75vh;
+            width: 50%;
+        }
+        &__engage{
+            color: $colorBackground;
         }
     }
 
@@ -109,13 +118,23 @@ h1,h2,h3{
         text-align: center;
         line-height: initial;
         &__container{
-            width: 90%;
+            width: 35%;
             height: 25vh;
-            margin-left: 5%;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            margin-top: 10%;
-            background-image: url("../assets/Icones/deco-titres-mobile.svg");
+            margin-left: 10%;
+            background-image: url("../assets/Icones/deco-titre.svg");
+        }
+        &__containerEngage{
+            background-image: none;
+            position: absolute;
+            margin-top: -75vh;
+            width: 90%;
+            margin-left: 0;
+        }
+        &__engage{
+            color: $colorBackground;
+            font-size: 40px;
         }
     }
     
