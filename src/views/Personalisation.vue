@@ -80,12 +80,13 @@
                     </a>
                 </span>
             </span>
+            
             <span class="perso__btn-terminer">
                 
                 <a class="perso-reset" href=""><img  src="@/assets/Icones/reset.svg" alt=""></a>
 
-                <a class="primaryBtn -fleche" href="">Terminer
-                    <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                <a class="primaryBtn -fleche" href=""><span>Terminer</span>
+                    <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
                             <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
@@ -147,8 +148,8 @@
                     <div class ="inspiPerso_texte">
                         <h2 class ="inspiPerso_titre">Besoin d'inspiration ?</h2>
                         <p class ="inspiPerso_paragraphe"> Besoin d'inspiration pour faire ta customisation ? Penses à regarder les modèles réalisés par les créatifs. N'hésites pas à y partager ta propre création.</p>
-                        <a class="inspiPerso_btn primaryBtn -fleche" href="./galerie.html">Accèdes à la galerie
-                            <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+                        <a class="inspiPerso_btn primaryBtn -fleche" href="./galerie.html"> <span>Accèdes à la galerie</span>
+                            <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                     enable-background="new 0 0 42 16.1" xml:space="preserve">
                                     <path class="fleche__line" fill-rule="evenodd" clip-rule="evenodd" fill="#170D42"
