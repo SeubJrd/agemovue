@@ -13,25 +13,30 @@
     overflow: hidden;
     &.-fleche{
         padding: 0 0.925rem 0 1.8rem;
-        transition: padding 0.3s $easeInOutBack;
+        transition: padding 0.45s $easeInOutBack;
         &:hover{
                 padding: 0 1.8rem 0 1.8rem;
-                transition: padding 0.3s $easeInOutBack;
+                transition: padding 0.3s cubic-bezier(0.68, -0.55, 0.4, 2.26) 0.15s;
         }
     }
     &:hover{
         .fleche__line{
             transform: scaleX(1.7);
-            transition: transform 0.3s $easeInQuart;
+            transition: transform 0.3s $easeInOutExpo;
         }
 
         .fleche__pointe{
             transform: translateX(14px);
-            transition: transform 0.3s $easeInQuart;
+            transition: transform 0.3s $easeInOutExpo;
         }  
     }
     .fleche {
         width: 30px;
+        position: absolute;
+        top: 47%;
+        left: 5px;
+        transform: translate(0, -50%);
+
         *{
             fill:white;
         }
@@ -47,6 +52,13 @@
     span{
         position: relative;
         z-index: 2;
+        display: inline-block;
+        vertical-align: top;
+
+        &.icon-container {
+            width: 30px;
+            height: 100%;
+        }
     }
 }
 
