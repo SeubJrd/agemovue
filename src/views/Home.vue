@@ -114,73 +114,82 @@ export default {
 
 <style lang="scss">
 
-.accueil__section{
+@media screen and (max-width: 960px) { 
+    
+
+}
+
+@media screen and (min-width: 960px) { 
+    .accueil__section{
     display: grid;
     grid-template-columns: repeat(2);
     margin-left: 12.5%;
     margin-top: 15%;
-}
+    }
 
-.accueil__infos {
-    padding-top: 7%;
-}
+    .accueil__infos {
+        padding-top: 7%;
+    }
 
-.accueil__infos h1{
-    margin-bottom: 10%;
-    font-weight: 600;
-    width: 80%;
-}
+    .accueil__infos h1{
+        margin-bottom: 10%;
+        font-weight: 600;
+        width: 80%;
+    }
 
-.accueil__infos p{
-    margin-bottom: 15%;
-    width: 90%;
-}
+    .accueil__infos p{
+        margin-bottom: 15%;
+        width: 90%;
+    }
 
-.accueil__infos-illus{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    img {
-        width: 85%;
+    .accueil__infos-illus{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        img {
+            width: 85%;
+        }
+    }
+
+    .-accueil-colDroite{
+        grid-auto-columns: 25% 50%;
+        grid-column-gap: 10%;
+    }
+
+    .-accueil-colGauche{
+        grid-auto-columns: 50% 25%;
+        grid-column-gap: 10%;
+    }
+
+    .-accueil-colDroite .accueil__infos{
+        grid-column: 1;
+    }
+
+    .-accueil-colDroite .accueil__infos-illus{
+        grid-column: 2;
+    }
+
+    .-accueil-colGauche .accueil__infos-illus{
+        grid-column: 1;
+    }
+
+    .-accueil-colGauche .accueil__infos{
+        grid-column: 2;
+    }
+
+    .section1__video {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        object-fit: cover;
+
+    }
+
+    .accueil__section1{
+        position: relative;
     }
 }
 
-.-accueil-colDroite{
-    grid-auto-columns: 25% 50%;
-    grid-column-gap: 10%;
-}
 
-.-accueil-colGauche{
-    grid-auto-columns: 50% 25%;
-    grid-column-gap: 10%;
-}
-
-.-accueil-colDroite .accueil__infos{
-    grid-column: 1;
-}
-
-.-accueil-colDroite .accueil__infos-illus{
-    grid-column: 2;
-}
-
-.-accueil-colGauche .accueil__infos-illus{
-    grid-column: 1;
-}
-
-.-accueil-colGauche .accueil__infos{
-    grid-column: 2;
-}
-
-.section1__video {
-    width: 100%;
-    height: 100vh;
-    border: none;
-    object-fit: cover;
-
-}
-
-.accueil__section1{
-    position: relative;
-}
 
 </style>

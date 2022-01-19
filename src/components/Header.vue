@@ -6,7 +6,6 @@
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
             <span>Personnaliser</span>
             </router-link>
-            <routeur-link rel="icon" href="@assets/img/logo.ico"/>
             <router-link class="header__lien" to="/Collaborations">Collaborations</router-link>
             <router-link class="header__lien" to="/Galerie">Communauté</router-link>
             <router-link class="header__lien" to="/Engagement">Engagements</router-link>
@@ -24,6 +23,13 @@
                 </svg>
             </router-link>
         </div>
+        <div class="burgerOpen">
+            <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.828C0 9.37071 0.370708 9 0.828 9H27.324C27.7813 9 28.152 9.37071 28.152 9.828C28.152 10.2853 27.7813 10.656 27.324 10.656H0.828C0.370708 10.656 0 10.2853 0 9.828Z" fill="#170D42"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.828C0 0.370708 0.370708 0 0.828 0H27.324C27.7813 0 28.152 0.370708 28.152 0.828C28.152 1.28529 27.7813 1.656 27.324 1.656H0.828C0.370708 1.656 0 1.28529 0 0.828Z" fill="#170D42"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.171997 18.664C0.171997 18.2067 0.542705 17.836 0.999997 17.836H27.496C27.9533 17.836 28.324 18.2067 28.324 18.664C28.324 19.1213 27.9533 19.492 27.496 19.492H0.999997C0.542705 19.492 0.171997 19.1213 0.171997 18.664Z" fill="#170D42"/>
+            </svg>
+        </div>
     </div>
 
 </template>
@@ -37,65 +43,83 @@ export default {
 
 <style lang="scss">
 
-.header {
+
+@media screen and (min-width: 960px) { 
+    .burgerOpen{
+        display: none;
+    }
+    .header {
     display: flex;
     align-items: center;
-}
-
-.header__navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.header__image{
-    margin: 9px 32px ;
-    display: flex;
-}
-
-.IconesHeader{
-    justify-content: space-between;
-    display: flex;
-    width: 8%;
-}
-
-.header__logo{
-    height : 5vw;
-}
-
-.header__icone{
-    margin: auto;
-    margin-left: 5%;
-    fill: $colorAction;
-}
-
-.-icone{
-    display: flex;
-    padding: 10%;
-    border: 2px solid $colorAction;
-    border-radius: 10px;
-    &:hover {
-        background-color: $colorAction;
-        transition: 0.5s;
     }
-     &:hover .header__icone {
-        fill: white;
-        transition: 0.5s;
+
+    .header__navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 15%;
+    }
+
+    .header__image{
+        margin: 9px 32px ;
+        display: flex;
+    }
+
+    .IconesHeader{
+        justify-content: space-between;
+        display: flex;
+        width: 8%;
+    }
+
+    .header__logo{
+        height : 5vw;
+    }
+
+    .header__icone{
+        margin: auto;
+        margin-left: 5%;
+        fill: $colorAction;
+    }
+
+    .-icone{
+        display: flex;
+        padding: 10%;
+        border: 2px solid $colorAction;
+        border-radius: 10px;
+        &:hover {
+            background-color: $colorAction;
+            transition: 0.5s;
+        }
+        &:hover .header__icone {
+            fill: white;
+            transition: 0.5s;
+        }
+    }
+
+    .header__lien{
+        text-decoration: none;
+        font-family: $fontFamily; 
+        font-weight: 500;
+        font-style: normal;
+        font-size: 100%;
+    }
+
+    .header__logo {
+        width: 80%;
     }
 }
 
-.header__lien{
-    text-decoration: none;
-    font-family: $fontFamily; 
-    font-weight: 500;
-    font-style: normal;
-    font-size: 100%;
+
+@media screen and (max-width: 960px) { 
+    .header__navigation {
+        display: none;
+    }
+
 }
 
-.header__logo {
-    width: 80%;
-}
+
+
+
 </style>
