@@ -9,10 +9,10 @@
             <div class="collab__infos">
                 <img src="@/assets/img/collabs/deco-fleur.jpg" alt="">
                 <h1>Ponce X Agemo</h1>
-                <p>Nouveau, découvres notre collaboration avec le streamer Ponce ! L’occasion de t’approprier ses fameux motifs floraux pour personnaliser tes chaussures.</p>
+                <p>Nouveau, découvre notre collaboration avec le streamer Ponce ! L’occasion de t’approprier ses fameux motifs floraux pour personnaliser tes chaussures.</p>
                 <a class="collab__plus" href="#">En savoir plus sur Ponce</a>
                 <a class="primaryBtn -fleche" href=""> 
-                    <span> Testes le motif </span>
+                    <span> Teste le motif </span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -40,10 +40,10 @@
             <div class="collab__infos">
                 <img src="@/assets/img/collabs/deco-chapeau.png" alt="">
                 <h1>One Piece X Agemo</h1>
-                <p>Embarques pour notre collaboration avec la série One Piece ! Pars à l’aventure, chaussé de tes plus belles sneakers au design de pirates. Des motifs dignes du plus grand roi des pirates.</p>
+                <p>Embarque pour notre collaboration avec la série One Piece ! Pars à l’aventure, chaussé de tes plus belles sneakers au design de pirates. Des motifs dignes du plus grand roi des pirates.</p>
                 <a class="collab__plus" href="#">En savoir plus sur One Piece</a>
                 <a class="primaryBtn -fleche" href="">
-                    <span>Testes le motif</span>
+                    <span>Teste le motif</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -64,7 +64,7 @@
                 <p>Paré au décollage, embarcation imminente pour notre collaboration intersidérale avec la NASA ! A toi les chaussures de l’espace ! Ce motif galactique emmenera tes chaussures personnalisées dans une autre dimension.</p>
                 <a class="collab__plus" href="#">En savoir plus sur la Nasa</a>
                 <a class="primaryBtn -fleche" href="">
-                    <span>Testes le motif</span>
+                    <span>Teste le motif</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
