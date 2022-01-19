@@ -135,14 +135,62 @@
 // Bouton compte
 
 .primaryBtnCompte{
-    text-decoration: none;
-    display: inline-block;
-    background: $colorAction;
+    position: relative;
+    text-decoration: none; 
     color: white;
-    padding: 1rem 3rem;
     border-radius: 15px;
+    display: flex;
+    width: 12vw;
+    height: 8vh;
+    margin: 0 0 2vw 2vw;
+    overflow: hidden;
+    &.-deco {
+        background: $rougeVoila;
+    }
+    &.-compte {
+        background: $colorAction;
+    }
 }
 
-.primaryBtnCompte:hover{
+.primaryBtnCompte svg, .primaryBtnCompte img, .textBtn {
+    margin: auto;
+    z-index: 2;
+}
+
+.primaryBtnCompte span {
+    position: relative;
+    z-index: 2;
+}
+
+.primaryBtnCompte.-deco::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $horizontalGradientDeco;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 450ms $authenticMotion, transform 450ms $magikMotion;
+    transform: translateX(60px);
+}
+
+.primaryBtnCompte.-compte::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: $horizontalGradient;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 450ms $authenticMotion, transform 450ms $magikMotion;
+    transform: translateX(60px);
+}
+
+.primaryBtnCompte:hover::after{
+    opacity: 1;
+    transform: translateX(0px);
 }

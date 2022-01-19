@@ -52,6 +52,13 @@
                 </label>
             </div>
 
+            <div>
+                <label class="main-check">J’ai lu et j’accepte les <a class="lien-connexion" href="">conditions générales d’utilisation / de vente</a>
+                <input type="checkbox">
+                <span class="newsletter"></span>
+                </label>
+            </div>
+
             <div class="zoneOu">
                 <span class="trait-ou"></span>
                 <p>OU</p>
@@ -108,15 +115,14 @@ export default {
       display: block;
       position: relative;
       padding-left: 45px;
-      padding-top: 5px;
       margin-bottom: 15px;
       cursor: pointer;
       }
-      /* Hiding the initial checkbox */
+
       input[type=checkbox] {
       visibility: hidden;
       }
-      /* Creating a custom checkbox based on demand */
+
       .newsletter {
       position: absolute;
       top: 0;
@@ -128,27 +134,24 @@ export default {
       border-radius: 3px;
       }
 
-      /* Specify the background color to be shown when checkbox is active */
       .main-check input:active ~ .newsletter {
       background-color: white;
       }
-      /* Specify the background color to be shown when checkbox is checked */
+
       .main-check input:checked ~ .newsletter {
       background-color: $colorAction; 
       }
-      /* Checkmark to be shown in checkbox */
-      /* It is not be shown when not checked */
+
       .newsletter:after {
       content: "";
       position: absolute;
       display: none;
       }
-      /* Display checkmark when checked */
+
       .main-check input:checked ~ .newsletter:after {
       display: block;
       }
-      /* Styling the checkmark using webkit */
-      /* Rotated the rectangle by 45 degree and showing only two border to make it look like a tickmark */
+
       .main-check .newsletter:after {
       left: 6px;
       bottom: 5px;
@@ -160,63 +163,7 @@ export default {
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       }
-/*
-input[type=checkbox] {
-    visibility: hidden;
-}
 
-.check-main {
-    display: block;
-    position: relative;
-    padding-left: 45px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.newsletter {
-position: absolute;
-top: 0;
-left: 0;
-height: 25px;
-width: 25px;
-background-color: black;
-}
-
-.check-main input ~ .newsletter {
-    background-color: gray;
-    }
-
-.check-main input:active ~ .newsletter {
-    background-color: white;
-    }
-
-.check-main input:checked ~ .newsletter {
-    background-color: orange; 
-    }
-
-.newsletter:after {
-      content: "";
-      position: absolute;
-      display: none;
-      }
-
-.check-main input:checked ~ .newsletters:after {
-      display: block;
-      }
-
-.check-main .newsletters:after {
-      left: 8px;
-      bottom: 5px;
-      width: 6px;
-      height: 12px;
-      border: solid white;
-      border-width: 0 4px 4px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      }
-*/
 .zoneInscription{
     margin: auto;
     width: 50%;
