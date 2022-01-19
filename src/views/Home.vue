@@ -2,7 +2,7 @@
     <div class="main">
 
         <div  class="accueil__section1">
-        <video class="section1__video" autoplay loop muted>
+        <video class="section1__video" loop muted>
             <source src="@/assets/video/test youtube.mp4" type=video/mp4>
         </video>
 
