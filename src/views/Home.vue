@@ -11,10 +11,10 @@
 
         <div class="accueil__section -accueil-colDroite">
             <div class="accueil__infos">
-                <h1>Personnalises tes chaussures</h1>
+                <h1>Personnalise tes chaussures</h1>
                 <p>Laisse parler ta créativité ! Couleurs, textures et même des motifs réalisés par des artistes, tu peux tout changer pour créer le modèle de tes rêves.</p>
                 <router-link class="primaryBtn -fleche" to="/Personalisation">
-                    <span>Personnalises</span>
+                    <span>Personnalise</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -36,10 +36,10 @@
                 <img src="@/assets/img/Accueil/illu_colaboration.svg" alt="">
             </div>
             <div class="accueil__infos">
-                <h1>Découvres nos collaborations</h1>
-                <p>Des motifs fleuris de Ponce, à l’aventure One Piece en partant pour l’espace avec la NASA, viens découvrir des designs originaux et éphémères pour personnaliser te s chaussures.</p>
+                <h1>Découvre nos collaborations</h1>
+                <p>Des motifs fleuris de Ponce, à l’aventure One Piece en partant pour l’espace avec la NASA, viens découvrir des designs originaux et éphémères pour personnaliser tes chaussures.</p>
                 <router-link class="primaryBtn -fleche" to="/Collaborations">
-                    <span>Découvres</span>
+                    <span>Découvre</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -56,10 +56,10 @@
         <div class="accueil__section -accueil-colDroite">
             <div class="accueil__infos">
                 <div class="centreVert">
-                    <h1>Partages tes créations</h1>
-                    <p>Besoin d’inspiration pour faire ta customisation ? Penses à regarder les modèles réalisés par les créatifs. N’hésites pas à y partager ta propre création.</p>
+                    <h1>Partage tes créations</h1>
+                    <p>Besoin d’inspiration pour faire ta customisation ? Pense à regarder les modèles réalisés par les créatifs. N’hésite pas à y partager ta propre création.</p>
                     <router-link class="primaryBtn -fleche" to="/Galerie">
-                        <span>Accèdes à la galerie</span>
+                        <span>Accède à la galerie</span>
                         <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -82,10 +82,10 @@
                 <img src="@/assets/img/Accueil/illu_engagements.svg" alt="">
             </div>
             <div class="accueil__infos">
-                <h1>Découvres nos engagements</h1>
+                <h1>Découvre nos engagements</h1>
                 <p>Notre planète est importante, pour limiter notre impact environnemental, Agemo s’engage sur ses méthodes de production et choix de matériaux.</p>
                 <router-link class="primaryBtn -fleche" to="/">
-                    <span>Découvres</span>
+                    <span>Découvre</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">

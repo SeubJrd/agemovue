@@ -10,7 +10,7 @@
             <div class="compteSupCol1"><img src="@/assets/img/compte/iconeCompte.png" alt=""></div>
 
             <div class="compteSupCol2">
-                <h1>Gurdil_le_nain</h1>
+                <h1>{{user.displayName}}</h1>
                 <h2>Jean jacques Demisel</h2>
             </div>
 
@@ -21,7 +21,7 @@
                     </svg>
                     <span class="textBtn"> Éditer mon profil </span>
                 </a>
-                <a class="primaryBtnCompte -deco" href="">
+                <a v-if="$store.state.user.authToken" @click="$store.commit('removeUser')" class="primaryBtnCompte -deco" href="">
                     <img src="@/assets/Icones/deco.svg" alt="Deconnexion">
                     <span class="textBtn"> Déconnexion </span>
                 </a>
@@ -60,11 +60,53 @@
 </template>
 
 <script>
+import axios from "axios"
 
 export default {
-
+    data() {
+        return {
+            form: {
+                username: null,
+                password: null,
+            },
+            success: false,
+            error: false,
+            }
+    },
+    computed: {
+        user () {
+            return this.$store.state.user
+        }
+    },
+    methods: {
+        submit(event) {
+            event.preventDefault()
+ 
+            axios.post('https://agemovue.sebastienjourdain.com/wp-json/jwt-auth/v1/token', {
+                username: this.form.username,
+                password: this.form.password
+            }).then(response => {
+                console.log(response)
+                if (response.status === 200) {
+                    this.success = true
+                    
+                    this.$store.commit('setUser' , {
+                        username: response.data.data.displayName,
+                        email: response.data.data.email,
+                        authToken: response.data.data.token
+                    })
+                }
+            }).catch(error => {
+                console.log('Error LOG : ', error.response)
+                this.errorMessage = error.response.data.message
+                this.error = true
+                this.success = false
+            })
+        }
+ 
+ 
+    }
 }
-
 </script>
 
 <style lang="scss">
