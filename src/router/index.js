@@ -11,6 +11,7 @@ import Inscription from '../views/Inscription.vue'
 import Modeles from '../views/Modeles.vue'
 import Personalisation from '../views/Personalisation.vue'
 import Engagement from '../views/Engagement.vue'
+import Crea from '../views/Crea.vue'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,11 @@ const routes = [
     path: '/connexion',
     name: 'Connexion',
     component: Connexion
+  },
+  {
+    path: '/crea',
+    name: 'Crea',
+    component: Crea
   },
   {
     path: '/galerie',

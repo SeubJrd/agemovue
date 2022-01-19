@@ -22,6 +22,8 @@
         </div>
 
         <p>Bonjour, {{user.displayName}}</p>
+
+        <router-link to="/Crea">crea</router-link>
     
     </div>
 </template>

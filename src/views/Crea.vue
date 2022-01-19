@@ -2,6 +2,8 @@
     <div>
         <input type="text" v-model="shoeName">
         <button @click="submitShoe">Send</button>
+
+        
     </div>
 </template>
  
@@ -17,7 +19,7 @@ export default {
     methods: {
         submitShoe() {
  
-            axios.post('https://lpwdapi.local/wp-json/wp/v2/shoes',
+            axios.post('https://agemovue.sebastienjourdain.com/wp-json/wp/v2/shoes',
                 {
                     "status": "publish",
                     "title": this.shoeName
