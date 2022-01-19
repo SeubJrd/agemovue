@@ -20,7 +20,19 @@
                     <label class="formulaire__label || mdp__label" for="password">Mot de passe *</label><br>
                     <input class="formulaire__input || mdp__input" type="password" id="password" placeholder="motdepasse" v-model="form.password">
                 </div>
-    
+                <div>
+                    <label class="main-check">Je souhaite m’inscrire à la newsletter
+                    <input type="checkbox">
+                    <span class="newsletter"></span>
+                    </label>
+                </div>
+
+                <div>
+                    <label class="main-check">J’ai lu et j’accepte les <a class="lien-connexion" href="">conditions générales d’utilisation / de vente</a>
+                    <input type="checkbox" required>
+                    <span class="newsletter"></span>
+                    </label>
+                </div>    
                 <div>
                     <a class="zoneConnexion__lien || primaryBtn -fleche" @click = "submit">
                     <span>Inscription</span>
@@ -34,19 +46,7 @@
                     </a> 
                 </div>
             </form>
-                <div>
-                <label class="main-check">Je souhaite m’inscrire à la newsletter
-                <input type="checkbox">
-                <span class="newsletter"></span>
-                </label>
-            </div>
 
-            <div>
-                <label class="main-check">J’ai lu et j’accepte les <a class="lien-connexion" href="">conditions générales d’utilisation / de vente</a>
-                <input type="checkbox">
-                <span class="newsletter"></span>
-                </label>
-            </div>
 
             <div class="zoneOu">
                 <span class="trait-ou"></span>
@@ -140,5 +140,104 @@ export default {
 </script>
  
 <style lang="scss">
+.main-check {
+    position: relative;
+    padding-left: 45px;
+    padding-top: 3px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
 
+    input[type=checkbox] {
+    visibility: hidden;
+}
+
+.newsletter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: white;
+    border: 1px solid $colorAction;
+    border-radius: 3px;
+}
+
+.main-check input:active ~ .newsletter {
+    background-color: white;
+}
+
+.main-check input:checked ~ .newsletter {
+    background-color: $colorAction; 
+}
+
+.newsletter:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.main-check input:checked ~ .newsletter:after {
+    display: block;
+}
+
+.main-check .newsletter:after {
+    left: 6px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.zoneInscription{
+    margin: auto;
+    width: 50%;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.connexion2{
+    margin-bottom:3vh;
+}
+
+.espace-bouton{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.nb-page{
+    grid-column: 2;
+    margin: auto;
+}
+.btn-suivant{
+    grid-column: 3;
+    justify-self: end;
+}
+
+#newsletter{
+    width: 18px;
+    height: 18px;
+}
+
+input[type="checkbox"]#newsletter {
+  display: none;
+}
+input[type="checkbox"]#newsletter + label::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0c8';
+  font-size: 1.2em;  
+  color: #00B7E8;
+  margin-right: 0.3rem  ;
+}
+input[type="checkbox"]#newsletter:checked + label::before {
+  content:'\f14a';
+  color: #00B7E8;
+}
 </style>
