@@ -17,16 +17,48 @@
         </ul>       
 
         <div class="jeVeuxDesChaussures">
-            <img src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
-            <img src="@/assets/img/vue1/vue1-corps-arr_blanc.png" alt="Corps Arrière">
-            <img src="@/assets/img/vue1/vue1-corps-avant_blanc.png" alt="Corps avant">
-            <img src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
-            <img src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
-            <img src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
-            <img src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
-            <img src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
-            <img src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
-            <img src="@/assets/img/vue1/vue1-toe-box_blanc.png" alt="Toe Box">
+            <!-- Arrières de chaussures -->
+            <img class="default Arriere" src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
+            <img class="gris Arriere" src="@/assets/img/vue1/vue1-arriere_gris.png" alt="Arrière de la chaussure">
+
+            <!-- Corps arrières de chaussures -->
+            <img class="default CorpsArriere" src="@/assets/img/vue1/vue1-corpsarr_blanc.png" alt="Corps Arrière">
+            <img class="gris CorpsArriere" src="@/assets/img/vue1/vue1-corpsarr_gris.png" alt="Corps Arrière">
+
+            <!-- Corps avant de chaussures -->
+            <img class="default CorpsAvant" src="@/assets/img/vue1/vue1-corpsavant_blanc.png" alt="Corps avant">
+            <img class="gris CorpsAvant" src="@/assets/img/vue1/vue1-corpsavant_gris.png" alt="Corps avant">
+
+            <!-- Doublures de chaussures -->
+            <img class="default Doublure" src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
+            <img class="gris Doublure" src="@/assets/img/vue1/vue1-doublure_gris.png" alt="Doublure">
+
+            <!-- Lacets de chaussures -->
+            <img class="default Lacet" src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
+            <img class="gris Lacet" src="@/assets/img/vue1/vue1-lacet_gris.png" alt="Lacet">
+
+            <!-- languettes de chaussures -->
+            <img class="default Languette" src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
+            <img class="gris Languette" src="@/assets/img/vue1/vue1-languette_gris.png" alt="Languette">
+
+            <!-- Milieux de chaussures -->
+            <img class="default Milieu" src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
+            <img class="gris Milieu" src="@/assets/img/vue1/vue1-milieu_gris.png" alt="Milieu">
+
+            <!-- Renforts de chaussures -->
+            <img class="default Renfort" src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
+            <img class="gris Renfort" src="@/assets/img/vue1/vue1-renfort_gris.png" alt="Renfort">
+
+            <!-- Semelles de chaussures -->
+            <img class="default Semelle" src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
+            <img class="gris Semelle" src="@/assets/img/vue1/vue1-semelle_gris.png" alt="Semelle">
+
+            <!-- Toeboxes de chaussures -->
+            <img class="default ToeBox" src="@/assets/img/vue1/vue1-toebox_blanc.png" alt="Toe Box">
+            <img class="gris ToeBox" src="@/assets/img/vue1/vue1-toebox_gris.png" alt="Toe Box">
+
+
+
         </div>
        
         <div class ="infoPartagePrix">
@@ -381,7 +413,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .bulle{
@@ -479,16 +511,24 @@ export default {
 .jeVeuxDesChaussures {
     display: block;
     width: 100%;
-    height: 50vh;
-    top: 0;
-    left: 0;
-    margin: auto;
+    height: 40vh;
+    margin-top: 5%;
 }
 
 .jeVeuxDesChaussures img {
     position: absolute;
     width: 50%;
-    margin-left: 25%;
+    left: 25%;
+}
+
+//Début des styles de la Perso//
+
+.default{
+    display: block;
+}
+
+.gris{
+    display: none;
 }
 
 
