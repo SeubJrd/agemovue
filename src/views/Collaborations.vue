@@ -100,10 +100,9 @@ export default {
 
 .-col-gauche{
     display: grid;
-    grid-template-columns: repeat(2);
     grid-auto-columns: 25% 40%;
     grid-column-gap: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
     align-items: center;
     margin-top: 10%;
 }
@@ -113,7 +112,7 @@ export default {
     grid-template-columns: repeat(2);
     grid-auto-columns: 40% 25%;
     grid-column-gap: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
     align-items: center;
     margin-top: 10%;
 }
@@ -164,7 +163,7 @@ export default {
 
 .collab__infos p{
     margin-bottom: 5%;
-    width: 80%;
+   // width: 80%;
 }
 
 .collab__plus{
