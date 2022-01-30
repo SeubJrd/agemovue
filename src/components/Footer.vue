@@ -337,9 +337,5 @@ export default {
   .footer__col4{
       margin-top: 15%;
   }
-
-  video {
-    display: none;
-  }
 }
 </style>

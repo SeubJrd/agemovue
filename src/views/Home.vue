@@ -8,7 +8,12 @@
       <Chevron />
     </div>
 
+    
+
     <div class="accueil__section -accueil-colDroite">
+      <div class="mobile accueil__infos-illus">
+        <img v-bind:src="section1.illustration" alt="" />
+      </div>
       <div class="accueil__infos">
         <h1>{{section1.titre}}</h1>
         <p>
@@ -47,7 +52,7 @@
           ></span>
         </router-link>
       </div>
-      <div class="accueil__infos-illus">
+      <div class="desktop accueil__infos-illus">
         <img v-bind:src="section1.illustration" alt="" />
       </div>
     </div>
@@ -97,6 +102,9 @@
     </div>
 
     <div class="accueil__section -accueil-colDroite">
+      <div class="mobile accueil__infos-illus">
+        <img v-bind:src="section3.illustration" alt="" />
+      </div>
       <div class="accueil__infos">
         <div class="centreVert">
           <h1>{{section3.titre}}</h1>
@@ -137,7 +145,7 @@
           </router-link>
         </div>
       </div>
-      <div class="accueil__infos-illus">
+      <div class="desktop accueil__infos-illus">
         <img v-bind:src="section3.illustration" alt="" />
       </div>
     </div>
@@ -224,10 +232,14 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (max-width: 960px) {
-}
+
 
 @media screen and (min-width: 960px) {
+
+  .mobile{
+    display: none!important;
+  }
+
   .accueil__section {
     display: grid;
     grid-template-columns: repeat(2);
@@ -295,5 +307,62 @@ export default {
   .accueil__section1 {
     position: relative;
   }
+}
+
+@media screen and (max-width: 960px) {
+
+  .desktop{
+    display: none!important;
+  }
+
+  .accueil__section {
+    margin-top: 15%;
+    margin-bottom: 25%;
+  }
+
+  .accueil__infos {
+    padding-top: 7%;
+    width: 90%;
+    margin-left: 5%;
+    
+  }
+
+  .accueil__infos h1 {
+    margin-bottom: 10%;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    margin: 10%;
+  }
+
+  .accueil__infos p {
+    margin-bottom: 15%;
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .accueil__infos-illus {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    img {
+      width: 75%;
+    }
+  }
+
+  .section1__video {
+    width: 100%;
+    height: inherit;
+    border: none;
+    object-fit: cover;
+  }
+
+  .accueil__section1 {
+    position: relative;
+  }
+
+
+
 }
 </style>
