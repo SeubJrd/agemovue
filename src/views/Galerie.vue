@@ -93,7 +93,7 @@ import axios from "axios";
 export default {
     data() {
     return {
-      homeCards: null,
+      encartGalerie: null,
       section1: null,
     };
   },
@@ -103,7 +103,7 @@ export default {
       .get("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/pages/28851")
       .then((response) => {
         // Appel des infos acf
-        this.homeCards = response.data.acf;
+        this.encartGalerie = response.data.acf;
         // section1
         this.section1 = response.data.acf.section1;
       });
