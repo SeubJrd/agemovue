@@ -16,7 +16,7 @@
                     <p>
                         {{modele1.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -26,11 +26,11 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     
-            <div class="modele__card modele__col2">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele2.background + ')' }" class="modele__card modele__col2">
                 <div class="modele__infos">
                     <h1>{{modele2.titre}}</h1>
                     <P>{{modele2.prix}}</P>
@@ -39,7 +39,7 @@
                     <p>
                         {{modele2.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -49,11 +49,11 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     
-            <div class="modele__card modele__col3">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele3.background + ')' }" class="modele__card modele__col3">
                 <div class="modele__infos">
                     <h1>{{modele3.titre}}</h1>
                     <P>{{modele3.prix}}</P>
@@ -62,7 +62,7 @@
                     <p>
                         {{modele3.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -72,11 +72,11 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     
-            <div class="modele__card modele__col4">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele4.background + ')' }" class="modele__card modele__col4">
                 <div class="modele__infos ">
                     <h1>{{modele4.titre}}</h1>
                     <P>{{modele4.prix}}</P>
@@ -85,7 +85,7 @@
                     <p>
                         {{modele4.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -95,7 +95,7 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
 
@@ -169,7 +169,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 .modele__col2:hover{
@@ -177,7 +177,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 .modele__col3:hover{
@@ -185,7 +185,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 .modele__col4:hover{
@@ -193,7 +193,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 
@@ -215,26 +215,22 @@ export default {
 
 .modele__col1{
     grid-column: 1;
-    
     float: right;
     margin-left: 43%;
 }
 
 .modele__col2{
     grid-column: 2;
-    background-image: url("../assets/img/agmid5.jpg");
 }
 
 .modele__col3{
     grid-column: 1;
-    background-image: url("../assets/img/agone163.jpg");
     float: right;
     margin-left: 43%;
 }
 
 .modele__col4{
     grid-column: 2;
-    background-image: url("../assets/img/agrun808.jpg");
 }
 
 
