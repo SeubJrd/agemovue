@@ -63,7 +63,7 @@
         
         <div class="ToiAussiPerso">
             <div class="galerieAussi__col1">
-                <h1>Toi aussi personnalise tes sneakers</h1>
+                <h1>{{section1.titre}}</h1>
             <a class="primaryBtn -fleche" href="">
                 <span>Personnalises</span>
                 <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@
             </div>
 
             <div class="galerieAussi__col2">
-                <img src="@/assets/img/galerie/Group.png" alt="">
+                <img v-bind:src="section1.illustration" alt="">
             </div>
         </div>
 
@@ -88,7 +88,33 @@
 
 <script>
 
+import axios from "axios";
+
 export default {
+    data() {
+    return {
+      homeCards: null,
+      section1: null,
+    };
+  },
+  mounted() {
+    console.log("LOG BACKGROUND INIT", this.background);
+
+    axios
+      .get("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/pages/28851")
+      .then((response) => {
+        // Appel des infos acf
+        this.homeCards = response.data.acf;
+        // section1
+        this.section1 = response.data.acf.section1;
+        // section2
+        this.section2 = response.data.acf.section2;
+        // section3
+        this.section3 = response.data.acf.section3;
+        // section4
+        this.section4 = response.data.acf.section4;
+      });
+  },
 
 }
 
