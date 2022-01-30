@@ -117,12 +117,14 @@ h1,h2,h3{
         top: 30%;
         text-align: center;
         line-height: initial;
+        margin: 0;
+        left: 0;
         &__container{
-            width: 35%;
-            height: 25vh;
+            width: 90%;
+            height: 30vh;
+            margin-left: 5%;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            margin-left: 10%;
             background-image: url("../assets/Icones/deco-titre.svg");
         }
         &__containerWhite{

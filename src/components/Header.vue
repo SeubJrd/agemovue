@@ -22,13 +22,13 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44806 1.53606C8.76617 1.1119 8.68021 0.510173 8.25606 0.192057C7.8319 -0.12606 7.23017 -0.0400982 6.91206 0.384057L4.32006 3.84006H2.99048H1.92H0.96C0.429807 3.84006 0 4.26987 0 4.80006C0 5.33025 0.429807 5.76006 0.96 5.76006H1.56952L3.79429 13.0411C4.041 13.8485 4.78621 14.4001 5.63048 14.4001H11.52H18.0281C18.8545 14.4001 19.5882 13.8712 19.8495 13.0872L22.2919 5.76006H23.04C23.5702 5.76006 24 5.33025 24 4.80006C24 4.26987 23.5702 3.84006 23.04 3.84006H22.08H20.9081H19.6801L17.0881 0.384057C16.7699 -0.0400982 16.1682 -0.12606 15.7441 0.192057C15.3199 0.510173 15.2339 1.1119 15.5521 1.53606L17.2801 3.84006H6.72005L8.44806 1.53606ZM4.78906 5.76006C4.7959 5.76013 4.80274 5.76013 4.80958 5.76006H19.1905C19.1974 5.76013 19.2042 5.76013 19.2111 5.76006H20.2681L18.0281 12.4801L11.52 12.4801L5.63048 12.4801L3.57715 5.76006H4.78906Z" />
                 </svg>
             </router-link>
-            <div class="burgerOpen">
+            <router-link class="burgerOpen header__lien -icone" to="#">
             <svg class="header__icone" width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.828C0 9.37071 0.370708 9 0.828 9H27.324C27.7813 9 28.152 9.37071 28.152 9.828C28.152 10.2853 27.7813 10.656 27.324 10.656H0.828C0.370708 10.656 0 10.2853 0 9.828Z" fill="#170D42"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.828C0 0.370708 0.370708 0 0.828 0H27.324C27.7813 0 28.152 0.370708 28.152 0.828C28.152 1.28529 27.7813 1.656 27.324 1.656H0.828C0.370708 1.656 0 1.28529 0 0.828Z" fill="#170D42"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.171997 18.664C0.171997 18.2067 0.542705 17.836 0.999997 17.836H27.496C27.9533 17.836 28.324 18.2067 28.324 18.664C28.324 19.1213 27.9533 19.492 27.496 19.492H0.999997C0.542705 19.492 0.171997 19.1213 0.171997 18.664Z" fill="#170D42"/>
             </svg>
-        </div>
+            </router-link>
         </div>
     </div>
 
@@ -44,10 +44,6 @@ export default {
 <style lang="scss">
 
 @media screen and (min-width: 960px) { 
-
-    .burgerOpen{
-        display: none;
-    }
     
     .header {
     display: flex;
@@ -98,6 +94,9 @@ export default {
             fill: white;
             transition: 0.5s;
         }
+        &:last-of-type{
+            display: none;
+        }
     }
 
     .header__lien{
@@ -128,8 +127,6 @@ export default {
 
     .IconesHeader{
         display: flex;
-        margin: auto;
-        justify-content: space-between;
     }
 
     .header__logo{
@@ -146,6 +143,11 @@ export default {
         padding: 10%;
         border: 2px solid $colorAction;
         border-radius: 10px;
+        margin-right: 15%;
+        &:last-of-type{
+            border: none;
+
+        }
     }
 
     .header__lien{
