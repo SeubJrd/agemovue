@@ -7,9 +7,9 @@
 
         <div class="collab__ponce -col-gauche">
             <div class="collab__infos">
-                <img src="@/assets/img/collabs/deco-fleur.jpg" alt="">
-                <h1>Ponce X Agemo</h1>
-                <p>Nouveau, découvre notre collaboration avec le streamer Ponce ! L’occasion de t’approprier ses fameux motifs floraux pour personnaliser tes chaussures.</p>
+                <img v-bind:src="collab1.decotitre" alt="">
+                <h1>{{collab1.titre}}</h1>
+                <p>{{collab1.texte}}</p>
                 <a class="collab__plus" href="#">En savoir plus sur Ponce</a>
                 <a class="primaryBtn -fleche" href=""> 
                     <span> Teste le motif </span>
@@ -26,21 +26,21 @@
             </div>
 
             <div class="collab__illu">
-                <img src="@/assets/img/collabs/motif ponce.jpg" alt="">
-                <img src="@/assets/img/collabs/img chaussure ponce.jpg" alt="">
+                <img v-bind:src="collab1.motifpreview" alt="">
+                <img v-bind:src="collab1.shoepreview" alt="">
             </div>
         </div>
 
         <div class="collab__OP -col-droite">
             <div class="collab__illu">
-                <img src="@/assets/img/collabs/motif OP 1.jpg" alt="">
-                <img src="@/assets/img/collabs/img chaussure OP.jpg" alt="">
+                <img v-bind:src="collab2.motifpreview" alt="">
+                <img v-bind:src="collab2.shoepreview" alt="">
             </div>
 
             <div class="collab__infos">
-                <img src="@/assets/img/collabs/deco-chapeau.png" alt="">
-                <h1>One Piece X Agemo</h1>
-                <p>Embarque pour notre collaboration avec la série One Piece ! Pars à l’aventure, chaussé de tes plus belles sneakers au design de pirates. Des motifs dignes du plus grand roi des pirates.</p>
+                <img v-bind:src="collab2.decotitre" alt="">
+                <h1>{{collab2.titre}}</h1>
+                <p>{{collab2.texte}}</p>
                 <a class="collab__plus" href="#">En savoir plus sur One Piece</a>
                 <a class="primaryBtn -fleche" href="">
                     <span>Teste le motif</span>
@@ -59,9 +59,9 @@
 
         <div class="collab__nasa -col-gauche">
             <div class="collab__infos">
-                <img src="@/assets/img/collabs/deco-etoile.jpg" alt="">
-                <h1>Nasa X Agemo</h1>
-                <p>Paré au décollage, embarcation imminente pour notre collaboration intersidérale avec la NASA ! A toi les chaussures de l’espace ! Ce motif galactique emmenera tes chaussures personnalisées dans une autre dimension.</p>
+                <img v-bind:src="collab3.decotitre" alt="">
+                <h1>{{collab3.titre}}</h1>
+                <p>{{collab3.texte}}</p>
                 <a class="collab__plus" href="#">En savoir plus sur la Nasa</a>
                 <a class="primaryBtn -fleche" href="">
                     <span>Teste le motif</span>
@@ -78,8 +78,8 @@
             </div>
 
             <div class="collab__illu">
-                <img src="@/assets/img/collabs/motif nasa 1.jpg" alt="">
-                <img src="@/assets/img/collabs/img chaussure NASA.jpg" alt="">
+                <img v-bind:src="collab3.motifpreview" alt="">
+                <img v-bind:src="collab3.shoepreview" alt="">
             </div>
         </div>
 
@@ -89,8 +89,32 @@
 </template>
 
 <script>
+import axios from "axios"
 
 export default {
+
+     data() {
+    return {
+      collabsCards: null,
+      collab1: null,
+      collab2: null,
+      collab3: null,
+    };
+  },
+  mounted() {
+    axios
+      .get("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/pages/28848")
+      .then((response) => {
+        // Appel des infos acf
+        this.collabsCards = response.data.acf;
+        // section1
+        this.collab1 = response.data.acf.collab1;
+        // section2
+        this.collab2 = response.data.acf.collab2;
+        // section3
+        this.collab3 = response.data.acf.collab3;
+      });
+  },
 
 }
 
@@ -100,10 +124,9 @@ export default {
 
 .-col-gauche{
     display: grid;
-    grid-template-columns: repeat(2);
     grid-auto-columns: 25% 40%;
     grid-column-gap: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
     align-items: center;
     margin-top: 10%;
 }
@@ -113,7 +136,7 @@ export default {
     grid-template-columns: repeat(2);
     grid-auto-columns: 40% 25%;
     grid-column-gap: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
     align-items: center;
     margin-top: 10%;
 }
@@ -164,7 +187,7 @@ export default {
 
 .collab__infos p{
     margin-bottom: 5%;
-    width: 80%;
+   // width: 80%;
 }
 
 .collab__plus{

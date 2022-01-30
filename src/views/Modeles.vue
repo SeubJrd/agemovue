@@ -7,17 +7,16 @@
 
         <div class="choix-modele">
 
-            <div class="modele__card modele__col1">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele1.background + ')' }" class="modele__card modele__col1">
                 <div class="modele__infos">
-                    <h1>AG Mid IV</h1>
-                    <P>A partir de 95 €</P>
+                    <h1>{{modele1.titre}}</h1>
+                    <P>{{modele1.prix}}</P>
                 </div>
                 <div class="modele__infos-hover -1">
                     <p>
-                        La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
-                        qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
+                        {{modele1.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -27,21 +26,20 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     
-            <div class="modele__card modele__col2">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele2.background + ')' }" class="modele__card modele__col2">
                 <div class="modele__infos">
-                    <h1>AG Mid V</h1>
-                    <P>A partir de 130 €</P>
+                    <h1>{{modele2.titre}}</h1>
+                    <P>{{modele2.prix}}</P>
                 </div>
                 <div class="modele__infos-hover -2">
                     <p>
-                        La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
-                        qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
+                        {{modele2.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -51,21 +49,20 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     
-            <div class="modele__card modele__col3">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele3.background + ')' }" class="modele__card modele__col3">
                 <div class="modele__infos">
-                    <h1>AG One 163</h1>
-                    <P>A partir de 90 €</P>
+                    <h1>{{modele3.titre}}</h1>
+                    <P>{{modele3.prix}}</P>
                 </div>
                 <div class="modele__infos-hover -3">
                     <p>
-                        La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
-                        qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
+                        {{modele3.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -75,21 +72,20 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     
-            <div class="modele__card modele__col4">
+            <div v-bind:style="{ backgroundImage: 'url(' + modele4.background + ')' }" class="modele__card modele__col4">
                 <div class="modele__infos ">
-                    <h1>AG Run 808</h1>
-                    <P>A partir de 120 €</P>
+                    <h1>{{modele4.titre}}</h1>
+                    <P>{{modele4.prix}}</P>
                 </div>
                 <div class="modele__infos-hover -4">
                     <p>
-                        La chaussure de légende. AG One 163 est une icone de la marque, son modèle phare. Une chaussure à porter au quotidien 
-                        qui allie confort et résistance. Sa large semelle vous assure un confort de marche tout en gardant le style.
+                        {{modele4.description}}
                     </p>
-                    <a class="BtnVariant-modeles -fleche" href="">Bouton
+                    <router-link class="BtnVariant-modeles -fleche" to="/Personalisation">Bouton
                         <span><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                                 enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -99,7 +95,7 @@
                                     d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                            c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                             </svg></span>
-                    </a>
+                    </router-link>
                 </div>
             </div>
 
@@ -109,9 +105,37 @@
 
 <script>
 
+import axios from "axios";
+
 export default {
 
-}
+    data() {
+    return {
+      Modeles: null,
+      modele1: null,
+      modele2: null,
+      modele3: null,
+      modele4: null,
+    };
+  },
+  mounted() {
+    axios
+      .get("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/pages/28853")
+      .then((response) => {
+        // Appel des infos acf
+        this.Modeles = response.data.acf;
+        // section1
+        this.modele1 = response.data.acf.modele1;
+        // section2
+        this.modele2 = response.data.acf.modele2;
+        // section3
+        this.modele3 = response.data.acf.modele3;
+        // section4
+        this.modele4 = response.data.acf.modele4;
+      });
+  },
+
+};
 
 </script>
 
@@ -145,7 +169,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 .modele__col2:hover{
@@ -153,7 +177,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 .modele__col3:hover{
@@ -161,7 +185,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 .modele__col4:hover{
@@ -169,7 +193,7 @@ export default {
         visibility: visible;
     }
     background-color: $bleuVert;
-    background-image: none;
+    background-image: none!important;
 }
 
 
@@ -191,26 +215,22 @@ export default {
 
 .modele__col1{
     grid-column: 1;
-    background-image: url("../assets/img/agmid4.jpg");
     float: right;
     margin-left: 43%;
 }
 
 .modele__col2{
     grid-column: 2;
-    background-image: url("../assets/img/agmid5.jpg");
 }
 
 .modele__col3{
     grid-column: 1;
-    background-image: url("../assets/img/agone163.jpg");
     float: right;
     margin-left: 43%;
 }
 
 .modele__col4{
     grid-column: 2;
-    background-image: url("../assets/img/agrun808.jpg");
 }
 
 

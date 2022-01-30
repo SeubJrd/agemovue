@@ -16,17 +16,49 @@
             <li class="timeline__item"><span>milieu</span></li>
         </ul>       
 
-        <div class="jeVeuxDesChaussures">
-            <img src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
-            <img src="@/assets/img/vue1/vue1-corps-arr_blanc.png" alt="Corps Arrière">
-            <img src="@/assets/img/vue1/vue1-corps-avant_blanc.png" alt="Corps avant">
-            <img src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
-            <img src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
-            <img src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
-            <img src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
-            <img src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
-            <img src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
-            <img src="@/assets/img/vue1/vue1-toe-box_blanc.png" alt="Toe Box">
+        <div class="jeVeuxDesChaussures canvas">
+            <!-- Arrières de chaussures -->
+            <img class="default back" src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
+            <img class="gris back" src="@/assets/img/vue1/vue1-arriere_gris.png" alt="Arrière de la chaussure">
+
+            <!-- Corps arrières de chaussures -->
+            <img class="default bodyback" src="@/assets/img/vue1/vue1-corpsarr_blanc.png" alt="Corps Arrière">
+            <img class="gris bodyback" src="@/assets/img/vue1/vue1-corpsarr_gris.png" alt="Corps Arrière">
+
+            <!-- Corps avant de chaussures -->
+            <img class="default bodyfront" src="@/assets/img/vue1/vue1-corpsavant_blanc.png" alt="Corps avant">
+            <img class="gris bodyfront" src="@/assets/img/vue1/vue1-corpsavant_gris.png" alt="Corps avant">
+
+            <!-- Doublures de chaussures -->
+            <img class="default lining" src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
+            <img class="gris lining" src="@/assets/img/vue1/vue1-doublure_gris.png" alt="Doublure">
+
+            <!-- Lacets de chaussures -->
+            <img class="default lace" src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
+            <img class="gris lace" src="@/assets/img/vue1/vue1-lacet_gris.png" alt="Lacet">
+
+            <!-- languettes de chaussures -->
+            <img class="default tongue" src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
+            <img class="gris tongue" src="@/assets/img/vue1/vue1-languette_gris.png" alt="Languette">
+
+            <!-- Milieux de chaussures -->
+            <img class="default middle" src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
+            <img class="gris middle" src="@/assets/img/vue1/vue1-milieu_gris.png" alt="Milieu">
+
+            <!-- Renforts de chaussures -->
+            <img class="default reinforcement" src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
+            <img class="gris reinforcement" src="@/assets/img/vue1/vue1-renfort_gris.png" alt="Renfort">
+
+            <!-- Semelles de chaussures -->
+            <img class="default sole" src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
+            <img class="gris sole" src="@/assets/img/vue1/vue1-semelle_gris.png" alt="Semelle">
+
+            <!-- Toeboxes de chaussures -->
+            <img class="default toebox" src="@/assets/img/vue1/vue1-toebox_blanc.png" alt="Toe Box">
+            <img class="gris toebox" src="@/assets/img/vue1/vue1-toebox_gris.png" alt="Toe Box">
+
+
+
         </div>
        
         <div class ="infoPartagePrix">
@@ -85,7 +117,7 @@
                 
                 <a class="perso-reset" href=""><img  src="@/assets/Icones/reset.svg" alt=""></a>
 
-                <a class="primaryBtn -fleche" href=""><span>Terminer</span>
+                <button @click="screenShot" class="primaryBtn -fleche" ><span>Terminer</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -96,52 +128,24 @@
                        c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3" />
                         </svg>
                     </span>
-                </a>
+                </button>
             </span>
         </div>
 
                 <div class="perso__choix">
 
-                    <a class="choix__col" href="">
-                        <div class="col__img1"></div>
-                        <p class="col__txt">Blanc</p>
-                    </a>
-        
-                    <a class="choix__col" href="">
-                        <div class="col__img2"></div>
-                        <p class="col__txt">Noir</p>
-                    </a>
-        
-                    <a class="choix__col" href="">
-                        <div class="col__img3"></div>
-                        <p class="col__txt">Gris</p>
-                    </a>
-        
-                    <a class="choix__col" href="">
-                        <div class="col__img4"></div>
-                        <p class="col__txt">Rouge</p>
-                    </a>
-        
-                    <a class="choix__col" href="">
-                        <div class="col__img5"></div>
-                        <p class="col__txt">Vert</p>
-                    </a>
-        
-                    <a class="choix__col" href="">
-                        <div class="col__img6"></div>
-                        <p class="col__txt">Lavande</p>
-                    </a>
-        
-                    <a class="choix__col" href="">
-                        <div class="col__img7"></div>
-                        <p class="col__txt">Rose</p>
-                    </a>
+            
 
-                    <a class="choix__col" href="">
-                        <div class="col__img8"></div>
-                        <p class="col__txt">Bleu</p>
-                    </a>
+                    <div 
+                        v-for="(label, index) in colors"
+                        :key="index" class="choix__col"
+                        @click="colorPicked($event, label)"
+                        >
+                            <div :class="`col__img${index + 1}`"></div>
+                            <p class="col__txt">{{label}}</p>
+                    </div>
         
+    
                 </div>
 
                 <div id ="inspiPerso">
@@ -171,7 +175,64 @@
 
 <script>
 
+//import axios from "axios";
+import domtoimage from "dom-to-image-more";
+
 export default {
+    data() {
+        return {
+            options: {
+                element: 'Languette',
+                color: null,
+                view: null
+            },
+            colors: [
+                'Blanc',
+                'Noir',
+                'Gris',
+                'Rouge',
+                'Vert',
+                'Lavande',
+                'Rose',
+                'Bleu'
+            ],
+            elements: [
+                'Millieu',
+                'Languette'
+
+            ]
+        }
+    },
+    computed: {
+        colorActive: function() {
+            return this.options.color
+        }
+    },
+    mounted() {
+        this.canvas = document.querySelector('.canvas')
+    },
+    methods: {
+        screenShot() {
+            domtoimage
+            .toJpeg(document.querySelector(".canvas"), { quality: 0.95 })
+            .then( (dataUrl) => {
+                var link = document.createElement("a");
+                link.download = "my-image-name.jpeg";
+                link.href = dataUrl;
+                link.click();
+            })
+        },
+        colorPicked(event, label) {
+            this.options.color = label.toLowerCase()
+
+            this.canvas.querySelectorAll('img').forEach( (item) => {
+                item.classList.remove('show')
+            })
+
+            this.canvas.querySelector(`.${this.options.element}.${this.options.color}`).classList.add('show')
+
+        }
+    }
 
 }
 
@@ -381,7 +442,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .bulle{
@@ -479,16 +540,30 @@ export default {
 .jeVeuxDesChaussures {
     display: block;
     width: 100%;
-    height: 50vh;
-    top: 0;
-    left: 0;
-    margin: auto;
+    height: 40vh;
+    margin-top: 5%;
 }
 
 .jeVeuxDesChaussures img {
     position: absolute;
     width: 50%;
-    margin-left: 25%;
+    left: 25%;
+}
+
+//Début des styles de la Perso//
+
+.canvas {
+    img {
+        display: none;
+    }
+
+    img.show {
+        display: block;
+    }
+
+    .default{
+        display: block;
+    }
 }
 
 
