@@ -1,8 +1,8 @@
-var delay = 200
+var delay = 500
 
 setTimeout(function() {
 
-    var element = document.getElementsByClassName("modale");
+    /*    var element = document.getElementsByClassName("modale");
 
     console.log(element)
 
@@ -18,7 +18,8 @@ setTimeout(function() {
 
         })
 
-    });
+    });*/
+
 
 }, delay);
 
