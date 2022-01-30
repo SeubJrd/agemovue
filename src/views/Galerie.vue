@@ -98,7 +98,6 @@ export default {
     };
   },
   mounted() {
-    console.log("LOG BACKGROUND INIT", this.background);
 
     axios
       .get("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/pages/28851")
@@ -107,12 +106,6 @@ export default {
         this.homeCards = response.data.acf;
         // section1
         this.section1 = response.data.acf.section1;
-        // section2
-        this.section2 = response.data.acf.section2;
-        // section3
-        this.section3 = response.data.acf.section3;
-        // section4
-        this.section4 = response.data.acf.section4;
       });
   },
 

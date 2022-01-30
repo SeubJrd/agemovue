@@ -205,8 +205,6 @@ export default {
     };
   },
   mounted() {
-    console.log("LOG BACKGROUND INIT", this.background);
-
     axios
       .get("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/pages/36")
       .then((response) => {
