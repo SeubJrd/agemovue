@@ -324,7 +324,17 @@ export default {
     padding-top: 7%;
     width: 90%;
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    & a{
+     margin: auto;
+    }
     
+  }
+
+  .centreVert{
+    display: flex;
+    flex-direction: column;
   }
 
   .accueil__infos h1 {

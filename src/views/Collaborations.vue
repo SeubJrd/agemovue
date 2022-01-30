@@ -328,13 +328,18 @@ export default {
 
   .collab__plus {
     color: $colorAction;
-    text-align: center;
-    width: 70%;
-    margin-left: 25%;
+    margin: auto;
+    padding: 5%;
+  }
+
+  .collab__infos{
+    display: flex;
+    flex-direction: column;
   }
 
   .collab__infos .primaryBtn {
     margin-top: 5%;
+    margin: auto;
   }
 
   .collab__infos img {

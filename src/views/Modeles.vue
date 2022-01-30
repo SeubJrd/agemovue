@@ -329,6 +329,7 @@ export default {
       width: 90%;
       margin: 5%;
       height: fit-content;
+      background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-size: 100%;
     border: 1px solid $bleuVert;
