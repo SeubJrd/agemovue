@@ -13,47 +13,47 @@
             </div>
             <div class="galerie__card galerie__col2">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>    
             </div>
             <div class="galerie__card galerie__col3">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>     
             </div>
             <div class="galerie__card galerie__col1">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>     
             </div>
             <div class="galerie__card galerie__col2">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>     
             </div>
             <div class="galerie__card galerie__col3">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>     
             </div>
             <div class="galerie__card galerie__col1">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>      
             </div>
             <div class="galerie__card galerie__col2">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>      
             </div>
             <div class="galerie__card galerie__col3">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>      
             </div>
             <div class="galerie__card galerie__col1">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>      
             </div>
             <div class="galerie__card galerie__col2">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>      
             </div>
             <div class="galerie__card galerie__col3">
                 <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <a href=""><img src="@/assets/Icones/coeur non cliqué (Stroke).svg" alt=""></a>   
+                <div class="galerie__fav"></div>      
             </div>
 
             <a class="galerie__plus" href="">Afficher plus de résultats</a>
@@ -103,6 +103,7 @@ export default {
     width: 20vw;
     height: 18vw;
     margin-bottom: 10%;
+    position: relative;
 }
 
 .galerie__card a{
