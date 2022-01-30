@@ -44,10 +44,6 @@ export default {
 <style lang="scss">
 
 @media screen and (min-width: 960px) { 
-
-    .burgerOpen{
-        display: none;
-    }
     
     .header {
     display: flex;
@@ -97,6 +93,9 @@ export default {
         &:hover .header__icone {
             fill: white;
             transition: 0.5s;
+        }
+        &:last-of-type{
+            display: none;
         }
     }
 
