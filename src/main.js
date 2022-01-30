@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import '@/scss/styles.scss'
+import '@/js/script.js'
 //import { svgSpritePlugin } from 'vue-svg-sprite'
 
 Vue.config.productionTip = false

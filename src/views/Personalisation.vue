@@ -18,44 +18,104 @@
 
         <div class="jeVeuxDesChaussures canvas">
             <!-- Arrières de chaussures -->
-            <img class="default back" src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
-            <img class="gris back" src="@/assets/img/vue1/vue1-arriere_gris.png" alt="Arrière de la chaussure">
+            <img class="default blanc Arriere" src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
+            <img class="noir Arriere" src="@/assets/img/vue1/vue1-arriere_noir.png" alt="Arrière de la chaussure">
+            <img class="gris Arriere" src="@/assets/img/vue1/vue1-arriere_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Arriere" src="@/assets/img/vue1/vue1-arriere_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Arriere" src="@/assets/img/vue1/vue1-arriere_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Arriere" src="@/assets/img/vue1/vue1-arriere_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Arriere" src="@/assets/img/vue1/vue1-arriere_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Arriere" src="@/assets/img/vue1/vue1-arriere_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Corps arrières de chaussures -->
-            <img class="default bodyback" src="@/assets/img/vue1/vue1-corpsarr_blanc.png" alt="Corps Arrière">
-            <img class="gris bodyback" src="@/assets/img/vue1/vue1-corpsarr_gris.png" alt="Corps Arrière">
+            <img class="default blanc Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_blanc.png" alt="Corps Arrière">
+            <img class="noir Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_noir.png" alt="Corps Arrière">
+            <img class="gris Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Corps avant de chaussures -->
-            <img class="default bodyfront" src="@/assets/img/vue1/vue1-corpsavant_blanc.png" alt="Corps avant">
-            <img class="gris bodyfront" src="@/assets/img/vue1/vue1-corpsavant_gris.png" alt="Corps avant">
+            <img class="default blanc Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_blanc.png" alt="Corps avant">
+            <img class="gris Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_gris.png" alt="Corps avant">
+            <img class="noir Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_noir.png" alt="Arrière de la chaussure">
+            <img class="rouge Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Doublures de chaussures -->
-            <img class="default lining" src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
-            <img class="gris lining" src="@/assets/img/vue1/vue1-doublure_gris.png" alt="Doublure">
+            <img class="default blanc Doublure" src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
+            <img class="noir Doublure" src="@/assets/img/vue1/vue1-doublure_noir.png" alt="Doublure">
+            <img class="gris Doublure" src="@/assets/img/vue1/vue1-doublure_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Doublure" src="@/assets/img/vue1/vue1-doublure_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Doublure" src="@/assets/img/vue1/vue1-doublure_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Doublure" src="@/assets/img/vue1/vue1-doublure_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Doublure" src="@/assets/img/vue1/vue1-doublure_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Doublure" src="@/assets/img/vue1/vue1-doublure_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Lacets de chaussures -->
-            <img class="default lace" src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
-            <img class="gris lace" src="@/assets/img/vue1/vue1-lacet_gris.png" alt="Lacet">
+            <img class="default blanc Lacet" src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
+            <img class="noir Lacet" src="@/assets/img/vue1/vue1-lacet_noir.png" alt="Lacet">
+            <img class="gris Lacet" src="@/assets/img/vue1/vue1-lacet_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Lacet" src="@/assets/img/vue1/vue1-lacet_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Lacet" src="@/assets/img/vue1/vue1-lacet_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Lacet" src="@/assets/img/vue1/vue1-lacet_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Lacet" src="@/assets/img/vue1/vue1-lacet_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Lacet" src="@/assets/img/vue1/vue1-lacet_bleu.png" alt="Arrière de la chaussure">
 
             <!-- languettes de chaussures -->
-            <img class="default tongue" src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
-            <img class="gris tongue" src="@/assets/img/vue1/vue1-languette_gris.png" alt="Languette">
+            <img class="default blanc Languette" src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
+            <img class="Languette noir" src="@/assets/img/vue1/vue1-languette_noir.png" alt="Languette">
+            <img class="gris Languette" src="@/assets/img/vue1/vue1-languette_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Languette" src="@/assets/img/vue1/vue1-languette_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Languette" src="@/assets/img/vue1/vue1-languette_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Languette" src="@/assets/img/vue1/vue1-languette_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Languette" src="@/assets/img/vue1/vue1-languette_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Languette" src="@/assets/img/vue1/vue1-languette_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Milieux de chaussures -->
-            <img class="default middle" src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
-            <img class="gris middle" src="@/assets/img/vue1/vue1-milieu_gris.png" alt="Milieu">
+            <img class="default blanc Milieu" src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
+            <img class="noir Milieu" src="@/assets/img/vue1/vue1-milieu_noir.png" alt="Milieu">
+            <img class="gris Milieu" src="@/assets/img/vue1/vue1-milieu_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Milieu" src="@/assets/img/vue1/vue1-milieu_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Milieu" src="@/assets/img/vue1/vue1-milieu_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Milieu" src="@/assets/img/vue1/vue1-milieu_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Milieu" src="@/assets/img/vue1/vue1-milieu_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Milieu" src="@/assets/img/vue1/vue1-milieu_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Renforts de chaussures -->
-            <img class="default reinforcement" src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
-            <img class="gris reinforcement" src="@/assets/img/vue1/vue1-renfort_gris.png" alt="Renfort">
+            <img class="default blanc Renfort" src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
+            <img class="noir Renfort" src="@/assets/img/vue1/vue1-renfort_noir.png" alt="Renfort">
+            <img class="gris Renfort" src="@/assets/img/vue1/vue1-renfort_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Renfort" src="@/assets/img/vue1/vue1-renfort_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Renfort" src="@/assets/img/vue1/vue1-renfort_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Renfort" src="@/assets/img/vue1/vue1-renfort_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Renfort" src="@/assets/img/vue1/vue1-renfort_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Renfort" src="@/assets/img/vue1/vue1-renfort_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Semelles de chaussures -->
-            <img class="default sole" src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
-            <img class="gris sole" src="@/assets/img/vue1/vue1-semelle_gris.png" alt="Semelle">
+            <img class="default blanc Semelle" src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
+            <img class="noir Semelle" src="@/assets/img/vue1/vue1-semelle_noir.png" alt="Semelle">
+            <img class="gris Semelle" src="@/assets/img/vue1/vue1-semelle_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Semelle" src="@/assets/img/vue1/vue1-semelle_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Semelle" src="@/assets/img/vue1/vue1-semelle_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Semelle" src="@/assets/img/vue1/vue1-semelle_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Semelle" src="@/assets/img/vue1/vue1-semelle_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Semelle" src="@/assets/img/vue1/vue1-semelle_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Toeboxes de chaussures -->
-            <img class="default toebox" src="@/assets/img/vue1/vue1-toebox_blanc.png" alt="Toe Box">
-            <img class="gris toebox" src="@/assets/img/vue1/vue1-toebox_gris.png" alt="Toe Box">
+            <img class="default blanc Toe_box" src="@/assets/img/vue1/vue1-toebox_blanc.png" alt="Toe Box">
+            <img class="noir Toe_box" src="@/assets/img/vue1/vue1-toebox_noir.png" alt="Toe Box">
+            <img class="gris Toe_box" src="@/assets/img/vue1/vue1-toebox_gris.png" alt="Arrière de la chaussure">
+            <img class="rouge Toe_box" src="@/assets/img/vue1/vue1-toebox_rouge.png" alt="Arrière de la chaussure">
+            <img class="vert Toe_box" src="@/assets/img/vue1/vue1-toebox_vert.png" alt="Arrière de la chaussure">
+            <img class="lavande Toe_box" src="@/assets/img/vue1/vue1-toebox_lavande.png" alt="Arrière de la chaussure">
+            <img class="rose Toe_box" src="@/assets/img/vue1/vue1-toebox_rose.png" alt="Arrière de la chaussure">
+            <img class="bleu Toe_box" src="@/assets/img/vue1/vue1-toebox_bleu.png" alt="Arrière de la chaussure">
 
 
 
@@ -225,8 +285,10 @@ export default {
         colorPicked(event, label) {
             this.options.color = label.toLowerCase()
 
-            this.canvas.querySelectorAll('img').forEach( (item) => {
-                item.classList.remove('show')
+            this.canvas.querySelectorAll(`.${this.options.element}`).forEach( (item) => {
+                if (item.id != "default") {
+                    item.classList.remove('show')
+                }
             })
 
             this.canvas.querySelector(`.${this.options.element}.${this.options.color}`).classList.add('show')
