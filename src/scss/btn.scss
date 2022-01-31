@@ -11,6 +11,7 @@
     padding: 0 1.8rem;
     border-radius: 15px;
     overflow: hidden;
+    border: 0;
     &.-fleche{
         padding: 0 0.925rem 0 1.8rem;
         transition: padding 0.45s $easeInOutBack;
@@ -58,10 +59,14 @@
         &.icon-container {
             width: 30px;
             height: 100%;
+            font-size: 15px;
         }
     }
 }
 
+button{
+    font-family: $fontFamily;
+}
 
 .primaryBtn::after{
     content: '';
