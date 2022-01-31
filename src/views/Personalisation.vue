@@ -239,7 +239,7 @@
 //import axios from "axios";
 import domtoimage from "dom-to-image-more";
 
-var i = 1;
+var i = 0;
 
 export default {
     data() {
@@ -272,8 +272,8 @@ export default {
                 'Toe_box'         
             ],
             names: [
-                'Arriere',
-                'Corps arriere',
+                'Arrière',
+                'Corps arrière',
                 'Corps avant',
                 'Doublure',
                 'Lacet',
@@ -310,13 +310,33 @@ export default {
         stepPicked(stepSelection) {
             var stepNom = document.querySelector("#Nom_etape")
             var stepNum = document.querySelector("#Num_etape")
+            console.log(i)
 
-            if (stepSelection == "next") {
-                i++
+            if (i <= 0 || i >= 9 ) {
+
+                if (i == 0 && stepSelection == "previous") {
+                    i = 0
+                }
+                else if (i == 0 && stepSelection == "next") {
+                    i++
+                }
+                if (i == 9 && stepSelection == "next") {
+                    i = 9
+                }
+                else if (i == 9 && stepSelection == "previous") {
+                    i--
+                }
             }
             else {
-                i--
+                if (stepSelection == "next") {
+                    i++
+                }
+                else {
+                    i--
+                }
             }
+
+            console.log(i)
 
             stepNom.innerHTML = this.names[i]
             stepNum.innerHTML = i+1 + "/10"
@@ -514,7 +534,6 @@ export default {
 }
 
 .informations_prix{
-    line-height: pxToRem(32);
     font-size: 1.25vw;
     font-weight: 700;
     color: $colorTitle;
