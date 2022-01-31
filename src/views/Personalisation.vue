@@ -662,7 +662,6 @@ export default {
     display: block;
     width: 100%;
     height: 40vh;
-    margin-top: 5%;
     position: relative;
 }
 
