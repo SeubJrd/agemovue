@@ -150,12 +150,12 @@
                 <h3 class="num-etape" id="Num_etape"> 1/10 </h3>
                 
                 <div class="fleche-perso" id="previous">
-                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" @click="stepPicked()">
+                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" @click="stepPicked('previous')">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13885 15.7445C8.55003 16.1132 9.18226 16.0788 9.55097 15.6676C9.91968 15.2564 9.88524 14.6242 9.47406 14.2555L3.6131 8.99999L23 8.99999C23.5523 8.99999 24 8.55228 24 7.99999C24 7.44771 23.5523 6.99999 23 6.99999L3.6131 6.99999L9.47406 1.74451C9.88524 1.3758 9.91968 0.743571 9.55097 0.332386C9.18226 -0.0787996 8.55003 -0.113235 8.13885 0.255473L0.332396 7.25547C0.120862 7.44515 7.24222e-07 7.71586 6.99383e-07 7.99999C6.74544e-07 8.28411 0.120862 8.55482 0.332396 8.74451L8.13885 15.7445Z" fill="#170D42"/>
                     </svg>
                 </div>
                 <div class="fleche-perso" id="next">
-                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" @click="stepPicked('next')">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8612 0.255483C15.45 -0.113224 14.8177 -0.078789 14.449 0.332396C14.0803 0.743581 14.1148 1.37581 14.5259 1.74452L20.3869 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H20.3869L14.5259 14.2555C14.1148 14.6242 14.0803 15.2564 14.449 15.6676C14.8177 16.0788 15.45 16.1132 15.8612 15.7445L23.6676 8.74452C23.8791 8.55483 24 8.28412 24 8C24 7.71588 23.8791 7.44517 23.6676 7.25548L15.8612 0.255483Z" fill="#170D42"/>
                     </svg>
                 </div>
@@ -270,6 +270,18 @@ export default {
                 'Renfort',
                 'Semelle',
                 'Toe_box'         
+            ],
+            names: [
+                'Arriere',
+                'Corps arriere',
+                'Corps avant',
+                'Doublure',
+                'Lacet',
+                'Languette',
+                'Milieu',
+                'Renfort',
+                'Semelle',
+                'Toe box'         
             ]
         }
     },
@@ -295,15 +307,20 @@ export default {
                 link.click();
             })
         },
-        stepPicked() {
+        stepPicked(stepSelection) {
             var stepNom = document.querySelector("#Nom_etape")
             var stepNum = document.querySelector("#Num_etape")
 
-            stepNom.innerHTML = this.elements[i]
-            stepNum.innerHTML = i+1 + "/10"
-            i++
+            if (stepSelection == "next") {
+                i++
+            }
+            else {
+                i--
+            }
 
-            this.options.element = stepNom.innerHTML
+            stepNom.innerHTML = this.names[i]
+            stepNum.innerHTML = i+1 + "/10"
+            this.options.element = this.elements[i]
         },
         colorPicked(event, label) {
             this.options.color = label.toLowerCase()
@@ -380,6 +397,7 @@ export default {
 
 .nom-etape{
     margin-left: 5%;
+    white-space: nowrap;
 }
 
 .num-etape{
@@ -430,6 +448,7 @@ export default {
 
 .perso__layer2-milieu{
     grid-column: 2;
+    display: none;
 }
 
 .perso__btn-terminer{
