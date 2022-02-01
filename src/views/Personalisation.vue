@@ -456,21 +456,21 @@ export default {
 
             if (i <= 0 || i >= 9 ) {
 
-                if (i == 0 && stepSelection == "previous") {
+                if (i === 0 && stepSelection === "previous") {
                     i = 0
                 }
-                else if (i == 0 && stepSelection == "next") {
+                else if (i === 0 && stepSelection === "next") {
                     i++
                 }
-                if (i == 9 && stepSelection == "next") {
+                if (i === 9 && stepSelection === "next") {
                     i = 9
                 }
-                else if (i == 9 && stepSelection == "previous") {
+                else if (i === 9 && stepSelection === "previous") {
                     i--
                 }
             }
             else {
-                if (stepSelection == "next") {
+                if (stepSelection === "next") {
                     i++
                 }
                 else {
