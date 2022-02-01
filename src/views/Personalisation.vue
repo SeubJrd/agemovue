@@ -452,39 +452,42 @@ export default {
             let timeline_label = document.querySelectorAll(".timeline__label")
             let timeline_item = document.querySelectorAll(".timeline__item")
 
-            timeline_item[this.options.view].classList.remove("-active")
-            timeline_label[this.options.view].innerHTML = ""
+            timeline_item[this.options.indexView].classList.remove("-active")
+            timeline_label[this.options.indexView].innerHTML = ""
+            
 
 
-            if (this.options.view <= 0 || this.options.view >= 9 ) {
+            if (this.options.indexView <= 0 || this.options.indexView >= 9 ) {
 
-                if (this.options.view === 0 && stepSelection === "previous") {
-                    this.options.view = 0
+                if (this.options.indexView === 0 && stepSelection === "previous") {
+                    this.options.indexView = 0
                 }
-                else if (this.options.view === 0 && stepSelection === "next") {
-                    this.options.view++
+                else if (this.options.indexView === 0 && stepSelection === "next") {
+                    this.options.indexView++
                 }
-                if (this.options.view === 9 && stepSelection === "next") {
-                    this.options.view = 9
+                if (this.options.indexView === 9 && stepSelection === "next") {
+                    this.options.indexView = 9
                 }
-                else if (this.options.view === 9 && stepSelection === "previous") {
-                    this.options.view--
+                else if (this.options.indexView === 9 && stepSelection === "previous") {
+                    this.options.indexView--
                 }
             }
             else {
                 if (stepSelection === "next") {
-                    this.options.view++
+                    this.options.indexView++
                 }
                 else {
-                    this.options.view--
+                    this.options.indexView--
                 }
             }
 
-            stepNom.innerHTML = this.names[this.options.view]
-            timeline_label[this.options.view].innerHTML = this.names[this.options.view]
-            stepNum.innerHTML = this.options.view + 1 + "/10"
-            timeline_item[this.options.view].classList.add("-active")
-            this.options.element = this.elements[this.options.index]
+            console.log(this.options.view)
+
+            stepNom.innerHTML = this.names[this.options.indexView]
+            timeline_label[this.options.indexView].innerHTML = this.names[this.options.indexView]
+            stepNum.innerHTML = this.options.indexView + 1 + "/10"
+            timeline_item[this.options.indexView].classList.add("-active")
+            this.options.element = this.elements[this.options.indexView]
         },
         colorPicked(event, label) {
             this.options.color = label.toLowerCase()
