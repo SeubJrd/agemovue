@@ -118,6 +118,7 @@ export default {
             this.success = true;
 
             this.$store.commit("setUser", {
+              userid: response.data.data.id,
               username: response.data.data.displayName,
               email: response.data.data.email,
               authToken: response.data.data.token,
