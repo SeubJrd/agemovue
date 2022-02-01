@@ -332,21 +332,20 @@
 //import axios from "axios";
 import domtoimage from "dom-to-image-more";
 
-var i = 0;
-var numView = 0
-
 export default {
     data() {
         return {
             options: {
                 element: "Arriere",
                 color: null,
-                view: "vue1"
+                view: "vue1",
+                index: 0,
+                indexView: 0
             },
             choix: {
                 arriere: null,
-                corps_back: null,
-                corps_front: null,
+                corps_arriere: null,
+                corps_avant: null,
                 doublure: null,
                 lacet: null,
                 languette: null,
@@ -421,6 +420,7 @@ export default {
             })
         },
         viewPicked() {
+
             this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
                     item.classList.remove('show')
                     if (item.classList.contains("blanc")) {
@@ -428,13 +428,15 @@ export default {
                     }
             })
 
-            if (numView == 0) {
-                this.options.view = this.views[numView + 1]
-                numView++
+            // TODO je suis pas certain mais je pense que c'est du code inutile ça, refait la logique dans ta tête
+
+            if (this.options.indexView === 0) {
+                this.options.view = this.views[this.options.indexView + 1]
+                this.options.indexView++
             } 
             else {
-                this.options.view = this.views[numView -1]
-                numView--
+                this.options.view = this.views[this.options.indexView -1]
+                this.options.indexView--
             }
 
             this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
@@ -445,44 +447,44 @@ export default {
             })
         },
         stepPicked(stepSelection) {
-            var stepNom = document.querySelector("#Nom_etape")
-            var stepNum = document.querySelector("#Num_etape")
-            var timeline_label = document.querySelectorAll(".timeline__label")
-            var timeline_item = document.querySelectorAll(".timeline__item")
+            let stepNom = document.querySelector("#Nom_etape")
+            let stepNum = document.querySelector("#Num_etape")
+            let timeline_label = document.querySelectorAll(".timeline__label")
+            let timeline_item = document.querySelectorAll(".timeline__item")
 
-            timeline_item[i].classList.remove("-active")
-            timeline_label[i].innerHTML = ""
+            timeline_item[this.options.view].classList.remove("-active")
+            timeline_label[this.options.view].innerHTML = ""
 
 
-            if (i <= 0 || i >= 9 ) {
+            if (this.options.view <= 0 || this.options.view >= 9 ) {
 
-                if (i === 0 && stepSelection === "previous") {
-                    i = 0
+                if (this.options.view === 0 && stepSelection === "previous") {
+                    this.options.view = 0
                 }
-                else if (i === 0 && stepSelection === "next") {
-                    i++
+                else if (this.options.view === 0 && stepSelection === "next") {
+                    this.options.view++
                 }
-                if (i === 9 && stepSelection === "next") {
-                    i = 9
+                if (this.options.view === 9 && stepSelection === "next") {
+                    this.options.view = 9
                 }
-                else if (i === 9 && stepSelection === "previous") {
-                    i--
+                else if (this.options.view === 9 && stepSelection === "previous") {
+                    this.options.view--
                 }
             }
             else {
                 if (stepSelection === "next") {
-                    i++
+                    this.options.view++
                 }
                 else {
-                    i--
+                    this.options.view--
                 }
             }
 
-            stepNom.innerHTML = this.names[i]
-            timeline_label[i].innerHTML = this.names[i]
-            stepNum.innerHTML = i+1 + "/10"
-            timeline_item[i].classList.add("-active")
-            this.options.element = this.elements[i]
+            stepNom.innerHTML = this.names[this.options.view]
+            timeline_label[this.options.view].innerHTML = this.names[this.options.view]
+            stepNum.innerHTML = this.options.view + 1 + "/10"
+            timeline_item[this.options.view].classList.add("-active")
+            this.options.element = this.elements[this.options.index]
         },
         colorPicked(event, label) {
             this.options.color = label.toLowerCase()
@@ -492,6 +494,13 @@ export default {
             })
 
             this.canvas.querySelector(`.${this.options.view}.${this.options.element}.${this.options.color}`).classList.add('show')
+
+
+            // Sauvegarder les choix de couleur par elements dans un object choix, réutiliser cet object pour les différentes vue de chaussure
+            // Check le log
+            this.choix[this.options.element.toLowerCase()] = this.options.color
+            console.log(this.choix)
+
             
         },
         reset() {
