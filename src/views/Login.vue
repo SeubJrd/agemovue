@@ -74,7 +74,7 @@
     </div>
 
     <div v-if="error">
-      <p style="color: red">Nom ou mdp invalide mon reuf</p>
+      <p style="color: red">Nom ou mot de passe invalide</p>
     </div>
 
     <!--<p>Bonjour, {{user.displayName}}</p>-->
@@ -116,7 +116,7 @@ export default {
           console.log(response);
           if (response.status === 200) {
             this.success = true;
-
+            console.log(response);
             this.$store.commit("setUser", {
               userid: response.data.data.id,
               username: response.data.data.displayName,

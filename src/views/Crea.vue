@@ -9,7 +9,7 @@
         
 
 
-        <button @click="saveShoeHandler">Send</button>
+        <button @click="saveShoeHandler()">Send</button>
 
         <p v-if="shoeCreated">réussit</p>
 
@@ -30,30 +30,30 @@ export default {
     },
     methods: {
         saveShoeHandler() {
-            this.getScreenShot(this.sendImageToWPMediaLibrary)
-        },
-        getScreenShot(callback) {
-            domtoimage
-                .toBlob(document.querySelector('.canvas'))
-                .then ((image) => {
-                    callback(image)
-                })
-        },
-        sendImageToWPMediaLibrary(image) {
-            axios.post('https://agemovue.sebastienjourdain.com/wp-json/wp/v2/media', image,
-            {
-                headers: {
-                    'Content-Disposition': `attachement; filename="${this.$store.state.user.displayName}.jpg`,
-                    'Authorization': `Bearer ${this.$store.state.user.authToken}`
-                }
-            })
-            .then(response => {
-                if (response.data.id) { 
-                this.createShoe(response.data.source_url)
-                }
-            })
-        },
-        createShoe(imageURL) {
+      this.getScreenShot(this.sendImageToWPMediaLibrary)
+    },
+    getScreenShot(callback) {
+      domtoimage
+        .toBlob(document.querySelector('.canvas'))
+        .then( (image) => {
+          callback(image)
+        })
+    },
+    sendImageToWPMediaLibrary(image) {
+      axios.post("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/media", image, 
+        {
+          headers: {
+            'Content-Disposition': `attachment; filename="${this.$store.state.user.displayName}.jpg`,
+            'Authorization': `Bearer ${this.$store.state.user.authToken}`,
+          }
+        })
+        .then(response => {
+          if (response.data.id) {
+            this.createShoe(response.data.source_url)
+          }
+        })
+    },
+    createShoe(imageURL) {
 
             axios.post('https://agemovue.sebastienjourdain.com/wp-json/wp/v2/shoes',
             {
@@ -73,7 +73,7 @@ export default {
                 console.log('SHOE IS CREATED', response)
                 this.shoeCreated = true
             })
-        }
+    },
     }
 }
 </script>

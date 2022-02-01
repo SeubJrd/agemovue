@@ -1060,7 +1060,7 @@
         </div>
 
         <button
-          @click="screenShot"
+          @click="viewPicked('vue1'), saveShoeHandler()"
           class="primaryBtn -fleche interactif desktop"
         >
           <span>Terminer</span>
@@ -1160,7 +1160,7 @@
 </template>
 
 <script>
-//import axios from "axios";
+import axios from "axios";
 import domtoimage from "dom-to-image-more";
 
 export default {
@@ -1177,14 +1177,14 @@ export default {
       choix: {
         Arriere: "blanc",
         Corps_arriere: "blanc",
-        Corps_avant: null,
-        Doublure: null,
-        Lacet: null,
-        Languette: null,
-        Milieu: null,
-        Renfort: null,
-        Semelle: null,
-        Toe_box: null,
+        Corps_avant: "blanc",
+        Doublure: "blanc",
+        Lacet: "blanc",
+        Languette: "blanc",
+        Milieu: "blanc",
+        Renfort: "blanc",
+        Semelle: "blanc",
+        Toe_box: "blanc",
       },
       colors: [
         "Blanc",
@@ -1238,15 +1238,50 @@ export default {
     this.canvas = document.querySelector(".canvas");
   },
   methods: {
-    screenShot() {
+    saveShoeHandler() {
+      this.getScreenShot(this.sendImageToWPMediaLibrary)
+    },
+    getScreenShot(callback) {
       domtoimage
-        .toJpeg(document.querySelector(".canvas"), { quality: 0.95 })
-        .then((dataUrl) => {
-          var link = document.createElement("a");
-          link.download = "my-image-name.jpeg";
-          link.href = dataUrl;
-          link.click();
-        });
+        .toBlob(document.querySelector('.canvas'))
+        .then( (image) => {
+          callback(image)
+        })
+    },
+    sendImageToWPMediaLibrary(image) {
+      axios.post("https://agemovue.sebastienjourdain.com/wp-json/wp/v2/media", image, 
+        {
+          headers: {
+            'Content-Disposition': `attachment; filename="${this.$store.state.user.displayName}.jpg`,
+            'Authorization': `Bearer ${this.$store.state.user.authToken}`,
+          }
+        })
+        .then(response => {
+          if (response.data.id) {
+            this.createShoe(response.data.source_url)
+          }
+        })
+    },
+    createShoe(imageURL) {
+
+            axios.post('https://agemovue.sebastienjourdain.com/wp-json/wp/v2/shoes',
+            {
+                "status": "publish",
+                "title": this.$store.state.user.displayName,
+                'fields': {
+                    'image_url': imageURL
+                }
+            },
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.$store.state.user.authToken}`
+                }
+            })
+            .then(response => {
+                console.log('SHOE IS CREATED', response)
+                this.shoeCreated = true
+            })
     },
     viewPicked(view) {
 

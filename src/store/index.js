@@ -31,10 +31,7 @@ export default new Vuex.Store({
       state.user.email = null
       state.user.authToken = null
 
-      localStorage.removeItem('userid')
-      localStorage.removeItem('username')
-      localStorage.removeItem('email')
-      localStorage.removeItem('authToken')
+      localStorage.clear();
     }
   },
   actions: {
