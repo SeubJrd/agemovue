@@ -16,24 +16,24 @@
     </ul>
 
     <div class="infoPartagePrix_informations mobile">
-        <a href=""
-          ><svg
-            class="informations_partage"
-            width="22"
-            height="24"
-            viewBox="0 0 22 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M17.1834 2.23077C15.9864 2.23077 14.9941 3.21732 14.9941 4.46154C14.9941 4.85235 15.092 5.21774 15.2634 5.53512C15.2728 5.54936 15.2819 5.56392 15.2907 5.57879C15.3032 5.6 15.3149 5.62149 15.3257 5.64321C15.7146 6.27601 16.4058 6.69231 17.1834 6.69231C18.3804 6.69231 19.3728 5.70577 19.3728 4.46154C19.3728 3.21732 18.3804 2.23077 17.1834 2.23077ZM14.1714 7.40212C14.9313 8.19643 15.9972 8.69231 17.1834 8.69231C19.5093 8.69231 21.3728 6.78593 21.3728 4.46154C21.3728 2.13716 19.5093 0.230774 17.1834 0.230774C14.8576 0.230774 12.9941 2.13716 12.9941 4.46154C12.9941 4.88153 13.0549 5.28787 13.1683 5.67178L7.43794 9.05934C6.67813 8.26508 5.61221 7.76923 4.42603 7.76923C2.10019 7.76923 0.236679 9.67561 0.236679 12C0.236679 14.3244 2.10019 16.2308 4.42603 16.2308C5.61241 16.2308 6.67851 15.7347 7.43834 14.9402L13.1697 18.3234C13.0554 18.7087 12.9941 19.1167 12.9941 19.5384C12.9941 21.8628 14.8576 23.7692 17.1834 23.7692C19.5093 23.7692 21.3728 21.8628 21.3728 19.5384C21.3728 17.2141 19.5093 15.3077 17.1834 15.3077C15.999 15.3077 14.9345 15.8021 14.1749 16.5943L8.44126 13.2098C8.55459 12.826 8.61538 12.4198 8.61538 12C8.61538 11.58 8.55453 11.1736 8.44109 10.7897L14.1714 7.40212ZM6.28293 10.817C6.29392 10.8392 6.3058 10.8611 6.31858 10.8827C6.32763 10.898 6.33701 10.913 6.34673 10.9276C6.51772 11.2447 6.61538 11.6097 6.61538 12C6.61538 12.3903 6.51771 12.7553 6.3467 13.0724C6.33688 13.0872 6.32739 13.1024 6.31826 13.1178C6.30561 13.1393 6.29384 13.161 6.28296 13.1829C5.89389 13.815 5.20309 14.2308 4.42603 14.2308C3.22901 14.2308 2.23668 13.2442 2.23668 12C2.23668 10.7558 3.22901 9.76923 4.42603 9.76923C5.20307 9.76923 5.89386 10.1849 6.28293 10.817ZM14.9941 19.5384C14.9941 19.1704 15.0809 18.8249 15.2342 18.5208C15.2584 18.4892 15.2809 18.4558 15.3017 18.4206C15.3254 18.3805 15.346 18.3393 15.3635 18.2974C15.7585 17.6981 16.4304 17.3077 17.1834 17.3077C18.3804 17.3077 19.3728 18.2942 19.3728 19.5384C19.3728 20.7827 18.3804 21.7692 17.1834 21.7692C15.9864 21.7692 14.9941 20.7827 14.9941 19.5384Z"
-              fill="#170D42"
-            /></svg
-        ></a>
-        <p class="informations_prix">Prix : 90€</p>
-      </div>
+      <a href=""
+        ><svg
+          class="informations_partage"
+          width="22"
+          height="24"
+          viewBox="0 0 22 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M17.1834 2.23077C15.9864 2.23077 14.9941 3.21732 14.9941 4.46154C14.9941 4.85235 15.092 5.21774 15.2634 5.53512C15.2728 5.54936 15.2819 5.56392 15.2907 5.57879C15.3032 5.6 15.3149 5.62149 15.3257 5.64321C15.7146 6.27601 16.4058 6.69231 17.1834 6.69231C18.3804 6.69231 19.3728 5.70577 19.3728 4.46154C19.3728 3.21732 18.3804 2.23077 17.1834 2.23077ZM14.1714 7.40212C14.9313 8.19643 15.9972 8.69231 17.1834 8.69231C19.5093 8.69231 21.3728 6.78593 21.3728 4.46154C21.3728 2.13716 19.5093 0.230774 17.1834 0.230774C14.8576 0.230774 12.9941 2.13716 12.9941 4.46154C12.9941 4.88153 13.0549 5.28787 13.1683 5.67178L7.43794 9.05934C6.67813 8.26508 5.61221 7.76923 4.42603 7.76923C2.10019 7.76923 0.236679 9.67561 0.236679 12C0.236679 14.3244 2.10019 16.2308 4.42603 16.2308C5.61241 16.2308 6.67851 15.7347 7.43834 14.9402L13.1697 18.3234C13.0554 18.7087 12.9941 19.1167 12.9941 19.5384C12.9941 21.8628 14.8576 23.7692 17.1834 23.7692C19.5093 23.7692 21.3728 21.8628 21.3728 19.5384C21.3728 17.2141 19.5093 15.3077 17.1834 15.3077C15.999 15.3077 14.9345 15.8021 14.1749 16.5943L8.44126 13.2098C8.55459 12.826 8.61538 12.4198 8.61538 12C8.61538 11.58 8.55453 11.1736 8.44109 10.7897L14.1714 7.40212ZM6.28293 10.817C6.29392 10.8392 6.3058 10.8611 6.31858 10.8827C6.32763 10.898 6.33701 10.913 6.34673 10.9276C6.51772 11.2447 6.61538 11.6097 6.61538 12C6.61538 12.3903 6.51771 12.7553 6.3467 13.0724C6.33688 13.0872 6.32739 13.1024 6.31826 13.1178C6.30561 13.1393 6.29384 13.161 6.28296 13.1829C5.89389 13.815 5.20309 14.2308 4.42603 14.2308C3.22901 14.2308 2.23668 13.2442 2.23668 12C2.23668 10.7558 3.22901 9.76923 4.42603 9.76923C5.20307 9.76923 5.89386 10.1849 6.28293 10.817ZM14.9941 19.5384C14.9941 19.1704 15.0809 18.8249 15.2342 18.5208C15.2584 18.4892 15.2809 18.4558 15.3017 18.4206C15.3254 18.3805 15.346 18.3393 15.3635 18.2974C15.7585 17.6981 16.4304 17.3077 17.1834 17.3077C18.3804 17.3077 19.3728 18.2942 19.3728 19.5384C19.3728 20.7827 18.3804 21.7692 17.1834 21.7692C15.9864 21.7692 14.9941 20.7827 14.9941 19.5384Z"
+            fill="#170D42"
+          /></svg
+      ></a>
+      <p class="informations_prix">Prix : 90€</p>
+    </div>
 
     <div class="jeVeuxDesChaussures canvas">
       <!-- Arrières de chaussures -->
@@ -867,68 +867,78 @@
       />
     </div>
 
-    <div class="changeEtapes mobile">
-            <div class="BtnVue interactif">
-                <p>Vue de côté</p>
-            </div>
-            <div class="BtnVue interactif">
-                <p>Vue de dessus</p>
-            </div>
-    </div>
-
     <div class="infoPartagePrix">
       <div class="bulle interactif" href="#inspiPerso">
         <div class="infoPartagePrix_inspiration">
           <p class="inspiration_texte desktop">Besoin d'inspiration ?</p>
-          <svg class="mobile" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.9941 22H14.9941H10.9941ZM5.99414 9C5.99414 7.14348 6.73164 5.36301 8.04439 4.05025C9.35715 2.7375 11.1376 2 12.9941 2C14.8507 2 16.6311 2.7375 17.9439 4.05025C19.2566 5.36301 19.9941 7.14348 19.9941 9C19.9948 10.1271 19.7222 11.2375 19.1997 12.2362C18.6772 13.2348 17.9204 14.0919 16.9941 14.734L16.4521 17.3C16.3804 17.773 16.1415 18.2046 15.7788 18.5165C15.416 18.8284 14.9535 18.9999 14.4751 19H11.5131C11.0348 18.9999 10.5723 18.8284 10.2095 18.5165C9.84681 18.2046 9.6079 17.773 9.53614 17.3L8.99414 14.745C8.06755 14.1006 7.31071 13.2415 6.78829 12.2411C6.26587 11.2407 5.9934 10.1286 5.99414 9V9Z" stroke="#FAF8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M8.99414 15H16.9941" stroke="#FAF8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            class="mobile"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.9941 22H14.9941H10.9941ZM5.99414 9C5.99414 7.14348 6.73164 5.36301 8.04439 4.05025C9.35715 2.7375 11.1376 2 12.9941 2C14.8507 2 16.6311 2.7375 17.9439 4.05025C19.2566 5.36301 19.9941 7.14348 19.9941 9C19.9948 10.1271 19.7222 11.2375 19.1997 12.2362C18.6772 13.2348 17.9204 14.0919 16.9941 14.734L16.4521 17.3C16.3804 17.773 16.1415 18.2046 15.7788 18.5165C15.416 18.8284 14.9535 18.9999 14.4751 19H11.5131C11.0348 18.9999 10.5723 18.8284 10.2095 18.5165C9.84681 18.2046 9.6079 17.773 9.53614 17.3L8.99414 14.745C8.06755 14.1006 7.31071 13.2415 6.78829 12.2411C6.26587 11.2407 5.9934 10.1286 5.99414 9V9Z"
+              stroke="#FAF8FF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.99414 15H16.9941"
+              stroke="#FAF8FF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
       </div>
 
-        <button @click="screenShot" class="primaryBtn -fleche interactif mobile">
-          <span>Terminer</span>
-          <span class="icon-container"
-            ><svg
-              class="fleche"
-              version="1.1"
-              id="Calque_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 42 16.1"
-              enable-background="new 0 0 42 16.1"
-              xml:space="preserve"
-            >
-              <path
-                class="fleche__line"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                fill="#170D42"
-                d="M24.4,7.1H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h19.4"
-              />
-              <path
-                class="fleche__pointe"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                fill="#170D42"
-                d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
+      <button @click="screenShot" class="primaryBtn -fleche interactif mobile">
+        <span>Terminer</span>
+        <span class="icon-container"
+          ><svg
+            class="fleche"
+            version="1.1"
+            id="Calque_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 42 16.1"
+            enable-background="new 0 0 42 16.1"
+            xml:space="preserve"
+          >
+            <path
+              class="fleche__line"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="#170D42"
+              d="M24.4,7.1H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h19.4"
+            />
+            <path
+              class="fleche__pointe"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="#170D42"
+              d="M24.4,9.1l-5.9,5.3c-0.4,0.4-0.4,1-0.1,1.4s1,0.4,1.4,0.1l7.8-7
                        c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3"
-              />
-            </svg>
-          </span>
-        </button>
+            />
+          </svg>
+        </span>
+      </button>
 
-        <div class="changeEtapes desktop">
-            <div class="BtnVue interactif">
-                <p>Vue de côté</p>
-            </div>
-            <div class="BtnVue interactif">
-                <p>Vue de dessus</p>
-            </div>
-    </div>
+      <div class="changeEtapes desktop">
+        <div id="vue1" class="BtnVue interactif actif" @click="viewPicked('vue1')">
+          <p>Vue de côté</p>
+        </div>
+        <div id="vue2" class="BtnVue interactif" @click="viewPicked('vue2')">
+          <p>Vue de dessus</p>
+        </div>
+      </div>
 
       <div class="infoPartagePrix_informations desktop">
         <a href=""
@@ -989,52 +999,46 @@
         </div>
 
         <div class="ChoixPerso">
+          <h1 class="nom-etape" id="Nom_etape">Arrière</h1>
 
-             <h1 class="nom-etape" id="Nom_etape">Arrière</h1>
+          <div class="etapesFleches">
+            <h3 class="num-etape" id="Num_etape">1/10</h3>
 
-        <div class="etapesFleches">
-
-          <h3 class="num-etape" id="Num_etape">1/10</h3>
-
-          <div class="fleche-perso interactif" id="previous">
-            <svg
-              width="24"
-              height="16"
-              viewBox="0 0 24 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              @click="stepPicked('previous')"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.13885 15.7445C8.55003 16.1132 9.18226 16.0788 9.55097 15.6676C9.91968 15.2564 9.88524 14.6242 9.47406 14.2555L3.6131 8.99999L23 8.99999C23.5523 8.99999 24 8.55228 24 7.99999C24 7.44771 23.5523 6.99999 23 6.99999L3.6131 6.99999L9.47406 1.74451C9.88524 1.3758 9.91968 0.743571 9.55097 0.332386C9.18226 -0.0787996 8.55003 -0.113235 8.13885 0.255473L0.332396 7.25547C0.120862 7.44515 7.24222e-07 7.71586 6.99383e-07 7.99999C6.74544e-07 8.28411 0.120862 8.55482 0.332396 8.74451L8.13885 15.7445Z"
-                fill="#170D42"
-              />
-            </svg>
-
+            <div class="fleche-perso interactif" id="previous">
+              <svg
+                width="24"
+                height="16"
+                viewBox="0 0 24 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                @click="stepPicked('previous')"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.13885 15.7445C8.55003 16.1132 9.18226 16.0788 9.55097 15.6676C9.91968 15.2564 9.88524 14.6242 9.47406 14.2555L3.6131 8.99999L23 8.99999C23.5523 8.99999 24 8.55228 24 7.99999C24 7.44771 23.5523 6.99999 23 6.99999L3.6131 6.99999L9.47406 1.74451C9.88524 1.3758 9.91968 0.743571 9.55097 0.332386C9.18226 -0.0787996 8.55003 -0.113235 8.13885 0.255473L0.332396 7.25547C0.120862 7.44515 7.24222e-07 7.71586 6.99383e-07 7.99999C6.74544e-07 8.28411 0.120862 8.55482 0.332396 8.74451L8.13885 15.7445Z"
+                  fill="#170D42"
+                />
+              </svg>
+            </div>
+            <div class="fleche-perso interactif" id="next">
+              <svg
+                width="24"
+                height="16"
+                viewBox="0 0 24 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                @click="stepPicked('next')"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.8612 0.255483C15.45 -0.113224 14.8177 -0.078789 14.449 0.332396C14.0803 0.743581 14.1148 1.37581 14.5259 1.74452L20.3869 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H20.3869L14.5259 14.2555C14.1148 14.6242 14.0803 15.2564 14.449 15.6676C14.8177 16.0788 15.45 16.1132 15.8612 15.7445L23.6676 8.74452C23.8791 8.55483 24 8.28412 24 8C24 7.71588 23.8791 7.44517 23.6676 7.25548L15.8612 0.255483Z"
+                  fill="#170D42"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="fleche-perso interactif" id="next">
-            <svg
-              width="24"
-              height="16"
-              viewBox="0 0 24 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              @click="stepPicked('next')"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15.8612 0.255483C15.45 -0.113224 14.8177 -0.078789 14.449 0.332396C14.0803 0.743581 14.1148 1.37581 14.5259 1.74452L20.3869 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H20.3869L14.5259 14.2555C14.1148 14.6242 14.0803 15.2564 14.449 15.6676C14.8177 16.0788 15.45 16.1132 15.8612 15.7445L23.6676 8.74452C23.8791 8.55483 24 8.28412 24 8C24 7.71588 23.8791 7.44517 23.6676 7.25548L15.8612 0.255483Z"
-                fill="#170D42"
-              />
-            </svg>
-          </div>
-
-        </div>
-
-       
         </div>
       </span>
       <span class="perso__layer2-milieu">
@@ -1055,7 +1059,10 @@
           <img src="@/assets/Icones/reset.svg" alt="" />
         </div>
 
-        <button @click="screenShot" class="primaryBtn -fleche interactif desktop">
+        <button
+          @click="screenShot"
+          class="primaryBtn -fleche interactif desktop"
+        >
           <span>Terminer</span>
           <span class="icon-container"
             ><svg
@@ -1165,18 +1172,19 @@ export default {
         view: "vue1",
         index: 0,
         indexView: 0,
+        test: 0,
       },
       choix: {
-        arriere: null,
-        corps_arriere: null,
-        corps_avant: null,
-        doublure: null,
-        lacet: null,
-        languette: null,
-        milieu: null,
-        renfort: null,
-        semelle: null,
-        toe_box: null,
+        Arriere: "blanc",
+        Corps_arriere: "blanc",
+        Corps_avant: null,
+        Doublure: null,
+        Lacet: null,
+        Languette: null,
+        Milieu: null,
+        Renfort: null,
+        Semelle: null,
+        Toe_box: null,
       },
       colors: [
         "Blanc",
@@ -1240,10 +1248,51 @@ export default {
           link.click();
         });
     },
-    viewPicked() {
-      
-      console.log("Bonjour")
-      
+    viewPicked(view) {
+
+      console.log(view);
+
+      this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
+        item.classList.remove("show")
+        if (item.classList.contains("default") === true){
+          item.classList.remove("default")
+        }
+      })
+
+      this.canvas.querySelectorAll("." + view).forEach((item) => {
+        console.log(item)
+        if (this.choix.Arriere != null) {
+          this.canvas.querySelector("." + view + ".Arriere" + `.${this.choix.Arriere}`).classList.add("show");
+        }
+        if (this.choix.Corps_arriere != null) {
+          this.canvas.querySelector("." + view + ".Corps_arriere" + `.${this.choix.Corps_arriere}`).classList.add("show");
+        }
+        if (this.choix.Corps_avant != null) {
+          this.canvas.querySelector("." + view + ".Corps_avant" + `.${this.choix.Corps_avant}`).classList.add("show");
+        }
+        if (this.choix.Doublure != null) {
+          this.canvas.querySelector("." + view + ".Doublure" + `.${this.choix.Doublure}`).classList.add("show");
+        }
+        if (this.choix.Lacet != null) {
+          this.canvas.querySelector("." + view + ".Lacet" + `.${this.choix.Lacet}`).classList.add("show");
+        }
+        if (this.choix.Languette != null) {
+          this.canvas.querySelector("." + view + ".Languette" + `.${this.choix.Languette}`).classList.add("show");
+        }
+        if (this.choix.Milieu != null) {
+          this.canvas.querySelector("." + view + ".Milieu" + `.${this.choix.Milieu}`).classList.add("show");
+        }
+        if (this.choix.Renfort != null) {
+          this.canvas.querySelector("." + view + ".Renfort" + `.${this.choix.Renfort}`).classList.add("show");
+        }
+        if (this.choix.Semelle != null) {
+          this.canvas.querySelector("." + view + ".Semelle" + `.${this.choix.Semelle}`).classList.add("show");
+        }
+        if (this.choix.Toe_box != null) {
+          this.canvas.querySelector("." + view + ".Toe_box" + `.${this.choix.Toe_box}`).classList.add("show");
+        }
+      });
+
     },
     stepPicked(stepSelection) {
       let stepNom = document.querySelector("#Nom_etape");
@@ -1279,8 +1328,7 @@ export default {
       console.log(this.options.view);
 
       stepNom.innerHTML = this.names[this.options.indexView];
-      timeline_label[this.options.indexView].innerHTML =
-        this.names[this.options.indexView];
+      timeline_label[this.options.indexView].innerHTML = this.names[this.options.indexView];
       stepNum.innerHTML = this.options.indexView + 1 + "/10";
       timeline_item[this.options.indexView].classList.add("-active");
       this.options.element = this.elements[this.options.indexView];
@@ -1302,7 +1350,7 @@ export default {
 
       // Sauvegarder les choix de couleur par elements dans un object choix, réutiliser cet object pour les différentes vue de chaussure
       // Check le log
-      this.choix[this.options.element.toLowerCase()] = this.options.color;
+      this.choix[this.options.element] = this.options.color;
       console.log(this.choix);
     },
     reset() {
@@ -1348,13 +1396,15 @@ export default {
   background-color: #5a8cd8;
 }
 
-
-
 //Début des styles de la Perso//
 
 .canvas {
   img {
     display: none;
+  }
+
+  .vue2 {
+    transform: rotate(90deg);
   }
 
   img.show {
@@ -1370,7 +1420,16 @@ export default {
   cursor: pointer;
 }
 
-@media screen and (min-width: 960px) {  // MEDIA QUERIES DESKTOP //
+.actif {
+  background-color: #6970FF;
+}
+
+.actif p {
+  color: white;
+}
+
+@media screen and (min-width: 960px) {
+  // MEDIA QUERIES DESKTOP //
   .timeline {
     list-style: none;
     display: flex;
@@ -1636,81 +1695,74 @@ export default {
     font-size: 14px;
   }
 
-  .etapesFleches{
-      margin-top: 10%;
-      display: flex;
+  .etapesFleches {
+    margin-top: 10%;
+    display: flex;
   }
 
-  .ChoixPerso{
-      width: 100%;
+  .ChoixPerso {
+    width: 100%;
   }
 
-  .changeEtapes{
-      display: flex;
-      align-items: center;
-      width: 20%;
+  .changeEtapes {
+    display: flex;
+    align-items: center;
+    width: 20%;
     justify-content: space-between;
     margin-left: 10%;
-      & .BtnVue{
-          padding: 4%;
-          border: $bleuVert solid 0.2px;
-          border-radius: 10px;
-          &:hover{
-          background-color: $bleuVert;
-          p{
-              color: white;
-          }
+    & .BtnVue {
+      padding: 4%;
+      border: $bleuVert solid 0.2px;
+      border-radius: 10px;
+      &:hover {
+        background-color: $bleuVert;
+        p {
+          color: white;
         }
       }
-      
+    }
   }
 
   .jeVeuxDesChaussures {
-  display: flex;
-  width: 100%;
-  height: 40vh;
-  position: relative;
-}
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  }
 
-.jeVeuxDesChaussures img {
-  position: absolute;
-
-  &.vue1 {
+  .jeVeuxDesChaussures img {
+    position: absolute;
     width: 50%;
     left: 25%;
   }
-  &.vue2 {
-    height: 100%;
-    left: 44%;
-  }
-}
 }
 
-@media screen and (max-width: 960px) { // MEDIA QUERIES MOBILE //
+@media screen and (max-width: 960px) {
+  // MEDIA QUERIES MOBILE //
   .timeline {
-      display: none!important;
+    display: none !important;
   }
 
   .jeVeuxDesChaussures {
-  display: flex;
-  width: 100%;
-  height: 25vh;
-  position: relative;
-  margin-bottom: 5%;
-}
-
-.jeVeuxDesChaussures img {
-  position: absolute;
-
-  &.vue1 {
-    width: 90%;
-    left: 5%;
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    margin-bottom: 5%;
   }
-  &.vue2 {
-    height: 100%;
-    left: 44%;
+
+  .jeVeuxDesChaussures img {
+    position: absolute;
+
+    &.vue1 {
+      width: 90%;
+      left: 5%;
+    }
+    &.vue2 {
+      height: 100%;
+      left: 44%;
+    }
   }
-}
 
   /*styles perso*/
 
@@ -1720,7 +1772,7 @@ export default {
     margin-top: 5%;
     line-height: 3vh;
     grid-column: 1;
-    }
+  }
 
   .nom-etape {
     margin-left: 5%;
@@ -1842,7 +1894,6 @@ export default {
     margin-top: 20%;
     width: 90%;
     margin-left: 5%;
-    
   }
 
   .bulle {
@@ -1921,30 +1972,29 @@ export default {
     font-size: 14px;
   }
 
-  .changeEtapes{
-      display: flex;
-      align-items: center;
-      width: 70%;
+  .changeEtapes {
+    display: flex;
+    align-items: center;
+    width: 70%;
     justify-content: space-between;
     margin-left: 15%;
     margin-bottom: 10%;
-      & .BtnVue{
-          padding: 3%;
-          border: $bleuVert solid 0.2px;
-          border-radius: 10px;
-          &:first-of-type{
-          background-color: $bleuVert;
-          p{
-              color: white;
-          }
+    & .BtnVue {
+      padding: 3%;
+      border: $bleuVert solid 0.2px;
+      border-radius: 10px;
+      &:first-of-type {
+        background-color: $bleuVert;
+        p {
+          color: white;
         }
       }
-      
+    }
   }
 
-  .etapesFleches{
-      margin-top: 15%;
-      display: flex;
+  .etapesFleches {
+    margin-top: 15%;
+    display: flex;
   }
 }
 </style>
