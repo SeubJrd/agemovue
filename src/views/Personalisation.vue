@@ -1232,29 +1232,9 @@ export default {
         });
     },
     viewPicked() {
-      this.canvas.querySelectorAll(`.${this.options.view}`).forEach((item) => {
-        item.classList.remove("show");
-        if (item.classList.contains("blanc")) {
-          item.classList.remove("default");
-        }
-      });
-
-      // TODO je suis pas certain mais je pense que c'est du code inutile ça, refait la logique dans ta tête
-
-      if (this.options.indexView === 0) {
-        this.options.view = this.views[this.options.indexView + 1];
-        this.options.indexView++;
-      } else {
-        this.options.view = this.views[this.options.indexView - 1];
-        this.options.indexView--;
-      }
-
-      this.canvas.querySelectorAll(`.${this.options.view}`).forEach((item) => {
-        item.classList.add("show");
-        if (item.classList.contains("blanc")) {
-          item.classList.add("default");
-        }
-      });
+      
+      console.log("Bonjour")
+      
     },
     stepPicked(stepSelection) {
       let stepNom = document.querySelector("#Nom_etape");
