@@ -8,52 +8,76 @@
         
         <div class="galerie__galerie">
             <div class="galerie__card galerie__col1">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>   
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>
             </div>
             <div class="galerie__card galerie__col2">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>    
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>  
             </div>
             <div class="galerie__card galerie__col3">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>     
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>     
             </div>
             <div class="galerie__card galerie__col1">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>     
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>     
             </div>
             <div class="galerie__card galerie__col2">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>     
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>     
             </div>
             <div class="galerie__card galerie__col3">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>     
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>     
             </div>
             <div class="galerie__card galerie__col1">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>      
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>    
             </div>
             <div class="galerie__card galerie__col2">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>      
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>     
             </div>
             <div class="galerie__card galerie__col3">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>      
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>      
             </div>
             <div class="galerie__card galerie__col1">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>      
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>      
             </div>
             <div class="galerie__card galerie__col2">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>      
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>     
             </div>
             <div class="galerie__card galerie__col3">
-                <a href=""><img src="@/assets/Icones/info.svg" alt=""></a>
-                <div class="galerie__fav"></div>      
+                <a class="mobile" href=""><img src="@/assets/Icones/info.svg" alt=""></a>
+                <div class="galerienormal galerie__fav"></div>   
+                <h2 class="desktop galeriehover">Informations sur cette paire</h2>
+                <p class="desktop galeriehover">Mise en ligne le 01/02/2022 par SeubLeCon</p>      
             </div>
 
             <a class="galerie__plus" href="">Afficher plus de résultats</a>
@@ -129,9 +153,10 @@ export default {
     background-repeat: no-repeat;
     background-size: 100%;
     width: 20vw;
-    height: 18vw;
+    height: 17vw;
     margin-bottom: 10%;
     position: relative;
+    border-radius: 20px;
 }
 
 .galerie__card a{
@@ -139,6 +164,9 @@ export default {
         float: right;
         margin-right: 5%;
         margin-top: 5%;
+        &:hover{
+            background-image: none;
+        }
     
     }
     &:nth-of-type(2){
@@ -148,6 +176,27 @@ export default {
         margin-bottom: 5%;
     }
 }
+
+.galeriehover{
+    display: none;
+    color: white;
+    
+}
+
+
+.galerie__card:hover {
+    background-color: $bleuVert;
+    background-image: none;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .galeriehover{
+        display: block;
+    }
+}
+
 
 .galerie__description{
     width: 30%;
@@ -215,7 +264,7 @@ export default {
     width : 35px;
     background: url("@/../../assets/Icones/coeur non cliqué (Stroke).svg") no-repeat ;
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     right: 25px;
     transition: 0.15s ease-in;
     overflow: hidden;
