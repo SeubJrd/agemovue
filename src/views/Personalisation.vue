@@ -921,6 +921,15 @@
           </span>
         </button>
 
+        <div class="changeEtapes desktop">
+            <div class="BtnVue interactif">
+                <p>Vue de côté</p>
+            </div>
+            <div class="BtnVue interactif">
+                <p>Vue de dessus</p>
+            </div>
+    </div>
+
       <div class="infoPartagePrix_informations desktop">
         <a href=""
           ><svg
