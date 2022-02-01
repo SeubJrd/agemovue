@@ -3,59 +3,210 @@
 
         <ul class="timeline">
             <li class="timeline__item -active">
-                <span>milieu</span>
+                <span class="timeline__label"> Arrière</span>
             </li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
-            <li class="timeline__item"><span>milieu</span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
+            <li class="timeline__item"><span class="timeline__label"></span></li>
         </ul>       
 
         <div class="jeVeuxDesChaussures canvas">
             <!-- Arrières de chaussures -->
-            <img class="default back" src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
-            <img class="gris back" src="@/assets/img/vue1/vue1-arriere_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 default blanc Arriere" src="@/assets/img/vue1/vue1-arriere_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue1 noir Arriere" src="@/assets/img/vue1/vue1-arriere_noir.png" alt="Arrière de la chaussure">
+                <img class="vue1 gris Arriere" src="@/assets/img/vue1/vue1-arriere_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Arriere" src="@/assets/img/vue1/vue1-arriere_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Arriere" src="@/assets/img/vue1/vue1-arriere_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Arriere" src="@/assets/img/vue1/vue1-arriere_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Arriere" src="@/assets/img/vue1/vue1-arriere_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Arriere" src="@/assets/img/vue1/vue1-arriere_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Arriere" src="@/assets/img/vue2/vue2-arriere_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Arriere" src="@/assets/img/vue2/vue2-arriere_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Arriere" src="@/assets/img/vue2/vue2-arriere_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Arriere" src="@/assets/img/vue2/vue2-arriere_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Arriere" src="@/assets/img/vue2/vue2-arriere_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Arriere" src="@/assets/img/vue2/vue2-arriere_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Arriere" src="@/assets/img/vue2/vue2-arriere_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Arriere" src="@/assets/img/vue2/vue2-arriere_bleu.png" alt="Arrière de la chaussure">
+
 
             <!-- Corps arrières de chaussures -->
-            <img class="default bodyback" src="@/assets/img/vue1/vue1-corpsarr_blanc.png" alt="Corps Arrière">
-            <img class="gris bodyback" src="@/assets/img/vue1/vue1-corpsarr_gris.png" alt="Corps Arrière">
+                <img class="vue1 default blanc Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_blanc.png" alt="Corps Arrière">
+                <img class="vue1 noir Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_noir.png" alt="Corps Arrière">
+                <img class="vue1 gris Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Corps_arriere" src="@/assets/img/vue1/vue1-corpsarr_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Corps_arriere" src="@/assets/img/vue2/vue2-corpsarr_bleu.png" alt="Arrière de la chaussure">
 
             <!-- Corps avant de chaussures -->
-            <img class="default bodyfront" src="@/assets/img/vue1/vue1-corpsavant_blanc.png" alt="Corps avant">
-            <img class="gris bodyfront" src="@/assets/img/vue1/vue1-corpsavant_gris.png" alt="Corps avant">
+                <img class="vue1 default blanc Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_blanc.png" alt="Corps avant">
+                <img class="vue1 gris Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_gris.png" alt="Corps avant">
+                <img class="vue1 noir Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_noir.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Corps_avant" src="@/assets/img/vue1/vue1-corpsavant_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Corps_avant" src="@/assets/img/vue2/vue2-corpsavant_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- Doublures de chaussures -->
-            <img class="default lining" src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
-            <img class="gris lining" src="@/assets/img/vue1/vue1-doublure_gris.png" alt="Doublure">
+                <img class="vue1 default blanc Doublure" src="@/assets/img/vue1/vue1-doublure_blanc.png" alt="Doublure">
+                <img class="vue1 noir Doublure" src="@/assets/img/vue1/vue1-doublure_noir.png" alt="Doublure">
+                <img class="vue1 gris Doublure" src="@/assets/img/vue1/vue1-doublure_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Doublure" src="@/assets/img/vue1/vue1-doublure_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Doublure" src="@/assets/img/vue1/vue1-doublure_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Doublure" src="@/assets/img/vue1/vue1-doublure_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Doublure" src="@/assets/img/vue1/vue1-doublure_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Doublure" src="@/assets/img/vue1/vue1-doublure_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Doublure" src="@/assets/img/vue2/vue2-doublure_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Doublure" src="@/assets/img/vue2/vue2-doublure_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Doublure" src="@/assets/img/vue2/vue2-doublure_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Doublure" src="@/assets/img/vue2/vue2-doublure_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Doublure" src="@/assets/img/vue2/vue2-doublure_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Doublure" src="@/assets/img/vue2/vue2-doublure_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Doublure" src="@/assets/img/vue2/vue2-doublure_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Doublure" src="@/assets/img/vue2/vue2-doublure_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- Lacets de chaussures -->
-            <img class="default lace" src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
-            <img class="gris lace" src="@/assets/img/vue1/vue1-lacet_gris.png" alt="Lacet">
+                <img class="vue1 default blanc Lacet" src="@/assets/img/vue1/vue1-lacet_blanc.png" alt="Lacet">
+                <img class="vue1 noir Lacet" src="@/assets/img/vue1/vue1-lacet_noir.png" alt="Lacet">
+                <img class="vue1 gris Lacet" src="@/assets/img/vue1/vue1-lacet_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Lacet" src="@/assets/img/vue1/vue1-lacet_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Lacet" src="@/assets/img/vue1/vue1-lacet_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Lacet" src="@/assets/img/vue1/vue1-lacet_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Lacet" src="@/assets/img/vue1/vue1-lacet_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Lacet" src="@/assets/img/vue1/vue1-lacet_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Lacet" src="@/assets/img/vue2/vue2-lacet_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Lacet" src="@/assets/img/vue2/vue2-lacet_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Lacet" src="@/assets/img/vue2/vue2-lacet_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Lacet" src="@/assets/img/vue2/vue2-lacet_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Lacet" src="@/assets/img/vue2/vue2-lacet_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Lacet" src="@/assets/img/vue2/vue2-lacet_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Lacet" src="@/assets/img/vue2/vue2-lacet_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Lacet" src="@/assets/img/vue2/vue2-lacet_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- languettes de chaussures -->
-            <img class="default tongue" src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
-            <img class="gris tongue" src="@/assets/img/vue1/vue1-languette_gris.png" alt="Languette">
+                <img class="vue1 default blanc Languette" src="@/assets/img/vue1/vue1-languette_blanc.png" alt="Languette">
+                <img class="vue1 Languette noir" src="@/assets/img/vue1/vue1-languette_noir.png" alt="Languette">
+                <img class="vue1 gris Languette" src="@/assets/img/vue1/vue1-languette_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Languette" src="@/assets/img/vue1/vue1-languette_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Languette" src="@/assets/img/vue1/vue1-languette_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Languette" src="@/assets/img/vue1/vue1-languette_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Languette" src="@/assets/img/vue1/vue1-languette_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Languette" src="@/assets/img/vue1/vue1-languette_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Languette" src="@/assets/img/vue2/vue2-languette_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Languette" src="@/assets/img/vue2/vue2-languette_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Languette" src="@/assets/img/vue2/vue2-languette_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Languette" src="@/assets/img/vue2/vue2-languette_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Languette" src="@/assets/img/vue2/vue2-languette_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Languette" src="@/assets/img/vue2/vue2-languette_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Languette" src="@/assets/img/vue2/vue2-languette_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Languette" src="@/assets/img/vue2/vue2-languette_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- Milieux de chaussures -->
-            <img class="default middle" src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
-            <img class="gris middle" src="@/assets/img/vue1/vue1-milieu_gris.png" alt="Milieu">
+                <img class="vue1 default blanc Milieu" src="@/assets/img/vue1/vue1-milieu_blanc.png" alt="Milieu">
+                <img class="vue1 noir Milieu" src="@/assets/img/vue1/vue1-milieu_noir.png" alt="Milieu">
+                <img class="vue1 gris Milieu" src="@/assets/img/vue1/vue1-milieu_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Milieu" src="@/assets/img/vue1/vue1-milieu_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Milieu" src="@/assets/img/vue1/vue1-milieu_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Milieu" src="@/assets/img/vue1/vue1-milieu_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Milieu" src="@/assets/img/vue1/vue1-milieu_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Milieu" src="@/assets/img/vue1/vue1-milieu_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Milieu" src="@/assets/img/vue2/vue2-milieu_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Milieu" src="@/assets/img/vue2/vue2-milieu_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Milieu" src="@/assets/img/vue2/vue2-milieu_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Milieu" src="@/assets/img/vue2/vue2-milieu_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Milieu" src="@/assets/img/vue2/vue2-milieu_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Milieu" src="@/assets/img/vue2/vue2-milieu_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Milieu" src="@/assets/img/vue2/vue2-milieu_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Milieu" src="@/assets/img/vue2/vue2-milieu_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- Renforts de chaussures -->
-            <img class="default reinforcement" src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
-            <img class="gris reinforcement" src="@/assets/img/vue1/vue1-renfort_gris.png" alt="Renfort">
+                <img class="vue1 default blanc Renfort" src="@/assets/img/vue1/vue1-renfort_blanc.png" alt="Renfort">
+                <img class="vue1 noir Renfort" src="@/assets/img/vue1/vue1-renfort_noir.png" alt="Renfort">
+                <img class="vue1 gris Renfort" src="@/assets/img/vue1/vue1-renfort_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Renfort" src="@/assets/img/vue1/vue1-renfort_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Renfort" src="@/assets/img/vue1/vue1-renfort_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Renfort" src="@/assets/img/vue1/vue1-renfort_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Renfort" src="@/assets/img/vue1/vue1-renfort_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Renfort" src="@/assets/img/vue1/vue1-renfort_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Renfort" src="@/assets/img/vue2/vue2-renfort_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Renfort" src="@/assets/img/vue2/vue2-renfort_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Renfort" src="@/assets/img/vue2/vue2-renfort_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Renfort" src="@/assets/img/vue2/vue2-renfort_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Renfort" src="@/assets/img/vue2/vue2-renfort_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Renfort" src="@/assets/img/vue2/vue2-renfort_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Renfort" src="@/assets/img/vue2/vue2-renfort_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Renfort" src="@/assets/img/vue2/vue2-renfort_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- Semelles de chaussures -->
-            <img class="default sole" src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
-            <img class="gris sole" src="@/assets/img/vue1/vue1-semelle_gris.png" alt="Semelle">
+                <img class="vue1 default blanc Semelle" src="@/assets/img/vue1/vue1-semelle_blanc.png" alt="Semelle">
+                <img class="vue1 noir Semelle" src="@/assets/img/vue1/vue1-semelle_noir.png" alt="Semelle">
+                <img class="vue1 gris Semelle" src="@/assets/img/vue1/vue1-semelle_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Semelle" src="@/assets/img/vue1/vue1-semelle_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Semelle" src="@/assets/img/vue1/vue1-semelle_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Semelle" src="@/assets/img/vue1/vue1-semelle_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Semelle" src="@/assets/img/vue1/vue1-semelle_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Semelle" src="@/assets/img/vue1/vue1-semelle_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Semelle" src="@/assets/img/vue2/vue2-semelle_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Semelle" src="@/assets/img/vue2/vue2-semelle_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Semelle" src="@/assets/img/vue2/vue2-semelle_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Semelle" src="@/assets/img/vue2/vue2-semelle_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Semelle" src="@/assets/img/vue2/vue2-semelle_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Semelle" src="@/assets/img/vue2/vue2-semelle_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Semelle" src="@/assets/img/vue2/vue2-semelle_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Semelle" src="@/assets/img/vue2/vue2-semelle_bleu.png" alt="Arrière de la chaussure">    
 
             <!-- Toeboxes de chaussures -->
-            <img class="default toebox" src="@/assets/img/vue1/vue1-toebox_blanc.png" alt="Toe Box">
-            <img class="gris toebox" src="@/assets/img/vue1/vue1-toebox_gris.png" alt="Toe Box">
+                <img class="vue1 default blanc Toe_box" src="@/assets/img/vue1/vue1-toebox_blanc.png" alt="Toe Box">
+                <img class="vue1 noir Toe_box" src="@/assets/img/vue1/vue1-toebox_noir.png" alt="Toe Box">
+                <img class="vue1 gris Toe_box" src="@/assets/img/vue1/vue1-toebox_gris.png" alt="Arrière de la chaussure">
+                <img class="vue1 rouge Toe_box" src="@/assets/img/vue1/vue1-toebox_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue1 vert Toe_box" src="@/assets/img/vue1/vue1-toebox_vert.png" alt="Arrière de la chaussure">
+                <img class="vue1 lavande Toe_box" src="@/assets/img/vue1/vue1-toebox_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue1 rose Toe_box" src="@/assets/img/vue1/vue1-toebox_rose.png" alt="Arrière de la chaussure">
+                <img class="vue1 bleu Toe_box" src="@/assets/img/vue1/vue1-toebox_bleu.png" alt="Arrière de la chaussure">
+            <!-- Vue2 -->
+                <img class="vue2 blanc Toe_box" src="@/assets/img/vue2/vue2-toebox_blanc.png" alt="Arrière de la chaussure">
+                <img class="vue2 noir Toe_box" src="@/assets/img/vue2/vue2-toebox_noir.png" alt="Arrière de la chaussure">
+                <img class="vue2 gris Toe_box" src="@/assets/img/vue2/vue2-toebox_gris.png" alt="Arrière de la chaussure">
+                <img class="vue2 rouge Toe_box" src="@/assets/img/vue2/vue2-toebox_rouge.png" alt="Arrière de la chaussure">
+                <img class="vue2 vert Toe_box" src="@/assets/img/vue2/vue2-toebox_vert.png" alt="Arrière de la chaussure">
+                <img class="vue2 lavande Toe_box" src="@/assets/img/vue2/vue2-toebox_lavande.png" alt="Arrière de la chaussure">
+                <img class="vue2 rose Toe_box" src="@/assets/img/vue2/vue2-toebox_rose.png" alt="Arrière de la chaussure">
+                <img class="vue2 bleu Toe_box" src="@/assets/img/vue2/vue2-toebox_bleu.png" alt="Arrière de la chaussure">    
 
 
 
@@ -77,36 +228,37 @@
         
         <div class="perso__layer2">
             <span class="perso__menu">
-                <a href="">
+                <div class="interactif">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1H2C1.44772 1 1 1.44772 1 2V8C1 8.55229 1.44772 9 2 9H8C8.55229 9 9 8.55229 9 8V2C9 1.44772 8.55229 1 8 1ZM2 0C0.895431 0 0 0.89543 0 2V8C0 9.10457 0.89543 10 2 10H8C9.10457 10 10 9.10457 10 8V2C10 0.895431 9.10457 0 8 0H2Z" fill="#170D42"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1H14C13.4477 1 13 1.44772 13 2V8C13 8.55229 13.4477 9 14 9H20C20.5523 9 21 8.55229 21 8V2C21 1.44772 20.5523 1 20 1ZM14 0C12.8954 0 12 0.89543 12 2V8C12 9.10457 12.8954 10 14 10H20C21.1046 10 22 9.10457 22 8V2C22 0.895431 21.1046 0 20 0H14Z" fill="#170D42"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20 13H14C13.4477 13 13 13.4477 13 14V20C13 20.5523 13.4477 21 14 21H20C20.5523 21 21 20.5523 21 20V14C21 13.4477 20.5523 13 20 13ZM14 12C12.8954 12 12 12.8954 12 14V20C12 21.1046 12.8954 22 14 22H20C21.1046 22 22 21.1046 22 20V14C22 12.8954 21.1046 12 20 12H14Z" fill="#170D42"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13H2C1.44772 13 1 13.4477 1 14V20C1 20.5523 1.44772 21 2 21H8C8.55229 21 9 20.5523 9 20V14C9 13.4477 8.55229 13 8 13ZM2 12C0.895431 12 0 12.8954 0 14V20C0 21.1046 0.89543 22 2 22H8C9.10457 22 10 21.1046 10 20V14C10 12.8954 9.10457 12 8 12H2Z" fill="#170D42"/>
                     </svg>
-                </a>
+                </div>
                 
-                <h1 class="nom-etape" id="Nom Etape 1">Milieu</h1>
-                <h3 class="num-etape" id="Num Etape 1">1/10</h3>
-                <a class="fleche-perso" href="">
-                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 class="nom-etape" id="Nom_etape"> Arrière </h1>
+                <h3 class="num-etape" id="Num_etape"> 1/10 </h3>
+                
+                <div class="fleche-perso interactif" id="previous">
+                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" @click="stepPicked('previous')">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13885 15.7445C8.55003 16.1132 9.18226 16.0788 9.55097 15.6676C9.91968 15.2564 9.88524 14.6242 9.47406 14.2555L3.6131 8.99999L23 8.99999C23.5523 8.99999 24 8.55228 24 7.99999C24 7.44771 23.5523 6.99999 23 6.99999L3.6131 6.99999L9.47406 1.74451C9.88524 1.3758 9.91968 0.743571 9.55097 0.332386C9.18226 -0.0787996 8.55003 -0.113235 8.13885 0.255473L0.332396 7.25547C0.120862 7.44515 7.24222e-07 7.71586 6.99383e-07 7.99999C6.74544e-07 8.28411 0.120862 8.55482 0.332396 8.74451L8.13885 15.7445Z" fill="#170D42"/>
                     </svg>
-                </a>
-                <a class="fleche-perso" href="">
-                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="fleche-perso interactif" id="next">
+                    <svg  width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" @click="stepPicked('next')">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8612 0.255483C15.45 -0.113224 14.8177 -0.078789 14.449 0.332396C14.0803 0.743581 14.1148 1.37581 14.5259 1.74452L20.3869 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H20.3869L14.5259 14.2555C14.1148 14.6242 14.0803 15.2564 14.449 15.6676C14.8177 16.0788 15.45 16.1132 15.8612 15.7445L23.6676 8.74452C23.8791 8.55483 24 8.28412 24 8C24 7.71588 23.8791 7.44517 23.6676 7.25548L15.8612 0.255483Z" fill="#170D42"/>
                     </svg>
-                </a>
+                </div>
                 
             </span>
             <span class="perso__layer2-milieu">
                 <span class="menu-choix-custo">
-                    <a  class="choix-custo" href="">
+                    <a  class="choix-custo interactif" href="">
                         <img src="@/assets/Icones/couleurs.svg" alt="">
                         <h3>Couleurs</h3>
                     </a>
-                    <a  class="choix-custo" href="">
+                    <a  class="choix-custo interactif" href="">
                         <img src="@/assets/Icones/collab.svg" alt="">
                         <h3>Collaborations</h3>
                     </a>
@@ -115,9 +267,11 @@
             
             <span class="perso__btn-terminer">
                 
-                <a class="perso-reset" href=""><img  src="@/assets/Icones/reset.svg" alt=""></a>
+                <div class="perso_reset interactif" 
+                    @click="reset()"
+                ><img  src="@/assets/Icones/reset.svg" alt=""></div>
 
-                <button @click="screenShot" class="primaryBtn -fleche" ><span>Terminer</span>
+                <button @click="screenShot" class="primaryBtn -fleche interactif" ><span>Terminer</span>
                     <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                             enable-background="new 0 0 42 16.1" xml:space="preserve">
@@ -138,7 +292,7 @@
 
                     <div 
                         v-for="(label, index) in colors"
-                        :key="index" class="choix__col"
+                        :key="index" class="choix__col interactif"
                         @click="colorPicked($event, label)"
                         >
                             <div :class="`col__img${index + 1}`"></div>
@@ -182,9 +336,23 @@ export default {
     data() {
         return {
             options: {
-                element: 'Languette',
+                element: "Arriere",
                 color: null,
-                view: null
+                view: "vue1",
+                index: 0,
+                indexView: 0
+            },
+            choix: {
+                arriere: null,
+                corps_arriere: null,
+                corps_avant: null,
+                doublure: null,
+                lacet: null,
+                languette: null,
+                milieu: null,
+                renfort: null,
+                semelle: null,
+                toe_box: null,
             },
             colors: [
                 'Blanc',
@@ -197,15 +365,44 @@ export default {
                 'Bleu'
             ],
             elements: [
-                'Millieu',
-                'Languette'
-
+                'Arriere',
+                'Corps_arriere',
+                'Corps_avant',
+                'Doublure',
+                'Lacet',
+                'Languette',
+                'Milieu',
+                'Renfort',
+                'Semelle',
+                'Toe_box'         
+            ],
+            views: [
+                'vue1',
+                'vue2'
+            ],
+            names: [
+                'Arrière',
+                'Corps arrière',
+                'Corps avant',
+                'Doublure',
+                'Lacet',
+                'Languette',
+                'Milieu',
+                'Renfort',
+                'Semelle',
+                'Toe box'         
             ]
         }
     },
     computed: {
         colorActive: function() {
             return this.options.color
+        },
+        stepActive: function() {
+            return this.options.element
+        },
+        viewActive: function() {
+            return this.options.view
         }
     },
     mounted() {
@@ -222,15 +419,94 @@ export default {
                 link.click();
             })
         },
+        viewPicked() {
+
+            this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
+                    item.classList.remove('show')
+                    if (item.classList.contains("blanc")) {
+                        item.classList.remove("default")
+                    }
+            })
+
+            // TODO je suis pas certain mais je pense que c'est du code inutile ça, refait la logique dans ta tête
+
+            if (this.options.indexView === 0) {
+                this.options.view = this.views[this.options.indexView + 1]
+                this.options.indexView++
+            } 
+            else {
+                this.options.view = this.views[this.options.indexView -1]
+                this.options.indexView--
+            }
+
+            this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
+                    item.classList.add('show')
+                    if (item.classList.contains("blanc")) {
+                        item.classList.add("default")
+                    }
+            })
+        },
+        stepPicked(stepSelection) {
+            let stepNom = document.querySelector("#Nom_etape")
+            let stepNum = document.querySelector("#Num_etape")
+            let timeline_label = document.querySelectorAll(".timeline__label")
+            let timeline_item = document.querySelectorAll(".timeline__item")
+
+            timeline_item[this.options.view].classList.remove("-active")
+            timeline_label[this.options.view].innerHTML = ""
+
+
+            if (this.options.view <= 0 || this.options.view >= 9 ) {
+
+                if (this.options.view === 0 && stepSelection === "previous") {
+                    this.options.view = 0
+                }
+                else if (this.options.view === 0 && stepSelection === "next") {
+                    this.options.view++
+                }
+                if (this.options.view === 9 && stepSelection === "next") {
+                    this.options.view = 9
+                }
+                else if (this.options.view === 9 && stepSelection === "previous") {
+                    this.options.view--
+                }
+            }
+            else {
+                if (stepSelection === "next") {
+                    this.options.view++
+                }
+                else {
+                    this.options.view--
+                }
+            }
+
+            stepNom.innerHTML = this.names[this.options.view]
+            timeline_label[this.options.view].innerHTML = this.names[this.options.view]
+            stepNum.innerHTML = this.options.view + 1 + "/10"
+            timeline_item[this.options.view].classList.add("-active")
+            this.options.element = this.elements[this.options.index]
+        },
         colorPicked(event, label) {
             this.options.color = label.toLowerCase()
 
-            this.canvas.querySelectorAll('img').forEach( (item) => {
+            this.canvas.querySelectorAll(`.${this.options.view}.${this.options.element}`).forEach( (item) => {
                 item.classList.remove('show')
             })
 
-            this.canvas.querySelector(`.${this.options.element}.${this.options.color}`).classList.add('show')
+            this.canvas.querySelector(`.${this.options.view}.${this.options.element}.${this.options.color}`).classList.add('show')
 
+
+            // Sauvegarder les choix de couleur par elements dans un object choix, réutiliser cet object pour les différentes vue de chaussure
+            // Check le log
+            this.choix[this.options.element.toLowerCase()] = this.options.color
+            console.log(this.choix)
+
+            
+        },
+        reset() {
+            this.canvas.querySelectorAll('img').forEach( (item) => {
+                item.classList.remove('show')
+            })
         }
     }
 
@@ -297,6 +573,7 @@ export default {
 
 .nom-etape{
     margin-left: 5%;
+    white-space: nowrap;
 }
 
 .num-etape{
@@ -347,6 +624,7 @@ export default {
 
 .perso__layer2-milieu{
     grid-column: 2;
+    display: none;
 }
 
 .perso__btn-terminer{
@@ -357,7 +635,7 @@ export default {
     margin-left: 2%;
 }
 
-.perso-reset{
+.perso_reset{
     margin-top: 5%;
     margin-right: 10%;
     width: 7%;
@@ -412,7 +690,6 @@ export default {
 }
 
 .informations_prix{
-    line-height: pxToRem(32);
     font-size: 1.25vw;
     font-weight: 700;
     color: $colorTitle;
@@ -538,16 +815,23 @@ export default {
 
 
 .jeVeuxDesChaussures {
-    display: block;
+    display: flex;
     width: 100%;
     height: 40vh;
-    margin-top: 5%;
+    position: relative;
 }
 
 .jeVeuxDesChaussures img {
     position: absolute;
-    width: 50%;
-    left: 25%;
+    
+    &.vue1 {
+        width: 50%;
+        left: 25%;
+    }
+    &.vue2 {
+        height: 100%;
+        left: 44%;
+    }
 }
 
 //Début des styles de la Perso//
@@ -564,6 +848,10 @@ export default {
     .default{
         display: block;
     }
+}
+
+.interactif {
+    cursor: pointer;
 }
 
 

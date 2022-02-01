@@ -111,7 +111,9 @@ export default {
 
 <style lang="scss">
 
-.compte__superieur{
+@media screen and (min-width: 960px) {
+
+    .compte__superieur{
     display: grid;
     grid-template-columns: repeat(3);
     grid-auto-columns: 15% 50% 35%;
@@ -179,6 +181,72 @@ export default {
 .compteMenuCol2{
     grid-column: 2;
 }
+ 
+}
+
+@media screen and (max-width: 960px) { 
+
+    .compte__superieur{
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-auto-columns: 40% 60%;
+    margin-left: 5%;
+    border-bottom: $colorAction solid 1px;
+    padding-bottom: 3%;
+    width: 90%;
+    margin-top: 10%;
+}
+
+.compteSupCol1{
+    grid-column: 1;
+}
+
+.compteSupCol1 img{
+    width: 80%;
+}
+
+.compteSupCol2{
+    grid-column: 2;
+    padding-top: 8%;
+}
+
+.compteSupCol2 h1{
+    font-weight: 600;
+}
+
+.compteSupCol2 h2{
+    font-weight: 450;
+}
+
+.compte__menu{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 25%;
+}
+
+.compte__menuLien{
+    margin-top: 10%;
+    border-bottom: $colorAction 1px solid;
+    padding-bottom: 2%;
+    width: fit-content;
+}
+
+.compte__menuLien a{
+    text-decoration: none;
+    color: $colorAction;
+}
+
+.primaryBtnCompte{
+    margin-right: 5%!important;
+    width: 140%!important;
+    padding-left: 5%;
+    height: 5vh!important;
+    margin-top: 5%!important;
+}
+
+}
+
+
 
 
 

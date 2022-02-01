@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <div class="accueil__section1">
-      <video class="section1__video" loop muted>
-        <source src="@/assets/video/test youtube.mp4" type=video/mp4>
+      <video class="section1__video" loop autoplay muted>
+        <source v-bind:src="video" type=video/mp4>
       </video>
 
       <Chevron />
@@ -210,6 +210,7 @@ export default {
       section2: null,
       section3: null,
       section4: null,
+      video: null,
     };
   },
   mounted() {
@@ -226,6 +227,8 @@ export default {
         this.section3 = response.data.acf.section3;
         // section4
         this.section4 = response.data.acf.section4;
+         // videal
+        this.video = response.data.acf.videal;
       });
   },
 };
@@ -324,7 +327,17 @@ export default {
     padding-top: 7%;
     width: 90%;
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    & a{
+     margin: auto;
+    }
     
+  }
+
+  .centreVert{
+    display: flex;
+    flex-direction: column;
   }
 
   .accueil__infos h1 {
@@ -352,10 +365,12 @@ export default {
   }
 
   .section1__video {
-    width: 100%;
-    height: inherit;
+    width: inherit;
+    height: 35vh;
     border: none;
+    -o-object-fit: cover;
     object-fit: cover;
+    margin-left: -18%;
   }
 
   .accueil__section1 {
