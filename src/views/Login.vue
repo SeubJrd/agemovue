@@ -221,7 +221,7 @@ export default {
     }
   }
 
-  .titlePage__container {
+  .connexion .titlePage__container {
     margin-left: 25% !important;
   }
 }
