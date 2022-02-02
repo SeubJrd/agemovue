@@ -897,8 +897,8 @@
         </div>
       </div>
 
-      <button @click="screenShot" class="primaryBtn -fleche interactif mobile">
-        <span>Terminer</span>
+      <button @click="saveShoeHandler()" class="primaryBtn -fleche interactif mobile">
+        <span>Termine</span>
         <span class="icon-container"
           ><svg
             class="fleche"
@@ -1060,10 +1060,12 @@
         </div>
 
         <button
-          @click="viewPicked('vue1'), saveShoeHandler()"
+          @click="saveShoeHandler()"
           class="primaryBtn -fleche interactif desktop"
         >
-          <span>Terminer</span>
+          <span>
+            Termine
+          </span>
           <span class="icon-container"
             ><svg
               class="fleche"
@@ -1295,7 +1297,7 @@ export default {
       for (const property in this.choix) {
         this.canvas.querySelector(`.${property}.${this.choix[property]}` + "." + view).classList.add("show")
       }
-      
+
     },
     stepPicked(stepSelection) {
       let stepNom = document.querySelector("#Nom_etape");
