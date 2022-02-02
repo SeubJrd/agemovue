@@ -235,6 +235,11 @@ export default {
 
 @media screen and (max-width: 960px) {
 
+  .connexion{
+    width: 90%;
+    margin-left: 5%;
+  }
+
     form {
         width: 90%;
         margin-left: 5%;
