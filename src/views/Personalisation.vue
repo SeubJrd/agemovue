@@ -1314,6 +1314,10 @@ export default {
         }
       })
 
+      this.canvas.querySelectorAll("." + view + ".blanc").forEach( (item) => {
+          item.classList.add("default")
+      })
+
       this.options.view = view
 
       for (const property in this.choix) {
@@ -1382,7 +1386,13 @@ export default {
     },
     reset() {
       this.canvas.querySelectorAll("img" + `.${this.options.view}`).forEach((item) => {
-        item.classList.remove("show");
+        if (item.classList.contains("default") === false) {
+          item.classList.remove("show");
+        }
+        if (item.classList.contains("blanc") === true) {
+          item.classList.add("default");
+        }
+        for (var member in this.choix) delete this.choix[member];
       });
     },
   },
