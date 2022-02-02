@@ -1295,14 +1295,14 @@ export default {
             })
     },
     viewPicked(view) {
-      let btnActif = document.querySelectorAll("BtnVue")
+      let btnActif = document.querySelectorAll(".BtnVue")
       console.log(btnActif)
 
       btnActif.forEach((item) => {
-        if (item.classList.contains("actif") === true) {
-          item.classList.remove("actif")
+        if(item.classList.contains("actif") === true && item.id !== view) {
+            item.classList.remove("actif")
         }
-        else {
+        else if (item.id === view) {
           item.classList.add("actif")
         }
       })
@@ -1313,6 +1313,8 @@ export default {
           item.classList.remove("default")
         }
       })
+
+      this.options.view = view
 
       for (const property in this.choix) {
         this.canvas.querySelector(`.${property}.${this.choix[property]}` + "." + view).classList.add("show")
@@ -1426,10 +1428,6 @@ export default {
 .canvas {
   img {
     display: none;
-  }
-
-  .vue2 {
-    transform: rotate(90deg);
   }
 
   img.show {
@@ -1778,15 +1776,8 @@ export default {
 
   .jeVeuxDesChaussures img {
     position: absolute;
-
-    &.vue1 {
-      width: 90%;
-      left: 5%;
-    }
-    &.vue2 {
-      height: 100%;
-      left: 44%;
-    }
+    width: 90%;
+    left: 5%;
   }
 
   /*styles perso*/
@@ -2008,12 +1999,6 @@ export default {
       padding: 3%;
       border: $bleuVert solid 0.2px;
       border-radius: 10px;
-      &:first-of-type {
-        background-color: $bleuVert;
-        p {
-          color: white;
-        }
-      }
     }
   }
 
