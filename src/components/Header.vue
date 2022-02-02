@@ -78,6 +78,10 @@ export default {
 }
 
 @media screen and (min-width: 960px) { 
+
+    a.header__lien.router-link-exact-active {
+            text-decoration: red underline;
+    }
     
     .header {
     display: flex;
