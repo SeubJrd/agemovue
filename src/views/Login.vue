@@ -36,7 +36,7 @@
         ><br />
 
         <div>
-          <a class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
+          <a style="cursor: pointer" class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
             <span>Connexion</span>
             <span class="icon-container"
               ><svg class="fleche" x="0px" y="0px" viewBox="0 0 42 16.1">
@@ -69,10 +69,7 @@
       </p>
     </div>
 
-    <router-link to="/Compte" v-if="success">
-    </router-link>
-
-    <div v-if="error">
+    <div class="errorMessage" v-if="error">
       <p style="color: red">Nom ou mot de passe invalide</p>
     </div>
 
@@ -115,6 +112,7 @@ export default {
           console.log(response);
           if (response.status === 200) {
             this.success = true;
+            this.$router.push('compte')
             console.log(response);
             this.$store.commit("setUser", {
               userid: response.data.data.id,
@@ -122,6 +120,7 @@ export default {
               email: response.data.data.email,
               authToken: response.data.data.token,
             });
+
           }
         })
         .catch((error) => {
@@ -137,6 +136,14 @@ export default {
  
 <style lang="scss">
 @media screen and (min-width: 960px) {
+
+  .connexion .errorMessage{
+    margin-left: 25%;
+    & p{
+      font-weight: bold;
+    }
+  }
+
   .zoneConnexion {
     margin: auto;
     width: 50%;

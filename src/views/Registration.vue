@@ -34,10 +34,20 @@
             v-model="form.email"
           />
         </div>
-         <div class="formulaire">
-                <label class="formulaire__label || date__label" for="date">Date de naissance (JJ / MM / AAAA) *</label> <br>
-                <input class="formulaire__input || date__input" type="date" required name="date" id="date" placeholder="XX / XX / XXXX">
-            </div>
+        <div class="formulaire">
+          <label class="formulaire__label || date__label" for="date"
+            >Date de naissance (JJ / MM / AAAA) *</label
+          >
+          <br />
+          <input
+            class="formulaire__input || date__input"
+            type="date"
+            required
+            name="date"
+            id="date"
+            placeholder="XX / XX / XXXX"
+          />
+        </div>
         <div class="formulaire">
           <label class="formulaire__label || mdp__label" for="password"
             >Mot de passe *</label
@@ -69,7 +79,7 @@
           </label>
         </div>
         <div>
-          <a class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
+          <a style="cursor: pointer" class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
             <span>Inscription</span>
             <span class="icon-container"
               ><svg class="fleche" x="0px" y="0px" viewBox="0 0 42 16.1">
@@ -91,10 +101,18 @@
             ></span>
           </a>
         </div>
+
+        <div class="errorMessage" v-if="error">
+            <p style="color: red">
+              Vous n'avez pas bien rempli un champ du formulaire
+            </p>
+          </div>
       </form>
 
       <p class="phrase-compte">
-        Déjà membre ?<router-link class="lien-compte || lien-connexion" to="./Login"
+        Déjà membre ?<router-link
+          class="lien-compte || lien-connexion"
+          to="./Login"
           >Connectez vous ici</router-link
         >
       </p>
@@ -104,14 +122,6 @@
         to="https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
         >Règlement général sur la protection des données</router-link
       >
-    </div>
-
-    <div v-if="success">
-      <p style="color: green">Inscription réussie</p>
-    </div>
-
-    <div v-if="error">
-      <p style="color: red">{{ errorMessage }}</p>
     </div>
   </div>
 </template>
@@ -163,6 +173,13 @@ export default {
  
 <style lang="scss">
 @media screen and (min-width: 960px) {
+  .inscription .errorMessage {
+    margin-bottom: 5%;
+    & p {
+      font-weight: bold;
+    }
+  }
+
   .main-check {
     position: relative;
     padding-left: 45px;
@@ -343,25 +360,26 @@ export default {
     color: #00b7e8;
   }
 
-  label, input{
-      margin-left: 0!important;
+  label,
+  input {
+    margin-left: 0 !important;
   }
 
   .check {
-      margin-bottom: 10%;
-      margin-top: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
   }
 
-  .phrase-compte{
-      margin-left: 0!important;
+  .phrase-compte {
+    margin-left: 0 !important;
   }
 
-  .lien-rgpd{
-      margin-left: 0;
+  .lien-rgpd {
+    margin-left: 0;
   }
 
-  .zoneConnexion__lien{
-      margin-left: 0!important;
+  .zoneConnexion__lien {
+    margin-left: 0 !important;
   }
 }
 </style>
