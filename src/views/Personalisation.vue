@@ -1285,8 +1285,6 @@ export default {
     },
     viewPicked(view) {
 
-      console.log(view);
-
       this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
         item.classList.remove("show")
         if (item.classList.contains("default") === true){
@@ -1294,40 +1292,10 @@ export default {
         }
       })
 
-      this.canvas.querySelectorAll("." + view).forEach((item) => {
-        console.log(item)
-        if (this.choix.Arriere != null) {
-          this.canvas.querySelector("." + view + ".Arriere" + `.${this.choix.Arriere}`).classList.add("show");
-        }
-        if (this.choix.Corps_arriere != null) {
-          this.canvas.querySelector("." + view + ".Corps_arriere" + `.${this.choix.Corps_arriere}`).classList.add("show");
-        }
-        if (this.choix.Corps_avant != null) {
-          this.canvas.querySelector("." + view + ".Corps_avant" + `.${this.choix.Corps_avant}`).classList.add("show");
-        }
-        if (this.choix.Doublure != null) {
-          this.canvas.querySelector("." + view + ".Doublure" + `.${this.choix.Doublure}`).classList.add("show");
-        }
-        if (this.choix.Lacet != null) {
-          this.canvas.querySelector("." + view + ".Lacet" + `.${this.choix.Lacet}`).classList.add("show");
-        }
-        if (this.choix.Languette != null) {
-          this.canvas.querySelector("." + view + ".Languette" + `.${this.choix.Languette}`).classList.add("show");
-        }
-        if (this.choix.Milieu != null) {
-          this.canvas.querySelector("." + view + ".Milieu" + `.${this.choix.Milieu}`).classList.add("show");
-        }
-        if (this.choix.Renfort != null) {
-          this.canvas.querySelector("." + view + ".Renfort" + `.${this.choix.Renfort}`).classList.add("show");
-        }
-        if (this.choix.Semelle != null) {
-          this.canvas.querySelector("." + view + ".Semelle" + `.${this.choix.Semelle}`).classList.add("show");
-        }
-        if (this.choix.Toe_box != null) {
-          this.canvas.querySelector("." + view + ".Toe_box" + `.${this.choix.Toe_box}`).classList.add("show");
-        }
-      });
-
+      for (const property in this.choix) {
+        this.canvas.querySelector(`.${property}.${this.choix[property]}` + "." + view).classList.add("show")
+      }
+      
     },
     stepPicked(stepSelection) {
       let stepNom = document.querySelector("#Nom_etape");
@@ -1389,7 +1357,7 @@ export default {
       console.log(this.choix);
     },
     reset() {
-      this.canvas.querySelectorAll("img").forEach((item) => {
+      this.canvas.querySelectorAll("img" + `.${this.options.view}`).forEach((item) => {
         item.classList.remove("show");
       });
     },
