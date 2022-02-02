@@ -11,10 +11,11 @@ import Personalisation from '../views/Personalisation.vue'
 import Engagement from '../views/Engagement.vue'
 import Crea from '../views/Crea.vue'
 import store from '../store/index'
+import NotFound from '../components/NotFound'
+
 
 Vue.use(VueRouter)
 
-//Installe Pi Seb
 
 const routes = [
   {
@@ -69,6 +70,11 @@ const routes = [
     path: '/engagement',
     name: 'Engagement',
     component: Engagement
+  },
+  {
+    path: '*',
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 
