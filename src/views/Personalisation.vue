@@ -1247,6 +1247,8 @@ export default {
   },
   mounted() {
     this.canvas = document.querySelector(".canvas");
+    this.header = document.querySelector("#header");
+    this.header.classList.add("header__perso")
   },
   methods: {
     saveShoeHandler() {
@@ -1400,6 +1402,15 @@ export default {
 </script>
 
 <style lang="scss">
+.header__perso {
+    display: flex;
+    align-items: center;
+    position: inherit;
+    width: inherit;
+    background: initial;
+    height: initial;
+}
+
 .col__img1 {
   background: #f1e8e8;
   box-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 0.25);

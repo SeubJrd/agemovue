@@ -1,6 +1,6 @@
 <template>
 
-    <div id="header" class="header">
+    <div id="header" class="header" onload="headerFixe(window.location.href)">
         <router-link to="/" class="header__image"><img class="header__logo" src="@/assets/img/LogoHeader.svg" alt="logo agemo"></router-link>
         <nav class="header__navigation desktop">
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
@@ -63,7 +63,7 @@ export default {
             {
                 open.classList.remove("burgerActive")
             }
-        }
+        },
     }
 }
 
@@ -80,12 +80,17 @@ export default {
 @media screen and (min-width: 960px) { 
 
     a.header__lien.router-link-exact-active {
-            text-decoration: red underline;
+            text-decoration: $colorText underline;
     }
     
     .header {
-    display: flex;
-    align-items: center;
+        position: fixed;
+        width: 100%;
+        background: #e1ffff;
+        height: 4.5vw;
+        display: flex;
+        z-index: 12;
+        align-items: center;
     }
 
     .header__navigation{
