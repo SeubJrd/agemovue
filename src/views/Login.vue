@@ -36,7 +36,7 @@
         ><br />
 
         <div>
-          <a class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
+          <a style="cursor: pointer" class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
             <span>Connexion</span>
             <span class="icon-container"
               ><svg class="fleche" x="0px" y="0px" viewBox="0 0 42 16.1">
@@ -61,20 +61,16 @@
       </form>
 
       <p class="phrase-compte">
-        Pas de compte ?<a
+        Pas de compte ?<router-link
           class="lien-compte || lien-connexion"
-          href="./Inscription"
-          >Inscrivez vous ici</a
+          to="./Registration"
+          >Inscrivez vous ici</router-link
         >
       </p>
     </div>
 
-    <div v-if="success">
-      <p style="color: green">Connexion réussie</p>
-    </div>
-
-    <div v-if="error">
-      <p style="color: red">Nom ou mdp invalide mon reuf</p>
+    <div class="errorMessage" v-if="error">
+      <p style="color: red">Nom ou mot de passe invalide</p>
     </div>
 
     <!--<p>Bonjour, {{user.displayName}}</p>-->
@@ -116,12 +112,15 @@ export default {
           console.log(response);
           if (response.status === 200) {
             this.success = true;
-
+            this.$router.push('compte')
+            console.log(response);
             this.$store.commit("setUser", {
+              userid: response.data.data.id,
               username: response.data.data.displayName,
               email: response.data.data.email,
               authToken: response.data.data.token,
             });
+
           }
         })
         .catch((error) => {
@@ -137,6 +136,14 @@ export default {
  
 <style lang="scss">
 @media screen and (min-width: 960px) {
+
+  .connexion .errorMessage{
+    margin-left: 25%;
+    & p{
+      font-weight: bold;
+    }
+  }
+
   .zoneConnexion {
     margin: auto;
     width: 50%;
@@ -221,12 +228,17 @@ export default {
     }
   }
 
-  .titlePage__container {
+  .connexion .titlePage__container {
     margin-left: 25% !important;
   }
 }
 
 @media screen and (max-width: 960px) {
+
+  .connexion{
+    width: 90%;
+    margin-left: 5%;
+  }
 
     form {
         width: 90%;

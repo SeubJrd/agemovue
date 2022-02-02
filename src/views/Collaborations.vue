@@ -6,8 +6,11 @@
 
     <div class="collab__ponce -col-gauche">
         <div class="mobile collab__illu">
-        <img v-bind:src="collab1.motifpreview" alt="" />
+          <div >
+            <img v-bind:src="collab1.motifpreview" alt="" />
         <img v-bind:src="collab1.shoepreview" alt="" />
+          </div>
+      
       </div>
       <div class="collab__infos">
         <img v-bind:src="collab1.decotitre" alt="" />
@@ -49,15 +52,40 @@
       </div>
 
       <div class="desktop collab__illu">
-        <img v-bind:src="collab1.motifpreview" alt="" />
-        <img v-bind:src="collab1.shoepreview" alt="" />
+
+        <div class="preview">
+          <img class="previewnormal" v-bind:src="collab1.motifpreview" alt="" />
+        <img class="previewnormal previewnormal2" v-bind:src="collab1.shoepreview" alt="" />
+        
+        
+          <img class="previewhover" v-bind:src="collab1.savoirplus" alt="" />
+          <h2 class="previewhover">Ponce</h2>
+          <p class="previewhover">Ponce aussi connu sous le nom de Poncefleur est un streamer de jeux vidéos. En septembre 2020 il lance sa boutique fleur, avec de nombreux articles aux couleurs florales.</p>
+
+      </div>
+
       </div>
     </div>
 
     <div class="collab__OP -col-droite">
-      <div class="collab__illu">
+      <div class="mobile collab__illu">
         <img v-bind:src="collab2.motifpreview" alt="" />
         <img v-bind:src="collab2.shoepreview" alt="" />
+      </div>
+
+      <div class="desktop collab__illu">
+
+        <div class="preview">
+          <img class="previewnormal" v-bind:src="collab2.motifpreview" alt="" />
+        <img class="previewnormal previewnormal2" v-bind:src="collab2.shoepreview" alt="" />
+        
+        
+          <img class="previewhover" v-bind:src="collab2.savoirplus" alt="" />
+          <h2 class="previewhover">One piece</h2>
+          <p class="previewhover">One Piece est une série de manga shōnen . Adaptée en animé depuis 1999 au Japon, elle rencontre un franc succès en France. A travers plus de 1000 épisodes, on découvre les aventures de pirates à la recherche du trésor “One piece”.</p>
+
+      </div>
+
       </div>
 
       <div class="collab__infos">
@@ -145,8 +173,18 @@
       </div>
 
       <div class="desktop collab__illu">
-        <img v-bind:src="collab3.motifpreview" alt="" />
-        <img v-bind:src="collab3.shoepreview" alt="" />
+
+        <div class="preview">
+          <img class="previewnormal" v-bind:src="collab3.motifpreview" alt="" />
+        <img class="previewnormal previewnormal2" v-bind:src="collab3.shoepreview" alt="" />
+        
+        
+          <img class="previewhover" v-bind:src="collab3.savoirplus" alt="" />
+          <h2 class="previewhover">Nasa</h2>
+          <p class="previewhover">Nasa, acronyme de “National Aeronautics and Space Administration” est une agence fédérale responsable du programme spatial civil des États-Unis. Ils sont à l’origine de plusieurs projets de vols spatiaux habités.</p>
+
+      </div>
+
       </div>
     </div>
   </div>
@@ -230,7 +268,7 @@ export default {
 
   .collab__illu img {
     width: 100%;
-    border-radius: inherit;
+    border-radius: 40px;
     &:first-of-type {
       border-bottom-left-radius: initial;
       border-bottom-right-radius: initial;
@@ -269,6 +307,51 @@ export default {
   .collab__infos img {
     width: 80%;
   }
+
+ 
+  .previewhover{
+    display: none;
+  }
+
+
+  .preview{
+    &:hover {
+    background-color: $bleuVert;
+    border-radius: 40px;
+
+      .previewhover{
+        display: block;
+      }
+      
+      .previewnormal:first-of-type{
+        display: none;
+        position: relative;
+
+      }
+      .previewnormal:nth-of-type(2){
+        visibility: hidden;
+        position: absolute;
+      }
+    }
+  }
+
+  .preview{
+      & h2{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10%;
+        color: white;
+        text-align: center;
+      }
+      & p{
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 10%;
+        color: white;
+        text-align: center;
+      }
+  }
+
 }
 
 @media screen and (max-width: 960px) {

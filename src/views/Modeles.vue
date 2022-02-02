@@ -18,7 +18,7 @@
             {{ modele1.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Bouton
+            >Personnalises
             <span
               ><svg
                 class="fleche"
@@ -65,7 +65,7 @@
             {{ modele2.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Bouton
+            >Personnalises
             <span
               ><svg
                 class="fleche"
@@ -112,7 +112,7 @@
             {{ modele3.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Bouton
+            >Personnalises
             <span
               ><svg
                 class="fleche"
@@ -159,7 +159,7 @@
             {{ modele4.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Bouton
+            >Personnalises
             <span
               ><svg
                 class="fleche"

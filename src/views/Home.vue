@@ -365,12 +365,11 @@ export default {
   }
 
   .section1__video {
-    width: inherit;
+    width: 100%;
     height: 35vh;
     border: none;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-left: -18%;
   }
 
   .accueil__section1 {

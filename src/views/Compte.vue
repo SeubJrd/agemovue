@@ -11,7 +11,7 @@
 
             <div class="compteSupCol2">
                 <h1>{{user.displayName}}</h1>
-                <h2>Jean jacques Demisel</h2>
+                <h2>{{user.email}}</h2>
             </div>
 
             <div class="compteSupCol3">
@@ -49,8 +49,12 @@
                 </div>
             </div>
 
-            <div class="compteMenuCol2">
-
+            <div v-if="shoes.length" class="compteMenuCol2">
+                <h2>Chaussures créés</h2>
+                <div v-for="shoe in shoes" :key="shoe.id" class="shoe">
+                    <p>{{shoe.title.rendered}}</p>
+                    <img :src="shoe.acf.image_url" alt="">
+                </div>
             </div>
 
         </div>
@@ -65,6 +69,7 @@ import axios from "axios"
 export default {
     data() {
         return {
+            shoes: [],
             form: {
                 username: null,
                 password: null,
@@ -72,6 +77,16 @@ export default {
             success: false,
             error: false,
             }
+    },
+    created() {
+        axios.get(`https://agemovue.sebastienjourdain.com/wp-json/wp/v2/shoes?author=${this.$store.state.user.id}`)
+        .then(response => {
+            console.log(response.data)
+            this.shoes = response.data
+        })
+        .catch(error => {
+            console.log(error)
+        })
     },
     computed: {
         user () {
@@ -126,6 +141,10 @@ export default {
 
 .compteSupCol1{
     grid-column: 1;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .compteSupCol1 img{
@@ -134,7 +153,9 @@ export default {
 
 .compteSupCol2{
     grid-column: 2;
-    padding-top: 8%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .compteSupCol2 h1{
