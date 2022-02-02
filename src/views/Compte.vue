@@ -79,7 +79,7 @@ export default {
             }
     },
     created() {
-        axios.get('https://agemovue.sebastienjourdain.com/wp-json/wp/v2/shoes?author=${this.$store.state.user.id}')
+        axios.get(`https://agemovue.sebastienjourdain.com/wp-json/wp/v2/shoes?author=${this.$store.state.user.id}`)
         .then(response => {
             console.log(response.data)
             this.shoes = response.data
