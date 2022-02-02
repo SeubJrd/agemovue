@@ -61,20 +61,19 @@
       </form>
 
       <p class="phrase-compte">
-        Pas de compte ?<a
+        Pas de compte ?<router-link
           class="lien-compte || lien-connexion"
-          href="./Inscription"
-          >Inscrivez vous ici</a
+          to="./Registration"
+          >Inscrivez vous ici</router-link
         >
       </p>
     </div>
 
-    <div v-if="success">
-      <p style="color: green">Connexion réussie</p>
-    </div>
+    <router-link to="/Compte" v-if="success">
+    </router-link>
 
     <div v-if="error">
-      <p style="color: red">Nom ou mdp invalide mon reuf</p>
+      <p style="color: red">Nom ou mot de passe invalide</p>
     </div>
 
     <!--<p>Bonjour, {{user.displayName}}</p>-->
@@ -116,8 +115,9 @@ export default {
           console.log(response);
           if (response.status === 200) {
             this.success = true;
-
+            console.log(response);
             this.$store.commit("setUser", {
+              userid: response.data.data.id,
               username: response.data.data.displayName,
               email: response.data.data.email,
               authToken: response.data.data.token,
@@ -221,7 +221,7 @@ export default {
     }
   }
 
-  .titlePage__container {
+  .connexion .titlePage__container {
     margin-left: 25% !important;
   }
 }

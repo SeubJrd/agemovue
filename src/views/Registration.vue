@@ -34,6 +34,10 @@
             v-model="form.email"
           />
         </div>
+         <div class="formulaire">
+                <label class="formulaire__label || date__label" for="date">Date de naissance (JJ / MM / AAAA) *</label> <br>
+                <input class="formulaire__input || date__input" type="date" required name="date" id="date" placeholder="XX / XX / XXXX">
+            </div>
         <div class="formulaire">
           <label class="formulaire__label || mdp__label" for="password"
             >Mot de passe *</label
@@ -90,20 +94,20 @@
       </form>
 
       <p class="phrase-compte">
-        Déjà membre ?<a class="lien-compte || lien-connexion" href="./Connexion"
-          >Connectez vous ici</a
+        Déjà membre ?<router-link class="lien-compte || lien-connexion" to="./Login"
+          >Connectez vous ici</router-link
         >
       </p>
 
-      <a
+      <router-link
         class="lien-rgpd || lien-connexion"
-        href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
-        >Règlement général sur la protection des données</a
+        to="https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
+        >Règlement général sur la protection des données</router-link
       >
     </div>
 
     <div v-if="success">
-      <p style="color: green">Votre inscription est réussi !</p>
+      <p style="color: green">Inscription réussie</p>
     </div>
 
     <div v-if="error">
@@ -254,6 +258,10 @@ export default {
   input[type="checkbox"]#newsletter:checked + label::before {
     content: "\f14a";
     color: #00b7e8;
+  }
+
+  .inscription .titlePage__container {
+    margin-left: 25% !important;
   }
 }
 
