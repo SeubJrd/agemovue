@@ -5,9 +5,7 @@ import Collaborations from '../views/Collaborations.vue'
 import Registration from '../views/Registration.vue'
 import Login from '../views/Login.vue'
 import Compte from '../views/Compte.vue'
-import Connexion from '../views/Connexion.vue'
 import Galerie from '../views/Galerie.vue'
-import Inscription from '../views/Inscription.vue'
 import Modeles from '../views/Modeles.vue'
 import Personalisation from '../views/Personalisation.vue'
 import Engagement from '../views/Engagement.vue'
@@ -34,11 +32,6 @@ const routes = [
     component: Compte
   },
   {
-    path: '/connexion',
-    name: 'Connexion',
-    component: Connexion
-  },
-  {
     path: '/crea',
     name: 'Crea',
     component: Crea
@@ -47,11 +40,6 @@ const routes = [
     path: '/galerie',
     name: 'Galerie',
     component: Galerie
-  },
-  {
-    path: '/inscription',
-    name: 'Inscription',
-    component: Inscription
   },
   {
     path: '/modeles',

@@ -61,17 +61,16 @@
       </form>
 
       <p class="phrase-compte">
-        Pas de compte ?<a
+        Pas de compte ?<router-link
           class="lien-compte || lien-connexion"
-          href="./Inscription"
-          >Inscrivez vous ici</a
+          to="./Registration"
+          >Inscrivez vous ici</router-link
         >
       </p>
     </div>
 
-    <div v-if="success">
-      <p style="color: green">Connexion réussie</p>
-    </div>
+    <router-link to="/Compte" v-if="success">
+    </router-link>
 
     <div v-if="error">
       <p style="color: red">Nom ou mot de passe invalide</p>
