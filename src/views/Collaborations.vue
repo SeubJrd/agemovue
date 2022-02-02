@@ -16,7 +16,6 @@
         <img v-bind:src="collab1.decotitre" alt="" />
         <h1>{{ collab1.titre }}</h1>
         <p>{{ collab1.texte }}</p>
-        <a class="collab__plus" href="#">En savoir plus sur Ponce</a>
         <a class="primaryBtn -fleche" href="">
           <span> Teste le motif </span>
           <span class="icon-container"
@@ -92,7 +91,6 @@
         <img v-bind:src="collab2.decotitre" alt="" />
         <h1>{{ collab2.titre }}</h1>
         <p>{{ collab2.texte }}</p>
-        <a class="collab__plus" href="#">En savoir plus sur One Piece</a>
         <a class="primaryBtn -fleche" href="">
           <span>Teste le motif</span>
           <span class="icon-container"
@@ -137,7 +135,6 @@
         <img v-bind:src="collab3.decotitre" alt="" />
         <h1>{{ collab3.titre }}</h1>
         <p>{{ collab3.texte }}</p>
-        <a class="collab__plus" href="#">En savoir plus sur la Nasa</a>
         <a class="primaryBtn -fleche" href="">
           <span>Teste le motif</span>
           <span class="icon-container"
