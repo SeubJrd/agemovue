@@ -2,7 +2,7 @@
 
     <div class="header">
         <router-link to="/" class="header__image"><img class="header__logo" src="@/assets/img/LogoHeader.svg" alt="logo agemo"></router-link>
-        <nav class="header__navigation">
+        <nav class="header__navigation desktop">
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
             <span>Personnalise</span>
             </router-link>
@@ -30,6 +30,14 @@
             </svg>
             </router-link>
         </div>
+        <nav class="header__navigation mobile">
+            <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
+            <span>Personnalise</span>
+            </router-link>
+            <router-link class="header__lien" to="/Collaborations">Collaborations</router-link>
+            <router-link class="header__lien" to="/Galerie">Communauté</router-link>
+            <router-link class="header__lien" to="/Engagement">Engagements</router-link>
+        </nav>
     </div>
 
 </template>
