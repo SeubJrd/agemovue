@@ -18,7 +18,7 @@
             {{ modele1.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Personnalises
+            >Personnalise
             <span
               ><svg
                 class="fleche"
@@ -65,7 +65,7 @@
             {{ modele2.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Personnalises
+            >Personnalise
             <span
               ><svg
                 class="fleche"
@@ -112,7 +112,7 @@
             {{ modele3.description }}
           </p>
           <router-link class="BtnVariant-modeles -fleche" to="/Personalisation"
-            >Personnalises
+            >Personnalise
             <span
               ><svg
                 class="fleche"
@@ -233,11 +233,12 @@ export default {
 @media screen and (min-width: 960px) {
   .modele__card {
     width: 25vw;
-    height: 25vw;
+    height: 30vw;
     background-repeat: no-repeat;
     background-size: 100%;
     border: 1px solid $bleuVert;
     border-radius: 5%;
+    background-color: #f7f7f7;
   }
 
   .modele__card h1 {
@@ -258,6 +259,9 @@ export default {
     .modele__infos-hover {
       visibility: visible;
     }
+    h1, p{
+      color: white;
+    }
     background-color: $bleuVert;
     background-image: none !important;
   }
@@ -265,6 +269,9 @@ export default {
   .modele__col2:hover {
     .modele__infos-hover {
       visibility: visible;
+    }
+    h1, p{
+      color: white;
     }
     background-color: $bleuVert;
     background-image: none !important;
@@ -274,6 +281,9 @@ export default {
     .modele__infos-hover {
       visibility: visible;
     }
+    h1, p{
+      color: white;
+    }
     background-color: $bleuVert;
     background-image: none !important;
   }
@@ -281,6 +291,9 @@ export default {
   .modele__col4:hover {
     .modele__infos-hover {
       visibility: visible;
+    }
+    h1, p{
+      color: white;
     }
     background-color: $bleuVert;
     background-image: none !important;
