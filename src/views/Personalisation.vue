@@ -1295,6 +1295,17 @@ export default {
             })
     },
     viewPicked(view) {
+      let btnActif = document.querySelectorAll("BtnVue")
+      console.log(btnActif)
+
+      btnActif.forEach((item) => {
+        if (item.classList.contains("actif") === true) {
+          item.classList.remove("actif")
+        }
+        else {
+          item.classList.add("actif")
+        }
+      })
 
       this.canvas.querySelectorAll(`.${this.options.view}`).forEach( (item) => {
         item.classList.remove("show")
