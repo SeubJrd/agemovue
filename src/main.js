@@ -11,8 +11,8 @@ Vue.config.productionTip = false
 //Vue.use(svgSpritePlugin, {})
 
 new Vue({
-  router,
   store,
+  router,
   render: h => h(App)
 }).$mount('#app')
 
