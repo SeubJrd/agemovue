@@ -867,6 +867,15 @@
       />
     </div>
 
+    <div class="changeEtapes mobile">
+        <div id="vue1" class="BtnVue interactif actif" @click="viewPicked('vue1')">
+          <p>Vue de côté</p>
+        </div>
+        <div id="vue2" class="BtnVue interactif" @click="viewPicked('vue2')">
+          <p>Vue de dessus</p>
+        </div>
+      </div>
+
     <div class="infoPartagePrix">
       <div class="bulle interactif" href="#inspiPerso">
         <div class="infoPartagePrix_inspiration">
