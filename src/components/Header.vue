@@ -29,6 +29,11 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.171997 18.664C0.171997 18.2067 0.542705 17.836 0.999997 17.836H27.496C27.9533 17.836 28.324 18.2067 28.324 18.664C28.324 19.1213 27.9533 19.492 27.496 19.492H0.999997C0.542705 19.492 0.171997 19.1213 0.171997 18.664Z" fill="#170D42"/>
                 </svg>
             </div>
+            <div class="croixMenu mobile">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28033 0.21967C0.987438 -0.0732233 0.512564 -0.0732233 0.219671 0.21967C-0.0732222 0.512563 -0.0732222 0.987437 0.219671 1.28033L10.1893 11.25L0.21967 21.2197C-0.0732233 21.5126 -0.0732233 21.9874 0.21967 22.2803C0.512563 22.5732 0.987437 22.5732 1.28033 22.2803L11.25 12.3107L20.8436 21.9043C21.1365 22.1972 21.6114 22.1972 21.9043 21.9043C22.1972 21.6114 22.1972 21.1365 21.9043 20.8436L12.3107 11.25L21.9043 1.65639C22.1972 1.3635 22.1972 0.888626 21.9043 0.595732C21.6114 0.302839 21.1365 0.30284 20.8436 0.595732L11.25 10.1893L1.28033 0.21967Z" fill="#170D42"/>
+                </svg>
+            </div>
         </div>
         <nav class="header__navigation header__navigationMobile mobile">
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
@@ -147,6 +152,7 @@ export default {
 
     .burgerOpen{
         margin: auto;
+        border: none!important;
     }
 
     .IconesHeader{
@@ -168,10 +174,6 @@ export default {
         border: 2px solid $colorAction;
         border-radius: 10px;
         margin-right: 15%;
-        &:last-of-type{
-            border: none;
-
-        }
     }
 
     .header__lien{
@@ -180,6 +182,10 @@ export default {
         font-weight: 500;
         font-style: normal;
         font-size: 100%;
+    }
+
+    .croixMenu{
+        display: none;
     }
 
     .burgerActive {
@@ -199,22 +205,24 @@ export default {
 
             margin-left: 5%;
 
-            & a {
-                display: none;
-                    &:last-of-type{
-                    display: flex!important;
-                    padding-top: 3.5%;
-                   margin-left: 70%;
-                }
+            .header__lien{
+            display: none;
             }
         }
+
+        .croixMenu {
+            display: flex!important;
+            padding-top: 3.5%;
+            margin-left: 85%;
+        }
+
         .header__navigationMobile{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             height: 30vh;
-            margin-top: 15%;
+            margin-top: 25%;
             & a{
                 text-decoration: none;
                 color: white;
