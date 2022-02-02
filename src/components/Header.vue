@@ -1,6 +1,6 @@
 <template>
 
-    <div class="header">
+    <div class="header BurgerActive">
         <router-link to="/" class="header__image"><img class="header__logo" src="@/assets/img/LogoHeader.svg" alt="logo agemo"></router-link>
         <nav class="header__navigation desktop">
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
@@ -30,7 +30,7 @@
             </svg>
             </router-link>
         </div>
-        <nav class="header__navigation mobile">
+        <nav class="header__navigation header__navigationMobile mobile">
             <router-link class="header__lien -principal || primaryBtn " to="/Modeles">
             <span>Personnalise</span>
             </router-link>
@@ -119,18 +119,18 @@ export default {
 
 @media screen and (max-width: 960px) { 
 
+    .header {
+        display: flex;
+        align-items: center;
+        margin: 5%;
+    }
+
     .header__navigation {
         display: none;
     }
 
     .burgerOpen{
         margin: auto;
-    }
-
-    .header {
-        display: flex;
-        align-items: center;
-        margin: 5%;
     }
 
     .IconesHeader{
@@ -164,6 +164,48 @@ export default {
         font-weight: 500;
         font-style: normal;
         font-size: 100%;
+    }
+
+    .BurgerActive {
+        padding-bottom: 50vh;
+        padding-top: 5vh;
+        background-color: $colorText;
+        margin: initial!important;
+        display: block;
+        .header__image{
+            margin-left: 25%;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            position: absolute;
+        }
+        .IconesHeader {
+
+            margin-left: 5%;
+
+            & a {
+                display: none;
+                    &:last-of-type{
+                    display: flex!important;
+                    padding-top: 3.5%;
+                   margin-left: 70%;
+                }
+            }
+        }
+        .header__navigationMobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 30vh;
+            margin-top: 15%;
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        
+       
     }
 
 }
