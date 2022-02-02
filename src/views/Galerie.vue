@@ -278,6 +278,10 @@ export default {
     background-image: none;
     background-color: blue;
 }
+
+.galerie .titlePage__container{
+    margin-bottom: 5%;
+}
  
 }
 
