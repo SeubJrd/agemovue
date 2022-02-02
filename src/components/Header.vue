@@ -117,9 +117,6 @@ export default {
             fill: white;
             transition: 0.5s;
         }
-        &:last-of-type{
-            display: none;
-        }
     }
 
     .header__lien{
@@ -128,6 +125,10 @@ export default {
         font-weight: 500;
         font-style: normal;
         font-size: 100%;
+    }
+
+    .burgerOpen{
+        display: none;
     }
 }
 
