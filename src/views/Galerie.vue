@@ -4,7 +4,7 @@
         <div class="titlePage__container">
             <p class="titlePage">Les paires de la communauté</p>
         </div>
-        <p class="galerie__description">Retrouves ici les créations de tous nos utilisateurs. De quoi te donner quelques idées pour te lancer dans ta propre customisation. N’hésites pas à partager ton design à la fin de la personnalisation.</p>
+        <p class="galerie__description">Retrouve ici les créations de tous nos utilisateurs. De quoi te donner quelques idées pour te lancer dans ta propre customisation. N’hésite pas à partager ton design à la fin de la personnalisation.</p>
         
         <div class="galerie__galerie">
             <div class="galerie__card galerie__col1">
@@ -92,7 +92,7 @@
             <div class="galerieAussi__col1">
                 <h1>{{section1.titre}}</h1>
             <a class="primaryBtn -fleche" href="">
-                <span>Personnalises</span>
+                <span>Personnalise</span>
                 <span class="icon-container"><svg class="fleche" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 16.1"
                         enable-background="new 0 0 42 16.1" xml:space="preserve">
