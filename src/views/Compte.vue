@@ -42,15 +42,22 @@
                     <a href="">Mes <strong>favoris</strong></a>
                 </div>
                 <div class="compte__menuLien">
-                    <a href="">Mes <strong>modèles</strong></a>
+                    <a href="">Mes <strong>paires créés</strong></a>
                 </div>
+                <div v-if="shoes.length" class="compteMenuCol2 mobile">
+                <h2>Paires créés</h2>
+                <div v-for="shoe in shoes" :key="shoe.id" class="shoe">
+                    <p>{{shoe.title.rendered}}</p>
+                    <img :src="shoe.acf.image_url" alt="">
+                </div>
+            </div>
                 <div class="compte__menuLien">
                     <a href="">Mes <strong>modèles partagés</strong></a>
                 </div>
             </div>
 
-            <div v-if="shoes.length" class="compteMenuCol2">
-                <h2>Chaussures créés</h2>
+            <div v-if="shoes.length" class="compteMenuCol2 desktop">
+                <h2>Paires créés</h2>
                 <div v-for="shoe in shoes" :key="shoe.id" class="shoe">
                     <p>{{shoe.title.rendered}}</p>
                     <img :src="shoe.acf.image_url" alt="">
@@ -201,6 +208,16 @@ export default {
 
 .compteMenuCol2{
     grid-column: 2;
+    margin-top: 5%;
+    & h2{
+        margin-bottom: 5%;
+    }
+}
+
+.shoe{ 
+    & img{
+        width: 100%;
+    }
 }
  
 }
@@ -263,6 +280,20 @@ export default {
     padding-left: 5%;
     height: 5vh!important;
     margin-top: 5%!important;
+}
+
+.compteMenuCol2{
+    margin-top: 15%;
+    & h2{
+        margin-bottom: 10%;
+    }
+}
+
+.shoe{ 
+    margin-bottom: 10%;
+    & img{
+        width: 100%;
+    }
 }
 
 }
