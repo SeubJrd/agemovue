@@ -1130,7 +1130,7 @@
           propre création.
         </p>
         <a class="inspiPerso_btn primaryBtn -fleche" href="./galerie.html">
-          <span>Accèdes à la galerie</span>
+          <span>Accède à la galerie</span>
           <span class="icon-container"
             ><svg
               class="fleche"
