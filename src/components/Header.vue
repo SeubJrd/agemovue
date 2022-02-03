@@ -82,15 +82,23 @@ export default {
     a.header__lien.router-link-exact-active {
             text-decoration: $colorText underline;
     }
+
+    a.header__lien:hover {
+        text-decoration: $colorText underline;
+    }
     
     .header {
         position: fixed;
         width: 100%;
-        background: #e1ffff;
+        background: #FFFFFF;
         height: 4.5vw;
         display: flex;
         z-index: 12;
         align-items: center;
+    }
+
+    .descendre {
+        padding-top: 2%;
     }
 
     .header__navigation{

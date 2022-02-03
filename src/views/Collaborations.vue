@@ -1,5 +1,5 @@
 <template>
-  <div class="collabs">
+  <div class="collabs descendre">
     <div class="titlePage__container">
       <p class="titlePage">Les Collaborations</p>
     </div>
@@ -16,7 +16,7 @@
         <img v-bind:src="collab1.decotitre" alt="" />
         <h1>{{ collab1.titre }}</h1>
         <p>{{ collab1.texte }}</p>
-        <a class="primaryBtn -fleche" href="">
+        <router-link class="primaryBtn -fleche" to="/Personalisation">
           <span> Teste le motif </span>
           <span class="icon-container"
             ><svg
@@ -47,7 +47,7 @@
                        c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3"
               /></svg
           ></span>
-        </a>
+        </router-link>
       </div>
 
       <div class="desktop collab__illu">
@@ -91,8 +91,8 @@
         <img v-bind:src="collab2.decotitre" alt="" />
         <h1>{{ collab2.titre }}</h1>
         <p>{{ collab2.texte }}</p>
-        <a class="primaryBtn -fleche" href="">
-          <span>Teste le motif</span>
+        <router-link class="primaryBtn -fleche" to="/Personalisation">
+          <span> Teste le motif </span>
           <span class="icon-container"
             ><svg
               class="fleche"
@@ -122,7 +122,7 @@
                        c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3"
               /></svg
           ></span>
-        </a>
+        </router-link>
       </div>
     </div>
 
@@ -135,8 +135,8 @@
         <img v-bind:src="collab3.decotitre" alt="" />
         <h1>{{ collab3.titre }}</h1>
         <p>{{ collab3.texte }}</p>
-        <a class="primaryBtn -fleche" href="">
-          <span>Teste le motif</span>
+        <router-link class="primaryBtn -fleche" to="/Personalisation">
+          <span> Teste le motif </span>
           <span class="icon-container"
             ><svg
               class="fleche"
@@ -166,7 +166,7 @@
                        c0.2-0.2,0.3-0.5,0.3-0.7c0-0.3-0.1-0.6-0.3-0.7l-7.8-7.2c-0.4-0.4-1-0.3-1.4,0.1s-0.3,1,0.1,1.4l5.9,5.3"
               /></svg
           ></span>
-        </a>
+        </router-link>
       </div>
 
       <div class="desktop collab__illu">

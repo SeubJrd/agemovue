@@ -1,5 +1,5 @@
 <template>
-  <div class="inscription">
+  <div class="inscription descendre">
     <div class="titlePage__container">
       <p class="titlePage">Inscription</p>
     </div>

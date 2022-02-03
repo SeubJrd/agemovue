@@ -1,5 +1,5 @@
 <template>
-  <div class="modeles">
+  <div class="modeles descendre">
     <div class="titlePage__container">
       <p class="titlePage">Choisis ton modèle</p>
     </div>

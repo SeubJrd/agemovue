@@ -1,5 +1,5 @@
 <template>
-  <div class="connexion">
+  <div class="connexion descendre">
     <div class="titlePage__container">
       <p class="titlePage">Connexion</p>
     </div>
