@@ -1294,6 +1294,7 @@ export default {
             .then(response => {
                 console.log('SHOE IS CREATED', response)
                 this.shoeCreated = true
+                this.$router.push('Panier')
             })
     },
     viewPicked(view) {

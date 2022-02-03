@@ -6,6 +6,7 @@ import Registration from '../views/Registration.vue'
 import Login from '../views/Login.vue'
 import Compte from '../views/Compte.vue'
 import Galerie from '../views/Galerie.vue'
+import Panier from '../views/Panier.vue'
 import Modeles from '../views/Modeles.vue'
 import Personalisation from '../views/Personalisation.vue'
 import Engagement from '../views/Engagement.vue'
@@ -70,6 +71,11 @@ const routes = [
     path: '/engagement',
     name: 'Engagement',
     component: Engagement
+  },
+  {
+    path: '/panier',
+    name: 'Panier',
+    component: Panier
   },
   {
     path: '*',
