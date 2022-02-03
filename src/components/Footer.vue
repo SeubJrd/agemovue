@@ -148,7 +148,7 @@
           >Collaborations</router-link
         >
         <router-link class="footer__lien" to="/Engagement"
-          >Nos engagements</router-link
+          >Engagements</router-link
         >
       </div>
     </div>
