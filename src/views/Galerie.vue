@@ -1,5 +1,5 @@
 <template>
-    <div class="galerie">
+    <div class="galerie descendre">
 
         <div class="titlePage__container">
             <p class="titlePage">Les paires de la communauté</p>

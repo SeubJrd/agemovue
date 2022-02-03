@@ -2,7 +2,7 @@
   <div class="NotFound">
     <h1>404 Oups ...</h1>
     <p>La page que tu cherches n'existe pas : (</p>
-    <router-link class="primaryBtn -fleche" to="/Collaborations">
+    <router-link class="primaryBtn -fleche" to="/">
           <span>Retourner à l'accueil</span>
           <span class="icon-container"
             ><svg
@@ -50,13 +50,13 @@ export default {
 
   .NotFound {
     width: 50%;
-    margin: 5% 25%;
+    margin: 0% 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 17%;
+    padding-bottom: 6%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("../assets/Icones/deco-titre.svg");

@@ -1,5 +1,5 @@
 <template>
-    <div class="compte">
+    <div class="compte descendre">
 
         <div class="titlePage__container">
             <p class="titlePage">Mon compte</p>

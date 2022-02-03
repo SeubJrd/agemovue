@@ -1,5 +1,5 @@
 <template>
-  <div class="inscription">
+  <div class="inscription descendre">
     <div class="titlePage__container">
       <p class="titlePage">Inscription</p>
     </div>
@@ -78,6 +78,7 @@
             <span class="newsletter"></span>
           </label>
         </div>
+        <p class="infoRegister">Si le site n'affiche aucune erreur après avoir cliqué sur le bouton si dessous et que vous êtes redirigé vers la page de connexion, alors votre compte à bien été créé</p>
         <div>
           <a style="cursor: pointer" class="zoneConnexion__lien || primaryBtn -fleche" @click="submit">
             <span>Inscription</span>
@@ -105,6 +106,12 @@
         <div class="errorMessage" v-if="error">
             <p style="color: red">
               Vous n'avez pas bien rempli un champ du formulaire
+            </p>
+          </div>
+
+          <div class="errorMessage" v-if="success">
+            <p style="color: green">
+              Inscription réussie
             </p>
           </div>
       </form>
@@ -157,6 +164,7 @@ export default {
         .then((response) => {
           if (response.status === 200) {
             this.success = true;
+            this.$router.push('Compte')
             this.error = false;
           }
         })
@@ -173,6 +181,10 @@ export default {
  
 <style lang="scss">
 @media screen and (min-width: 960px) {
+
+  .infoRegister{
+    width: 60%;
+  }
   .inscription .errorMessage {
     margin-bottom: 5%;
     & p {

@@ -159,7 +159,7 @@
         <p>
           {{section4.texte}}
         </p>
-        <router-link class="primaryBtn -fleche" to="/">
+        <router-link class="primaryBtn -fleche" to="/Engagement">
           <span>Découvre</span>
           <span class="icon-container"
             ><svg
